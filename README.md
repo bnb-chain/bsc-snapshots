@@ -25,7 +25,8 @@ unzip geth.zip
 Step 3: Replace Data
 - First, stop the running bsc client if you have one by `kill {pid}`, and make sure the client has shut down.
 - Consider backing up the original data: `mv ${BSC_DataDir}/geth/chaindata ${BSC_DataDir}/geth/chaindata_backup; mv ${BSC_DataDir}/geth/triecache ${BSC_DataDir}/geth/triecache_backup`
-- Replace the data: `mv server/data-seed/geth/chaindata ${BSC_DataDir}/geth/chaindata; mv server/data-seed/geth/triecache ${BSC_DataDir}/geth/triecache`
+- Otherwise remove the chaindata and triecache directory if they exist: `rm -r ${BSC_DataDir}/geth/chaindata ${BSC_DataDir}/geth/triecache`
+- Replace the data: `mv server/data-seed/geth/chaindata ${BSC_DataDir}/geth; mv server/data-seed/geth/triecache ${BSC_DataDir}/geth`
 - Start the bsc client again and check the logs
 
 
