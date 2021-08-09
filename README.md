@@ -2,9 +2,9 @@
 
 Pruned database:
 
-[Bsc-20210804.zip](https://s3.ap-northeast-1.amazonaws.com/dex-bin.bnbstatic.com/geth-20210804.zip?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Expires=1630723350&Signature=1aQFhpJDz6yygOMRuflUuk8F3jc%3D) (size 362.0GB)
+[Bsc-20210808.zip](https://s3.ap-northeast-1.amazonaws.com/dex-bin.bnbstatic.com/geth-20210808.zip?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Expires=1631088408&Signature=HXsqRYX14b%2FP%2FNR7%2BZXLtCRNEYg%3D) (size 435.0GB)
 
-MD5 checksum: 4649caad90cbcf62a063e6fc4d368070
+MD5 checksum: e58070770a7125f5398f89000467c6d9
 
 # Usage 
 
