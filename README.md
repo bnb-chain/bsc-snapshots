@@ -3,10 +3,10 @@
 
 Pruned database:
 
-[geth-20210902.zip
-](https://s3.ap-northeast-1.amazonaws.com/dex-bin.bnbstatic.com/geth-20210902.zip?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=kypkau1amMgI2Ybw%2BDc1JNbl9KA%3D&Expires=1633227355
+[geth-20210903.zip
+](https://s3.ap-northeast-1.amazonaws.com/dex-bin.bnbstatic.com/geth-20210903.zip?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=OBqKcBgMnVPDt0yA3kLIw4nyqDA%3D&Expires=1633310966
 )
-MD5 checksum: cb7dec4fe4d26689ee949d1e0491b674
+MD5 checksum: 858607f6682060622bd972413fe73f07  /server1/data-seed/geth-20210903.zip
 
 
 # Usage 
