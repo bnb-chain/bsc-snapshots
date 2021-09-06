@@ -3,10 +3,12 @@
 
 Pruned database:
 
-[geth-20210905.zip
-](https://s3.ap-northeast-1.amazonaws.com/dex-bin.bnbstatic.com/geth-20210905.zip?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=c9%2BzZ7fgCm9SB1Xgt1Oa8SmGb7Q%3D&Expires=1633494212
+[geth-20210906.tar.gz
+](https://s3.ap-northeast-1.amazonaws.com/dex-bin.bnbstatic.com/geth-20210906.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=IgAKD4GHdj9ODRAAr%2Bx1dIX3Vjo%3D&Expires=1633516310
 )
-MD5 checksum: 690e3219056e1b725d77dc942f171624  /server1/data-seed/geth-20210905.zip
+
+MD5 checksum: 8e8ecd782eafc4b927b4f85b91539a55  /server1/data-seed/geth-20210906.tar.gz
+
 
 
 # Usage 
@@ -17,12 +19,12 @@ Step 1: Preparation
 
 Step 2: Download && Uncompress
 - Copy the above snapshot URL.
-- Download:  `wget -O geth.zip  "<paste snapshot URL here>"` . It will take one or two hours to download the snapshot, you can put it in the backgroud by `nohup wget -O geth.zip  "<paste snapshot URL here?" &`
-- Uncompress: `unzip geth.zip`. It will take more than two hours to uncompress. You can put it in the backgroud by `nohup unzip geth.zip &`
+- Download:  `wget -O geth.tar.gz  "<paste snapshot URL here>"` . It will take one or two hours to download the snapshot, you can put it in the backgroud by `nohup wget -O geth.tar.gz  "<paste snapshot URL here?" &`
+- Uncompress: `tar zxvf geth.tar.gz` or `tar -I pigz -xvf geth.tar.gz`. It will take more than two hours to uncompress. You can put it in the backgroud by `nohup tar zxvf geth.tar.gz &`
 - You can combine the above steps by running a script:
 ```
-wget -O geth.zip  "<paste snapshot URL here>"
-unzip geth.zip
+wget -O geth.tar.gz  "<paste snapshot URL here>"
+tar zxvf geth.tar.gz
 ```
 
 Step 3: Replace Data
