@@ -4,10 +4,10 @@
 Pruned database:
 
 [geth-20210906.tar.gz
-](https://s3.ap-northeast-1.amazonaws.com/dex-bin.bnbstatic.com/geth-20210906.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=IgAKD4GHdj9ODRAAr%2Bx1dIX3Vjo%3D&Expires=1633516310
+](https://s3.ap-northeast-1.amazonaws.com/dex-bin.bnbstatic.com/geth-20210906.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=3Un5p4lJcPQehQB8niMthMYrg%2FM%3D&Expires=1633552351
 )
 
-MD5 checksum: 8e8ecd782eafc4b927b4f85b91539a55  /server1/data-seed/geth-20210906.tar.gz
+MD5 checksum: e4debe0743b1831f9ca88deab6a2c32f  /server1/data-seed/geth-20210906.tar.gz
 
 
 
