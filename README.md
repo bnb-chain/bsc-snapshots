@@ -34,6 +34,10 @@ Step 2: Download && Uncompress
 wget -O geth.tar.gz  "<paste snapshot URL here>"
 tar zxvf geth.tar.gz
 ```
+- If you do not need to store the archive for use with other nodes, you may also extract it while downloading to save time and disk space:
+```
+wget -q -O - <snapshot URL> | tar -zxvf -
+```
 
 Step 3: Replace Data
 - First, stop the running bsc client if you have one by `kill {pid}`, and make sure the client has shut down.
