@@ -16,7 +16,6 @@ Pruned database:
 ](https://tf-dex-prod-public-snapshot.s3.amazonaws.com/geth-20211101.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=r7DrUr9zv5vpACS4pGSXLwOR78A%3D&Expires=1638455710
 )
 
-MD5 checksum: 8a297c7da61b4cf831b4c90e2af3ea9c
 
 
 
