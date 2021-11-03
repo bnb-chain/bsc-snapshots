@@ -3,11 +3,29 @@
 
 Pruned database:
 
-[geth-20211031.tar.gz
-](https://s3.ap-northeast-1.amazonaws.com/dex-bin.bnbstatic.com/geth-20211031.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=ESK5xmr5f1AIK4Mr6our%2FALXzQk%3D&Expires=1638310885
+### Asia Endpoint
+
+
+[geth-20211102.tar.gz
+](https://s3.ap-northeast-1.amazonaws.com/dex-bin.bnbstatic.com/geth-20211102.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=ELCOMZjHuqkBiU9ldMIGsV9q7K8%3D&Expires=1638492157
 )
 
-MD5 checksum: 8a297c7da61b4cf831b4c90e2af3ea9c
+### EU Endpoint
+
+
+[geth-20211102.tar.gz
+](https://tf-dex-prod-public-snapshot.s3.amazonaws.com/geth-20211102.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=6AWd1DEJrwlK7PjsbIH3Ur4K6FM%3D&Expires=1638492157
+)
+
+
+### US Endpoint
+
+
+[geth-20211102.tar.gz
+](https://tf-dex-prod-public-snapshot-site3.s3.amazonaws.com/geth-20211102.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=xqMvVOHL8S2IxxyCCoEI9Ratmng%3D&Expires=1638492157
+)
+
+MD5 checksum: b9b7b99b796103b50a9a5859fa74bb31
 
 
 
