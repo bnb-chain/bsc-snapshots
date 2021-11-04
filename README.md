@@ -6,27 +6,26 @@ Pruned database:
 ### Asia Endpoint
 
 
-[geth-20211103.tar.gz
-](https://s3.ap-northeast-1.amazonaws.com/dex-bin.bnbstatic.com/geth-20211103.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=nc6ewWRBlqjklaWekEirRT1gQsA%3D&Expires=1638533587
+[geth-20211102.tar.gz
+](https://s3.ap-northeast-1.amazonaws.com/dex-bin.bnbstatic.com/geth-20211102.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=ELCOMZjHuqkBiU9ldMIGsV9q7K8%3D&Expires=1638492157
 )
 
 ### EU Endpoint
 
 
-[geth-20211103.tar.gz
-](https://tf-dex-prod-public-snapshot.s3.amazonaws.com/geth-20211103.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=DX%2BCBPF20kZgFpCXFfW08RKloHQ%3D&Expires=1638533587
+[geth-20211102.tar.gz
+](https://tf-dex-prod-public-snapshot.s3.amazonaws.com/geth-20211102.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=6AWd1DEJrwlK7PjsbIH3Ur4K6FM%3D&Expires=1638492157
 )
 
 
 ### US Endpoint
 
 
-[geth-20211103.tar.gz
-](https://tf-dex-prod-public-snapshot-site3.s3.amazonaws.com/geth-20211103.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=9pIKxIBXn%2BEzoeuFkIUL19kbjYM%3D&Expires=1638533588
+[geth-20211102.tar.gz
+](https://tf-dex-prod-public-snapshot-site3.s3.amazonaws.com/geth-20211102.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=xqMvVOHL8S2IxxyCCoEI9Ratmng%3D&Expires=1638492157
 )
 
-MD5 checksum: daab5d3ad5329010168589a43dfd13ff
-
+MD5 checksum: b9b7b99b796103b50a9a5859fa74bb31
 
 # Usage 
 
