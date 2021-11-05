@@ -12,13 +12,16 @@ verified:
 ### EU Endpoint
 
 
-uploading...
+verified:
 
+[new-geth-20211104.tar.gz](https://tf-dex-prod-public-snapshot.s3.amazonaws.com/new-geth-20211104.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=9KSe9AzSQbXcOtzAETQ%2B4igfX5I%3D&Expires=1638711052)
 
 ### US Endpoint
 
+verified:
 
-uploading...
+[new-geth-20211104.tar.gz](https://tf-dex-prod-public-snapshot-site3.s3.amazonaws.com/new-geth-20211104.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=84llt3NKCrz82iaa8KdFtWP2Diw%3D&Expires=1638710999)
+
 
 
 # Usage 
