@@ -5,22 +5,27 @@ Pruned database:
 
 ### Asia Endpoint
 
-verified:
 
-[new-geth-20211104.tar.gz](https://s3.ap-northeast-1.amazonaws.com/dex-bin.bnbstatic.com/new-geth-20211104.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=5Ll3tOk9dSuvieVekXUVHeGLuAE%3D&Expires=1638670592)
+[geth-20211107.tar.gz
+](https://s3.ap-northeast-1.amazonaws.com/dex-bin.bnbstatic.com/geth-20211107.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=0D16ZJvV6iEOg92pCI%2FIRynWi8I%3D&Expires=1638883622
+)
 
 ### EU Endpoint
 
 
-verified:
+[geth-20211107.tar.gz
+](https://tf-dex-prod-public-snapshot.s3.amazonaws.com/geth-20211107.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=xLqGmda2xWCg%2BmMlNoADxKPn7KI%3D&Expires=1638883623
+)
 
-[new-geth-20211104.tar.gz](https://tf-dex-prod-public-snapshot.s3.amazonaws.com/new-geth-20211104.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=9KSe9AzSQbXcOtzAETQ%2B4igfX5I%3D&Expires=1638711052)
 
 ### US Endpoint
 
-verified:
 
-[new-geth-20211104.tar.gz](https://tf-dex-prod-public-snapshot-site3.s3.amazonaws.com/new-geth-20211104.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=84llt3NKCrz82iaa8KdFtWP2Diw%3D&Expires=1638710999)
+[geth-20211107.tar.gz
+](https://tf-dex-prod-public-snapshot-site3.s3.amazonaws.com/geth-20211107.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=YkaV%2FrNOnQ4Y4Cl5hbZJ4c5CIrI%3D&Expires=1638883623
+)
+
+MD5 checksum: c1e741c764f306058591351491a11426
 
 
 
@@ -39,6 +44,13 @@ Step 2: Download && Uncompress
 wget -O geth.tar.gz  "<paste snapshot URL here>"
 tar zxvf geth.tar.gz
 ```
+
+
+- If you do not need to store the archive for use with other nodes, you may also extract it while downloading to save time and disk space:
+```
+wget -q -O - <snapshot URL> | tar -zxvf -
+```
+
 
 Step 3: Replace Data
 - First, stop the running bsc client if you have one by `kill {pid}`, and make sure the client has shut down.
