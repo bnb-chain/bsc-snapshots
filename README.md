@@ -6,26 +6,26 @@ Pruned database:
 ### Asia Endpoint
 
 
-[geth-20211111.tar.gz
-](https://s3.ap-northeast-1.amazonaws.com/dex-bin.bnbstatic.com/geth-20211111.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=iuG9CWhGVvZKSgEQEiegXd30cIw%3D&Expires=1639266292
+[geth-20211114.tar.gz
+](https://s3.ap-northeast-1.amazonaws.com/dex-bin.bnbstatic.com/geth-20211114.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=Z%2BnjQ6JRUaHjhIeoTyTMAIIUNfY%3D&Expires=1639516490
 )
 
 ### EU Endpoint
 
 
-[geth-20211111.tar.gz
-](https://tf-dex-prod-public-snapshot.s3.amazonaws.com/geth-20211111.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=xRalN5HKBxMEZSnU9RGBIfyEeJI%3D&Expires=1639266292
+[geth-20211114.tar.gz
+](https://tf-dex-prod-public-snapshot.s3.amazonaws.com/geth-20211114.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=xJJw%2BwbS%2B32IMg6KojKGPq1TwKw%3D&Expires=1639516490
 )
 
 
 ### US Endpoint
 
 
-[geth-20211111.tar.gz
-](https://tf-dex-prod-public-snapshot-site3.s3.amazonaws.com/geth-20211111.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=2rt0RM2ry14QL1IwDdm6kotkolw%3D&Expires=1639266292
+[geth-20211114.tar.gz
+](https://tf-dex-prod-public-snapshot-site3.s3.amazonaws.com/geth-20211114.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=YEIMj8IQcFskdV4P0DNl%2B%2Bg9Nu8%3D&Expires=1639516491
 )
 
-MD5 checksum: b78e54d02289ef7b16f85d00d208d953
+MD5 checksum: f3dca30bad9e69866802a42c9149fdf2
 
 
 
