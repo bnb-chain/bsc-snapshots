@@ -7,7 +7,7 @@ Pruned database:
 
 
 [geth-20211116.tar.gz
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20211116.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=pJ4%2BlZge%2BCwJo%2Bek7%2BgdzEq1YWA%3D&Expires=1639690557
+](https://tf-dex-prod-public-snapshot-site1.s3.amazonaws.com/geth-20211116.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=x2s7VqyfTjCkGXXn2%2BBQFg3NGyw%3D&Expires=1639717271
 )
 
 ### EU Endpoint
