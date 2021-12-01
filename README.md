@@ -1,6 +1,8 @@
 
 # bsc-snapshots
 
+*update every 3 days*
+
 Pruned database:
 
 ### Asia Endpoint
@@ -38,6 +40,14 @@ Step 1: Preparation
 Step 2: Download && Uncompress
 - Copy the above snapshot URL.
 - Download:  `wget -O geth.tar.gz  "<paste snapshot URL here>"` . It will take one or two hours to download the snapshot, you can put it in the backgroud by `nohup wget -O geth.tar.gz  "<paste snapshot URL here?" &`
+
+
+*If you need to speedup download, just use `aria2c`*
+```
+aria2c -o geth.tar.gz -x 4 -s 12 "URL TO ASIA ENDPOINT" "URL TO EU ENDPOINT" "URL TO US ENDPOINT"
+```
+
+
 - Uncompress: `tar zxvf geth.tar.gz` or `tar -I pigz -xvf geth.tar.gz`. It will take more than two hours to uncompress. You can put it in the backgroud by `nohup tar zxvf geth.tar.gz &`
 - You can combine the above steps by running a script:
 ```
