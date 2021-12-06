@@ -6,26 +6,26 @@ Pruned database:
 ### Asia Endpoint
 
 
-[geth-20211202.tar.gz
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20211202.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=PTyW8FL4SbGrEAW9JDF13dqr%2Bgc%3D&Expires=1641059846
+[geth-20211206.tar.gz
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20211206.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=VvfftNfk4jCDkatR3kgmLcuy6WI%3D&Expires=1641414317
 )
 
 ### EU Endpoint
 
 
-[geth-20211202.tar.gz
-](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20211202.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=e38bDFq%2BTlpgzXpOzZLkwvsDNyk%3D&Expires=1641059846
+[geth-20211206.tar.gz
+](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20211206.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=yo82%2F8PCVL%2BlA0m%2BVZlSLk6iBfs%3D&Expires=1641414317
 )
 
 
 ### US Endpoint
 
 
-[geth-20211202.tar.gz
-](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20211202.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=YalIYT6BrXs%2BIddtkRqnub0oEao%3D&Expires=1641059846
+[geth-20211206.tar.gz
+](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20211206.tar.gz?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=R31LyvNcoXrKrme4Pa2geyBsoa0%3D&Expires=1641414317
 )
 
-MD5 checksum: 70d18e74a86b9d1c1d9fe8cc9030c34d
+MD5 checksum: 804ae55f2a390461831d4bea948ce73b
 
 
 
@@ -38,6 +38,14 @@ Step 1: Preparation
 Step 2: Download && Uncompress
 - Copy the above snapshot URL.
 - Download:  `wget -O geth.tar.gz  "<paste snapshot URL here>"` . It will take one or two hours to download the snapshot, you can put it in the backgroud by `nohup wget -O geth.tar.gz  "<paste snapshot URL here?" &`
+
+
+*If you need to speedup download, just use `aria2c`*
+```
+aria2c -o geth.tar.gz -x 4 -s 12 "URL TO ASIA ENDPOINT" "URL TO EU ENDPOINT" "URL TO US ENDPOINT"
+```
+
+
 - Uncompress: `tar zxvf geth.tar.gz` or `tar -I pigz -xvf geth.tar.gz`. It will take more than two hours to uncompress. You can put it in the backgroud by `nohup tar zxvf geth.tar.gz &`
 - You can combine the above steps by running a script:
 ```
