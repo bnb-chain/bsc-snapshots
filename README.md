@@ -56,7 +56,7 @@ tar -I lz4 zxvf geth.tar.lz4
 
 - If you do not need to store the archive for use with other nodes, you may also extract it while downloading to save time and disk space:
 ```
-wget -q -O - <snapshot URL> | tar -I lz4 -zxvf -
+wget -q -O - <snapshot URL> | tar -I lz4 -xvf -
 ```
 
 
