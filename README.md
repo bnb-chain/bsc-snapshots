@@ -46,17 +46,17 @@ aria2c -o geth.tar.lz4 -x 4 -s 12 "URL TO ASIA ENDPOINT" "URL TO EU ENDPOINT" "U
 ```
 
 
-- Uncompress: `tar -I lz4 -xvf geth.tar.lz4`. It will take more than two hours to uncompress. You can put it in the backgroud by `nohup tar -I lz4 xvf geth.tar.lz4 &`
+- Uncompress: `tar -I lz4 -xf geth.tar.lz4`. It will take more than two hours to uncompress. You can put it in the backgroud by `nohup tar -I lz4 -xf geth.tar.lz4 &`
 - You can combine the above steps by running a script:
 ```
 wget -O geth.tar.lz4  "<paste snapshot URL here>"
-tar -I lz4 xvf geth.tar.lz4
+tar -I lz4 -xf geth.tar.lz4
 ```
 
 
 - If you do not need to store the archive for use with other nodes, you may also extract it while downloading to save time and disk space:
 ```
-wget -q -O - <snapshot URL> | tar -I lz4 -xvf -
+wget -q -O - <snapshot URL> | tar -I lz4 -xf -
 ```
 
 
