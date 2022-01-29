@@ -6,26 +6,26 @@ Pruned database:
 ### Asia Endpoint
 
 
-[geth-20220125.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220125.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=XJNmdxakAyiuQq3dsHRceB86E1M%3D&Expires=1645702257
+[geth-20220129.tar.lz4
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220129.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=QpanbcptKRSRnskUum14jnEhi3c%3D&Expires=1646059544
 )
 
 ### EU Endpoint
 
 
-[geth-20220125.tar.lz4
-](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220125.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=UqF%2B4NDJ4R%2BrXdni2S7DPl4U2J0%3D&Expires=1645702258
+[geth-20220129.tar.lz4
+](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220129.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=s%2Bi%2FfLWGaGNKqj55nWjjXM6HtJM%3D&Expires=1646059544
 )
 
 
 ### US Endpoint
 
 
-[geth-20220125.tar.lz4
-](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220125.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=SzuqEKNH2Vk1DgvBz2WqguvI6Xg%3D&Expires=1645702258
+[geth-20220129.tar.lz4
+](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220129.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=pi0sTQU62nxYVJCEyx%2FAZxLOCj0%3D&Expires=1646059545
 )
 
-MD5 checksum: fecdb11978b828861b71be1b70918cba
+MD5 checksum: e8b387123944f15a4fe983a6443d11c5
 
 
 
