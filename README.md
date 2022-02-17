@@ -7,8 +7,7 @@ Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-c
 
 ### Asia Endpoint
 
-[geth-20220207-prune-ancient.tar.lz4](https://tf-dex-prod-public-snapshot-site1.s3.amazonaws.com/geth-20220207-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=E3uT6sAEzq6X83r9F8hMvME3GF8%3D&Expires=1646999570)
-
+[geth-20220216-prune-ancient.tar.lz4](https://tf-dex-prod-public-snapshot-site1.s3.amazonaws.com/geth-20220216-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=5mV%2BitmrvyKlq3ZzIc%2FVlQIivwI%3D&Expires=1647660522)
 
 
 ## Pruned database:
