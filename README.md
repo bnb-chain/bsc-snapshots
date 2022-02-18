@@ -7,7 +7,10 @@ Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-c
 
 ### Asia Endpoint
 
-[geth-20220216-prune-ancient.tar.lz4](https://tf-dex-prod-public-snapshot-site1.s3.amazonaws.com/geth-20220216-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=5mV%2BitmrvyKlq3ZzIc%2FVlQIivwI%3D&Expires=1647660522)
+
+[geth-20220217.tar.lz4
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220217-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=GQXKzsDcH54wG8lrep43jeLzvg4%3D&Expires=1647758212
+)
 
 
 ## Pruned database:
@@ -16,26 +19,26 @@ Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-c
 ### Asia Endpoint
 
 
-[geth-20220216.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220216.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=1G2UW7DOAPGHPTsfn%2B7KFl5cVsw%3D&Expires=1647643476
+[geth-20220217.tar.lz4
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220217.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=lBcHhikLJvCGumNSzIx2fTDc7vY%3D&Expires=1647758211
 )
 
 ### EU Endpoint
 
 
-[geth-20220216.tar.lz4
-](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220216.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=mxFZ3%2BMhames%2FVRqEM35%2Bnw8oaw%3D&Expires=1647643476
+[geth-20220217.tar.lz4
+](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220217.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=eqp7Qf4Lh3hJvHi6WgJzScxE4CI%3D&Expires=1647758211
 )
 
 
 ### US Endpoint
 
 
-[geth-20220216.tar.lz4
-](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220216.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=F1L5Fiq4kbsopSsv02mL2qeUnes%3D&Expires=1647643477
+[geth-20220217.tar.lz4
+](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220217.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=G211ceKRtudsVxlUe1XqYMuTiU0%3D&Expires=1647758212
 )
 
-MD5 checksum: 41392f4c6facd542d5157cd7963fd4eb
+MD5 checksum: 2b638077343b2596fa69587d4bdac05f
 
 
 
