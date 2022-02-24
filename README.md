@@ -8,8 +8,8 @@ Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-c
 ### Asia Endpoint
 
 
-[geth-20220221.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220221-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=RfdWsEsVfXw4Y%2F2wSzlQP6fmqzQ%3D&Expires=1648106052
+[geth-20220223.tar.lz4
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220223-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=k6yJlcR7pda3E5CaArHjAUMxd38%3D&Expires=1648270913
 )
 
 
@@ -19,26 +19,26 @@ Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-c
 ### Asia Endpoint
 
 
-[geth-20220221.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220221.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=5Gw8QkCNGqTcFvoXH9%2BafNJPxI4%3D&Expires=1648106051
+[geth-20220223.tar.lz4
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220223.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=dPDVeW2J6%2FGuJdYjo4mgmIcTH1w%3D&Expires=1648270912
 )
 
 ### EU Endpoint
 
 
-[geth-20220221.tar.lz4
-](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220221.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=v%2FzS2539P0cjiOHfxY7BY2UUz80%3D&Expires=1648106051
+[geth-20220223.tar.lz4
+](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220223.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=K4cEOhWhnGi33hG93fCWjo5kKus%3D&Expires=1648270912
 )
 
 
 ### US Endpoint
 
 
-[geth-20220221.tar.lz4
-](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220221.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=7bMGRz1dIXgWCHpgOBQHLYr4Uq0%3D&Expires=1648106052
+[geth-20220223.tar.lz4
+](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220223.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=X7Bgg8FOLGBvpB%2BNbLcE7GhT%2FKM%3D&Expires=1648270913
 )
 
-MD5 checksum: a9d7007b56dbd2919b6c3dac0f22e7a7
+MD5 checksum: ae5959fdc119a45c9aaed25157bf585e
 
 
 
