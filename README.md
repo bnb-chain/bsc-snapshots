@@ -8,8 +8,8 @@ Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-c
 ### Asia Endpoint
 
 
-[geth-20220503.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220503-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=DBjx7qhOPnHZkoCtSULuS%2FkaiJw%3D&Expires=1654256807
+[geth-20220505.tar.lz4
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220505-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=Kkenyvv9%2F%2BJxw6T4%2BrPLXv1fJto%3D&Expires=1654432581
 )
 
 
@@ -19,26 +19,26 @@ Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-c
 ### Asia Endpoint
 
 
-[geth-20220503.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220503.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=%2B83JSYmxAiGVnr4qAQGvpFOvDgI%3D&Expires=1654256806
+[geth-20220505.tar.lz4
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220505.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=IeTssnPFSuuRTUmjT4EJiM5Ja9s%3D&Expires=1654432580
 )
 
 ### EU Endpoint
 
 
-[geth-20220503.tar.lz4
-](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220503.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=tEiKbVqgx0btgMCjyjuN1jWS4r4%3D&Expires=1654256806
+[geth-20220505.tar.lz4
+](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220505.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=63DPxmklZyoZkvcKsx076KIihO4%3D&Expires=1654432580
 )
 
 
 ### US Endpoint
 
 
-[geth-20220503.tar.lz4
-](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220503.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=pIiVv%2Bs%2B4kmGy44rU4vFhwpImtA%3D&Expires=1654256807
+[geth-20220505.tar.lz4
+](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220505.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=q4D088VhtKNCTgOwdHrlPVv280k%3D&Expires=1654432580
 )
 
-MD5 checksum: 3f6077d3593565e098c9f3e3d42e9c88
+MD5 checksum: f4085b5e8d6917dc1a241237ab0aedb6
 
 
 
