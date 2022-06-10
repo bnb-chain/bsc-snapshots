@@ -49,7 +49,7 @@ MD5 checksum: 5a3a38b51c92676a76b407bfe6337994
 # Usage 
 
 Step 1: Preparation
-- Make sure your hardware meets the [suggested requirement](https://docs.binance.org/smart-chain/developer/fullnode.html).
+- Make sure your hardware meets the [suggested requirement](https://docs.bnbchain.org/docs/validator/fullnode).
 - A disk with enough free storage, at least twice the size of the snapshot.
 
 Step 2: Download && Uncompress
