@@ -5,6 +5,10 @@
 
 Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-chain/bsc/releases/tag/v1.1.8)
 
+## Snapshots Provided by Community
+
+Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing another dump of snapshot, you can also refer [here](https://github.com/BNB48Club/bsc-snapshots) to download.
+
 ### Asia Endpoint
 
 
