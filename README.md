@@ -5,15 +5,11 @@
 
 Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-chain/bsc/releases/tag/v1.1.8)
 
-## Snapshots Provided by Community
-
-Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing another dump of snapshot, you can also refer [here](https://github.com/BNB48Club/bsc-snapshots) to download.
-
 ### Asia Endpoint
 
 
-[geth-20220609.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220609-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=%2Fhb7oAVPwQoXxfeTtH99fWaP5DM%3D&Expires=1657457829
+[geth-20220611.tar.lz4
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220611-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=dQYspfJiKdt92VRUbgBMJKjiLqY%3D&Expires=1657630639
 )
 
 
@@ -23,26 +19,26 @@ Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing ano
 ### Asia Endpoint
 
 
-[geth-20220609.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220609.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=qOevfkrjWG2XKmZHAiry72OIZmQ%3D&Expires=1657457828
+[geth-20220611.tar.lz4
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220611.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=aF84LEMAuOpY25fFqrgSDDlosek%3D&Expires=1657630638
 )
 
 ### EU Endpoint
 
 
-[geth-20220609.tar.lz4
-](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220609.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=O6wNYT71bC74Gg%2BXyLmoPcEAbrg%3D&Expires=1657457828
+[geth-20220611.tar.lz4
+](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220611.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=OzQBJpyjofreE6jH2P0QI0uq20I%3D&Expires=1657630639
 )
 
 
 ### US Endpoint
 
 
-[geth-20220609.tar.lz4
-](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220609.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=FRFItkIrAihfOjuP6azj0749plk%3D&Expires=1657457829
+[geth-20220611.tar.lz4
+](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220611.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=Ox%2BqrpgJxgGLWqtFFBymCbmb2UM%3D&Expires=1657630639
 )
 
-MD5 checksum: 7137ff4f4a4361984d4a0a989272d347
+MD5 checksum: 227b16499199c8819ac86da804fe8d3b
 
 
 
