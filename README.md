@@ -5,11 +5,17 @@
 
 Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-chain/bsc/releases/tag/v1.1.8)
 
+
+## Snapshots Provided by Community
+
+Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing another dump of snapshot, you can also refer [here](https://github.com/BNB48Club/bsc-snapshots) to download.
+
+
 ### Asia Endpoint
 
 
-[geth-20220611.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220611-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=dQYspfJiKdt92VRUbgBMJKjiLqY%3D&Expires=1657630639
+[geth-20220613.tar.lz4
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220613-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=oGZ4fwSwyQNnCyknRWlSl4ZldRU%3D&Expires=1657796923
 )
 
 
@@ -19,33 +25,33 @@ Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-c
 ### Asia Endpoint
 
 
-[geth-20220611.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220611.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=aF84LEMAuOpY25fFqrgSDDlosek%3D&Expires=1657630638
+[geth-20220613.tar.lz4
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220613.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=lr%2Bznve1bLH6FipBa6e7LCnCqMw%3D&Expires=1657796922
 )
 
 ### EU Endpoint
 
 
-[geth-20220611.tar.lz4
-](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220611.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=OzQBJpyjofreE6jH2P0QI0uq20I%3D&Expires=1657630639
+[geth-20220613.tar.lz4
+](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220613.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=bTzLHWvaaOcjxRaknxrSZRyF5jY%3D&Expires=1657796922
 )
 
 
 ### US Endpoint
 
 
-[geth-20220611.tar.lz4
-](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220611.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=Ox%2BqrpgJxgGLWqtFFBymCbmb2UM%3D&Expires=1657630639
+[geth-20220613.tar.lz4
+](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220613.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=17U%2BXYM%2B1h1lK6LVHV%2BcxFdFvuI%3D&Expires=1657796923
 )
 
-MD5 checksum: 227b16499199c8819ac86da804fe8d3b
+MD5 checksum: 23c5bbfa97dc4db703bba2620f27d273
 
 
 
 # Usage 
 
 Step 1: Preparation
-- Make sure your hardware meets the [suggested requirement](https://docs.bnbchain.org/docs/validator/fullnode).
+- Make sure your hardware meets the [suggested requirement](https://docs.binance.org/smart-chain/developer/fullnode.html).
 - A disk with enough free storage, at least twice the size of the snapshot.
 
 Step 2: Download && Uncompress
