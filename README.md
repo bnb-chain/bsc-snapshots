@@ -14,8 +14,8 @@ Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing ano
 ### Asia Endpoint
 
 
-[geth-20220619.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220619-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=WsdyxEKwsT2Cl6p8rDomkhx9pds%3D&Expires=1658316065
+[geth-20220621.tar.lz4
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220621-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=0t6U8CduwPS4S6GF7p%2B%2BexPJY%2FA%3D&Expires=1658489062
 )
 
 
@@ -25,26 +25,26 @@ Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing ano
 ### Asia Endpoint
 
 
-[geth-20220619.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220619.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=P%2FrHPZGQ5us2J9Q48s%2Bm6dvvaO4%3D&Expires=1658316064
+[geth-20220621.tar.lz4
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220621.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=7BoYrorRBI0cTCDpTA4VqmOJ%2BXc%3D&Expires=1658489061
 )
 
 ### EU Endpoint
 
 
-[geth-20220619.tar.lz4
-](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220619.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=VwO4Rjwr02%2FucSSAMtmqjnMW43Y%3D&Expires=1658316064
+[geth-20220621.tar.lz4
+](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220621.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=NUKGv%2BodmDnIAmkFVEIo%2B6onQlg%3D&Expires=1658489061
 )
 
 
 ### US Endpoint
 
 
-[geth-20220619.tar.lz4
-](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220619.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=vS0XPWt7O5x%2BPgrJ92u1ciY1KBU%3D&Expires=1658316065
+[geth-20220621.tar.lz4
+](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220621.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=9kmKDhX%2FNeE%2F2%2FMoogjyAVzusAo%3D&Expires=1658489061
 )
 
-MD5 checksum: 85b23b6cc2af13f54591535f46ee08c4
+MD5 checksum: 3601e80dfb382067e9dce691ac5b28fc
 
 
 
