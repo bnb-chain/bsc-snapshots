@@ -14,8 +14,8 @@ Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing ano
 ### Asia Endpoint
 
 
-[geth-20220621.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220621-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=0t6U8CduwPS4S6GF7p%2B%2BexPJY%2FA%3D&Expires=1658489062
+[geth-20220623.tar.lz4
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220623-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=xSWGkTfNmVF5vsKAetx31ca%2BTDQ%3D&Expires=1658661763
 )
 
 
@@ -25,26 +25,26 @@ Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing ano
 ### Asia Endpoint
 
 
-[geth-20220621.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220621.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=7BoYrorRBI0cTCDpTA4VqmOJ%2BXc%3D&Expires=1658489061
+[geth-20220623.tar.lz4
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220623.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=ryvov0rgXRTXmuCzlit0YAAduYc%3D&Expires=1658661762
 )
 
 ### EU Endpoint
 
 
-[geth-20220621.tar.lz4
-](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220621.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=NUKGv%2BodmDnIAmkFVEIo%2B6onQlg%3D&Expires=1658489061
+[geth-20220623.tar.lz4
+](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220623.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=UDwE1hPYHM%2BhyO7jLyOgxZO6a6k%3D&Expires=1658661762
 )
 
 
 ### US Endpoint
 
 
-[geth-20220621.tar.lz4
-](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220621.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=9kmKDhX%2FNeE%2F2%2FMoogjyAVzusAo%3D&Expires=1658489061
+[geth-20220623.tar.lz4
+](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220623.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=LrWqQ8262CglNcxeSjfs%2BNaiO8M%3D&Expires=1658661762
 )
 
-MD5 checksum: 3601e80dfb382067e9dce691ac5b28fc
+MD5 checksum: 44b4f4f944e3b171869eda909e7feaf0
 
 
 
