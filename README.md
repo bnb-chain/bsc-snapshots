@@ -14,8 +14,8 @@ Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing ano
 ### Asia Endpoint
 
 
-[geth-20220625.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220625-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=mw%2BL8WCAzUSe8LJWHQbEyR9H8Zw%3D&Expires=1658833880
+[geth-20220627.tar.lz4
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220627-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=QmXn0N04tTWNmgr6ow4Hh3hRdaQ%3D&Expires=1659007230
 )
 
 
@@ -25,26 +25,26 @@ Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing ano
 ### Asia Endpoint
 
 
-[geth-20220625.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220625.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=8EWArNg3W6%2BD4SrrPsDBu%2FQNglU%3D&Expires=1658833879
+[geth-20220627.tar.lz4
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220627.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=LcNq9TzxNE1Oiba1q0ALhXRxN38%3D&Expires=1659007229
 )
 
 ### EU Endpoint
 
 
-[geth-20220625.tar.lz4
-](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220625.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=mXiGvhd%2FVhKeogM6TdJ1LTFUNAI%3D&Expires=1658833879
+[geth-20220627.tar.lz4
+](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220627.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=hBcmcj5h1x%2Bcyr2JLY5srokp1sY%3D&Expires=1659007229
 )
 
 
 ### US Endpoint
 
 
-[geth-20220625.tar.lz4
-](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220625.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=kUlSD3lFHJNzzwNAGlUdzgg5liU%3D&Expires=1658833880
+[geth-20220627.tar.lz4
+](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220627.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=CxUg7%2BJAqFIhI1sQSTwGLiezsbc%3D&Expires=1659007229
 )
 
-MD5 checksum: 3224aa6d83e08c3f4ad20115aef420d2
+MD5 checksum: 3c083a36e9487f8b6690896cf2f3d8ec
 
 
 
