@@ -14,8 +14,8 @@ Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing ano
 ### Asia Endpoint
 
 
-[geth-20220701.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220701-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=cxgR2NZ4C7Dc7u%2FngVb%2FS550EWU%3D&Expires=1659352682
+[geth-20220703.tar.lz4
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220703-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=HKG3k1G8S4Mp%2BprJ0H1gk7rH%2Ff0%3D&Expires=1659502018
 )
 
 
@@ -25,26 +25,26 @@ Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing ano
 ### Asia Endpoint
 
 
-[geth-20220701.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220701.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=z8WP8xEpEBtHmQSWv43KJm51Dwo%3D&Expires=1659352680
+[geth-20220703.tar.lz4
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220703.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=kis6RJebXqvSP6n4EDbyFUputgo%3D&Expires=1659502017
 )
 
 ### EU Endpoint
 
 
-[geth-20220701.tar.lz4
-](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220701.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=1maZxrlqXQF%2F33kWH%2FJFUi3BLAI%3D&Expires=1659352681
+[geth-20220703.tar.lz4
+](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220703.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=rRtRbmb26yU4MWphZrD99GfJAYI%3D&Expires=1659502017
 )
 
 
 ### US Endpoint
 
 
-[geth-20220701.tar.lz4
-](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220701.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=EUiFFjFpbB343VAEO5oxaZwZtwQ%3D&Expires=1659352681
+[geth-20220703.tar.lz4
+](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220703.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=%2B%2Bu2sq6mHFUXeMfVkugCZ%2FtWJm8%3D&Expires=1659502018
 )
 
-MD5 checksum: af2e0fba1c83f2c062df9adc00b73f07
+MD5 checksum: a397c085fa16700b961aa16488958e5e
 
 
 
