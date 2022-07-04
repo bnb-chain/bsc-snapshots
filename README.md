@@ -1,50 +1,41 @@
 
 # bsc-snapshots
 
+
 ## Database after Ancient Data Prune:
 
 Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-chain/bsc/releases/tag/v1.1.8)
 
 
-## Snapshots Provided by Community
-
-Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing another dump of snapshot, you can also refer [here](https://github.com/BNB48Club/bsc-snapshots) to download.
-
-
 ### Asia Endpoint
 
 
-[geth-20220703.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220703-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=HKG3k1G8S4Mp%2BprJ0H1gk7rH%2Ff0%3D&Expires=1659502018
-)
-
-
-## Pruned database:
-
-
-### Asia Endpoint
-
-
-[geth-20220703.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220703.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=kis6RJebXqvSP6n4EDbyFUputgo%3D&Expires=1659502017
+[geth-20220704.tar.lz4
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220704.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=6U8xM92MV4D%2Fg8yjNHdAANpRQvw%3D&Expires=1659569129
 )
 
 ### EU Endpoint
 
 
-[geth-20220703.tar.lz4
-](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220703.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=rRtRbmb26yU4MWphZrD99GfJAYI%3D&Expires=1659502017
+[geth-20220704.tar.lz4
+](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220704.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=%2BgB1Z19WdiNWxbiARxdVkHyGYdE%3D&Expires=1659569130
 )
 
 
 ### US Endpoint
 
 
-[geth-20220703.tar.lz4
-](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220703.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=%2B%2Bu2sq6mHFUXeMfVkugCZ%2FtWJm8%3D&Expires=1659502018
+[geth-20220704.tar.lz4
+](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220704.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=ItHbdMA9Yn1VRnf8RTCXkLezI54%3D&Expires=1659569130
 )
 
-MD5 checksum: a397c085fa16700b961aa16488958e5e
+MD5 checksum: 3938b624f2eac1dbde70b0ed1075a853
+
+
+
+## Snapshots Provided by Community
+
+Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing another dump of snapshot, you can also refer [here](https://github.com/BNB48Club/bsc-snapshots) to download.
 
 
 
