@@ -10,26 +10,26 @@ Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-c
 ### Asia Endpoint
 
 
-[geth-20220709.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220709.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=QUKWP6ueRc6rSBh8Y7gFFjC5YlU%3D&Expires=1660018785
+[geth-20220711.tar.lz4
+](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220711.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=Tl2I9ynw0ze47gkEVf20V8dYuZs%3D&Expires=1660196595
 )
 
 ### EU Endpoint
 
 
-[geth-20220709.tar.lz4
-](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220709.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=KzbqVKbAPvm21CDOli4fFgfNfZI%3D&Expires=1660018785
+[geth-20220711.tar.lz4
+](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220711.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=BfBD99rjw91ddE2munpOdfOC%2Bwc%3D&Expires=1660196595
 )
 
 
 ### US Endpoint
 
 
-[geth-20220709.tar.lz4
-](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220709.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=8LdR137v1e9rq1jutDs9hnlxU%2FA%3D&Expires=1660018786
+[geth-20220711.tar.lz4
+](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220711.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=b25KT%2F0gmW9sTNwQKpW3TAcDfZ0%3D&Expires=1660196595
 )
 
-MD5 checksum: 1b0297bb8ac698c62c091207405e4154
+MD5 checksum: 46b5b2ecdd63a9ee1613ab5d57f2aa8d
 
 
 
