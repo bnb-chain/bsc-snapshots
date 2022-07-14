@@ -56,7 +56,7 @@ aria2c -o geth.tar.lz4 -x 4 -s 12 "URL TO ASIA ENDPOINT" "URL TO EU ENDPOINT" "U
 ```
 
 
-- Uncompress: `tar -I lz4 -xvf geth.tar.lz4`. It will take more than two hours to uncompress. You can put it in the backgroud by `nohup tar -I lz4 xvf geth.tar.lz4 &`
+- Uncompress: `tar -I lz4 -xvf geth.tar.lz4`. It will take more than two hours to uncompress. You can put it in the background by `nohup tar -I lz4 xvf geth.tar.lz4 &`
 - You can combine the above steps by running a script:
 ```
 wget -O geth.tar.lz4  "<paste snapshot URL here>"
