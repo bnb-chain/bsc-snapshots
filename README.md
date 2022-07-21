@@ -7,29 +7,14 @@
 Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-chain/bsc/releases/tag/v1.1.8)
 
 
-### Asia Endpoint
+### Endpoint
 
 
-[geth-20220719.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220719.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=9T4zXTrJm%2B2SEVfES%2B7uGPwkM6o%3D&Expires=1660890836
+[geth-20220721.tar.lz4
+](https://download.bsc-snapshot.workers.dev/geth-20220721.tar.lz4
 )
 
-### EU Endpoint
-
-
-[geth-20220719.tar.lz4
-](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220719.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=p3Sj1MMsoTidimYW1ZXQNvc%2B8FU%3D&Expires=1660890836
-)
-
-
-### US Endpoint
-
-
-[geth-20220719.tar.lz4
-](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220719.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=%2FZ4KUtgssxSQVHaK26VDLHWF1m0%3D&Expires=1660890837
-)
-
-MD5 checksum: 30d0f9c8cc0dda4cd644aa5d93cab4e9
+MD5 checksum: 9a43d7f94d76f20be43659e0b11060e4
 
 
 
@@ -52,15 +37,15 @@ Step 2: Download && Uncompress
 
 *If you need to speedup download, just use `aria2c`*
 ```
-aria2c -o geth.tar.lz4 -x 4 -s 12 "URL TO ASIA ENDPOINT" "URL TO EU ENDPOINT" "URL TO US ENDPOINT"
+aria2c -o geth.tar.lz4 -s14 -x14 -k100M https://download.bsc-snapshot.workers.dev/{filename} -o geth.tar.lz4
 ```
 
 
-- Uncompress: `tar -I lz4 -xvf geth.tar.lz4`. It will take more than two hours to uncompress. You can put it in the backgroud by `nohup tar -I lz4 xvf geth.tar.lz4 &`
+- Uncompress: `tar -I lz4 -xvf geth.tar.lz4`. It will take more than two hours to uncompress. You can put it in the backgroud by `nohup tar -I lz4 -xvf geth.tar.lz4 &`
 - You can combine the above steps by running a script:
 ```
 wget -O geth.tar.lz4  "<paste snapshot URL here>"
-tar -I lz4 xvf geth.tar.lz4
+tar -I lz4 -xvf geth.tar.lz4
 ```
 
 
