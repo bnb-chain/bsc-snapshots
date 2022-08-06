@@ -10,11 +10,11 @@ Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-c
 ### Endpoint
 
 
-[geth-20220804.tar.lz4
-](https://download.bsc-snapshot.workers.dev/geth-20220804.tar.lz4
+[geth-20220806.tar.lz4
+](https://download.bsc-snapshot.workers.dev/geth-20220806.tar.lz4
 )
 
-MD5 checksum: 5bd4fffc2804dd6aaa99f870b3b7ad07
+MD5 checksum: dfdc80036969c674d39cf1394ab6d448
 
 
 
@@ -24,7 +24,7 @@ Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing ano
 
 
 
-# Usage 
+### Usage 
 
 Step 1: Preparation
 - Make sure your hardware meets the [suggested requirement](https://docs.binance.org/smart-chain/developer/fullnode.html).
@@ -60,4 +60,35 @@ Step 3: Replace Data
 - Consider backing up the original data: `mv ${BSC_DataDir}/geth/chaindata ${BSC_DataDir}/geth/chaindata_backup; mv ${BSC_DataDir}/geth/triecache ${BSC_DataDir}/geth/triecache_backup`
 - Replace the data: `mv server/data-seed/geth/chaindata ${BSC_DataDir}/geth/chaindata; mv server/data-seed/geth/triecache ${BSC_DataDir}/geth/triecache`
 - Start the bsc client again and check the logs
+
+## Erigon Snapshot
+
+> erigon version [v2022.07.04](https://github.com/ledgerwatch/erigon/releases/tag/v2022.07.04)
+### Endpoint
+[erigon-20220729.tar.lz4](https://download.bsc-snapshot.workers.dev/erigon-20220729.tar.lz4)
+
+### Usage
+
+Step 1: Preparation
+
+- Make sure your hardware meets the [suggested requirement](https://github.com/ledgerwatch/erigon#system-requirements).
+- A fullnode running BSC requires at least 2TB of space
+
+Step 2: Download && Uncompress
+
+```
+sudo yum install aria2c
+aria2c -s14 -x14 -k100M https://download.bsc-snapshot.workers.dev/{filename} -o erigon.tar.lz4
+tar -I lz4 -xvf geth.tar.lz4
+```
+Step 3: Replace Data And Restart erigon
+- Stop the running erigon client by `kill {pid}`
+- Backing up the original data: `mv ${erigon_datadir}/erigon ${erigon_datadir}/erigon_back`
+- Replace the data: `mv ${erigon_snapshot_dir}/erigon ${erigon_datadir}`
+- Start the erigon client again and check logs
+
+```shell
+./erigon --chain=bsc --prune= --prune.h.older=5000 --prune.r.older=5000 --prune.t.older=5000 --prune.c.older=5000 --db.pagesize=16k --datadir ${erigon_datadir}/erigon --private.api.addr=localhost:9090 -metrics --metrics.addr=0.0.0.0 --metrics.port=9350 --pprof --pprof.addr=0.0.0.0 --pprof.port=9351
+```
+
 
