@@ -10,11 +10,11 @@ Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-c
 ### Endpoint
 
 
-[geth-20220806.tar.lz4
-](https://download.bsc-snapshot.workers.dev/geth-20220806.tar.lz4
+[geth-20220808.tar.lz4
+](https://download.bsc-snapshot.workers.dev/geth-20220808.tar.lz4
 )
 
-MD5 checksum: dfdc80036969c674d39cf1394ab6d448
+MD5 checksum: 1da6066d94321e5940a5705b91a8706f
 
 
 
@@ -67,6 +67,7 @@ Step 3: Replace Data
 ### Endpoint
 [erigon-20220806.tar.lz4](https://download.bsc-snapshot.workers.dev/snapshot/erigon-20220806.tar.lz4
 )
+
 
 ### Usage
 
