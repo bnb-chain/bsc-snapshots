@@ -65,7 +65,8 @@ Step 3: Replace Data
 
 > erigon version [v2022.07.04](https://github.com/ledgerwatch/erigon/releases/tag/v2022.07.04)
 ### Endpoint
-[erigon-20220729.tar.lz4](https://download.bsc-snapshot.workers.dev/erigon-20220729.tar.lz4)
+[erigon-20220806.tar.lz4](https://download.bsc-snapshot.workers.dev/snapshot/erigon-20220806.tar.lz4
+)
 
 ### Usage
 
