@@ -32,7 +32,7 @@ Step 1: Preparation
 
 Step 2: Download && Uncompress
 - Copy the above snapshot URL.
-- Download:  `wget -O geth.tar.lz4  "<paste snapshot URL here>"` . It will take one or two hours to download the snapshot, you can put it in the backgroud by `nohup wget -O geth.tar.gz  "<paste snapshot URL here?" &`
+- Download:  `wget -O geth.tar.lz4  "<paste snapshot URL here>"` . It will take one or two hours to download the snapshot, you can put it in the backgroud by `nohup wget -O geth.tar.gz  "<paste snapshot URL here>" &`
 
 
 *If you need to speedup download, just use `aria2c`*
