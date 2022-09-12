@@ -54,6 +54,11 @@ tar -I lz4 -xvf geth.tar.lz4
 wget -q -O - <snapshot URL> | tar -I lz4 -xvf -
 ```
 
+- If you have limited disk space (for example a disk of 1TB not allowing you to store both the lz4 file and the uncompressed data concurrently), you can pipe the data through the commands so that there is no intermediate file:
+```
+wget <snapshot URL> -O - | unlz4 --stdout | tar -xv -C .
+```
+
 
 Step 3: Replace Data
 - First, stop the running bsc client if you have one by `kill {pid}`, and make sure the client has shut down.
