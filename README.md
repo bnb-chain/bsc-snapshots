@@ -37,7 +37,7 @@ Step 2: Download && Uncompress
 
 *If you need to speedup download, just use `aria2c`*
 ```
-aria2c -o geth.tar.lz4 -s14 -x14 -k100M https://download.bsc-snapshot.workers.dev/{filename} -o geth.tar.lz4
+aria2c -o geth.tar.lz4 -s14 -x14 -k100M https://download.bsc-snapshot.workers.dev/{filename}
 ```
 
 
