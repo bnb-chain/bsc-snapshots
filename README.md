@@ -61,20 +61,20 @@ Step 3: Replace Data
 - Replace the data: `mv server/data-seed/geth/chaindata ${BSC_DataDir}/geth/chaindata; mv server/data-seed/geth/triecache ${BSC_DataDir}/geth/triecache`
 - Start the bsc client again and check the logs
 
-## Erigon Snapshot
 
-> erigon version [v2022.07.04](https://github.com/ledgerwatch/erigon/releases/tag/v2022.07.04)
+## Erigon-BSC Snapshot
+
+> erigon version [v2.32.0](https://github.com/ledgerwatch/erigon/releases/tag/v2.32.0)
 ### Endpoint
-[erigon-20220806.tar.lz4](https://download.bsc-snapshot.workers.dev/snapshot/erigon-20220806.tar.lz4
+[erigon-data-20221222.tar.lz4](https://download.bsc-snapshot.workers.dev/erigon-data-20221222.tar.lz4
 )
-
 
 ### Usage
 
 Step 1: Preparation
 
 - Make sure your hardware meets the [suggested requirement](https://github.com/ledgerwatch/erigon#system-requirements).
-- A fullnode running BSC requires at least 2TB of space
+- BSC Archive: 7TB. BSC Full: 1TB.
 
 Step 2: Download && Uncompress
 
@@ -90,7 +90,6 @@ Step 3: Replace Data And Restart erigon
 - Start the erigon client again and check logs
 
 ```shell
-./erigon --chain=bsc --prune= --prune.h.older=5000 --prune.r.older=5000 --prune.t.older=5000 --prune.c.older=5000 --db.pagesize=16k --datadir ${erigon_datadir}/erigon --private.api.addr=localhost:9090 -metrics --metrics.addr=0.0.0.0 --metrics.port=9350 --pprof --pprof.addr=0.0.0.0 --pprof.port=9351
+./build/bin/erigon --chain bsc --db.pagesize=16k --datadir=${erigon_dir/data}
 ```
-
 
