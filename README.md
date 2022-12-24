@@ -10,11 +10,11 @@ Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-c
 ### Endpoint
 
 
-[geth-20221222.tar.lz4
-](https://download.bsc-snapshot.workers.dev/geth-20221222.tar.lz4
+[geth-20221224.tar.lz4
+](https://download.bsc-snapshot.workers.dev/geth-20221224.tar.lz4
 )
 
-MD5 checksum: e298780fc3c70ca75756a752f5fb6baa
+MD5 checksum: cb76a4e9f0d4385c686356b020008278
 
 
 
@@ -92,4 +92,5 @@ Step 3: Replace Data And Restart erigon
 ```shell
 ./build/bin/erigon --chain bsc --db.pagesize=16k --datadir=${erigon_dir/data}
 ```
+
 
