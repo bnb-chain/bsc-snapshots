@@ -11,7 +11,7 @@ Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-c
 
 
 [geth-20230110.tar.lz4
-](https://download.bsc-snapshot.workers.dev/geth-20230110.tar.lz4
+](https://pub-10cd0733ed3540f1a5bd893cdcaf4027.r2.dev/geth-20230110.tar.lz4
 )
 
 MD5 checksum: 405bafe492173c48a859baf20c536583
@@ -80,7 +80,7 @@ Step 2: Download && Uncompress
 
 ```
 sudo yum install aria2c
-aria2c -s14 -x14 -k100M https://download.bsc-snapshot.workers.dev/{filename} -o erigon.tar.lz4
+aria2c -s14 -x14 -k100M https://pub-10cd0733ed3540f1a5bd893cdcaf4027.r2.dev/{filename} -o erigon.tar.lz4
 tar -I lz4 -xvf erigon-data-20221227.tar.lz4
 ```
 Step 3: Replace Data And Restart erigon
