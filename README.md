@@ -64,9 +64,9 @@ Step 3: Replace Data
 
 ## Erigon-BSC Snapshot
 
-> erigon version [v2.32.0](https://github.com/ledgerwatch/erigon/releases/tag/v2.32.0)
+> erigon version [v2.32.0](https://github.com/ledgerwatch/erigon/releases/tag/v2.38.0)
 ### Endpoint
-[erigon_data_20230109.tar.lz4](https://download.bsc-snapshot.workers.dev/erigon_data_20230109.tar.lz4
+[erigon_data_20230213.tar.lz4](https://download.bsc-snapshot.workers.dev/erigon_data_20230213.tar.lz4
 )
 
 ### Usage
@@ -85,8 +85,8 @@ tar -I lz4 -xvf {filename}
 ```
 Step 3: Replace Data And Restart erigon
 - Stop the running erigon client by `kill {pid}`
-- Backing up the original data: `mv ${erigon_datadir}/erigon ${erigon_datadir}/erigon_back`
-- Replace the data: `mv ${erigon_snapshot_dir}/erigon ${erigon_datadir}`
+- Backing up the original data: `mv ${erigon_datadir}/chaindata/mdbx.dat ${erigon_datadir}/mdbx_back.dat`
+- Replace the data: `mv ${erigon_snapshot_dir}/erigon/chaindata/mdbx.dat ${erigon_datadir}/chaindata/mdbx.dat`
 - Start the erigon client again and check logs
 
 ```shell
