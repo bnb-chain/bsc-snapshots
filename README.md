@@ -10,11 +10,11 @@ Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-c
 ### Endpoint
 
 
-[geth-20230218.tar.lz4
-](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-20230218.tar.lz4
+[geth-20230220.tar.lz4
+](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-20230220.tar.lz4
 )
 
-MD5 checksum: ec31966ff8527ca89363e7233033b1d9
+MD5 checksum: 38d167e0b5772e4b97c4c6313f841603
 
 
 
@@ -38,51 +38,6 @@ Step 2: Download && Uncompress
 *If you need to speedup download, just use `aria2c`*
 ```
 aria2c -o geth.tar.lz4 -s14 -x14 -k100M https://download.bsc-snapshot.workers.dev/{filename} -o geth.tar.lz4
-```
-But aria2c may fail sometimes, you need to rerun the download command. To make it convient, you can use the follow script
-```
-#!/bin/bash
-
-if [ $# -eq 1 ]; then 
-        dir=$(pwd)
-elif [ $# -eq 2 ]; then 
-        dir=$2
-else 
-        echo "Usage: $0 <uri> [filepath] "
-        exit 1
-fi
-
-uri=$1
-filename=$(basename "$uri")
-
-status=-1
-while (( status != 0 ))
-do 
-        PIDS=$(pgrep aria2c)
-        if [ -z "$PIDS" ]; then
-                aria2c -d $dir -o $filename -s14 -x14 -k100M $uri
-        fi
-        status=$?
-        pid=$(pidof aria2c)
-        wait $pid 
-        echo aria2c exit.
-        case $status in 
-                3)
-                        echo file not exist.
-                        exit 3
-                        ;;
-                9)
-                        echo No space left on device.
-                        exit 9
-                        ;;
-                *)
-                        continue
-                        ;;
-        esac
-done
-
-echo download succeed.
-exit 0
 ```
 
 
