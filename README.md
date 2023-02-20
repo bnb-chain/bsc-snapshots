@@ -39,45 +39,6 @@ Step 2: Download && Uncompress
 ```
 aria2c -o geth.tar.lz4 -s14 -x14 -k100M https://download.bsc-snapshot.workers.dev/{filename} -o geth.tar.lz4
 ```
-But aria2c may fail sometimes, you need to rerun the download command. To make it convient, you can use the follow script
-```
-#!/bin/bash
-#download_snapshot.sh
-#Useage: download_snapshot.sh {filename} {URI}
-
-if [ $# -eq 2 ]; then 
-        status=-1
-        while (( status != 0 ))
-        do 
-                PIDS=`ps -ef |grep aria2c |grep -v grep | awk '{print $2}'`
-                if [ "$PIDS" = "" ]; then
-                        aria2c -o $1 -s14 -x14 -k100M $2
-                fi
-                status=$?
-                pid=$(pidof aria2c)
-                wait $pid 
-                echo aria2c exit.
-                case $status in 
-                        3)
-                                echo file not exist.
-                                exit 3
-                                ;;
-                        9)
-                                echo No space left on device.
-                                exit 9
-                                ;;
-                        *)
-                                continue
-                                ;;
-                esac
-        done
-else 
-        echo "please input target filename and download URI"
-        exit 1
-fi
-echo download succeed.
-exit 0
-```
 
 
 - Uncompress: `tar -I lz4 -xvf geth.tar.lz4`. It will take more than two hours to uncompress. You can put it in the backgroud by `nohup tar -I lz4 -xvf geth.tar.lz4 &`
