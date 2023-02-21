@@ -66,7 +66,7 @@ Step 3: Replace Data
 
 > erigon version [v2.32.0](https://github.com/ledgerwatch/erigon/releases/tag/v2.38.0)
 ### Endpoint
-[erigon_data_20230213.tar.lz4](https://download.bsc-snapshot.workers.dev/erigon_data_20230213.tar.lz4
+[erigon_data_20230220.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20230220.tar.lz4
 )
 
 ### Usage
@@ -80,7 +80,7 @@ Step 2: Download && Uncompress
 
 ```
 sudo yum install aria2c
-aria2c -s14 -x14 -k100M https://download.bsc-snapshot.workers.dev/{filename} -o erigon.tar.lz4
+aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/{filename} -o erigon.tar.lz4
 tar -I lz4 -xvf {filename}
 ```
 Step 3: Replace Data And Restart erigon
