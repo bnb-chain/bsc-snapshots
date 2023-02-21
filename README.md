@@ -106,10 +106,9 @@ Step 3: Replace Data
 
 ## Erigon-BSC Snapshot
 
-> erigon version [v2.32.0](https://github.com/ledgerwatch/erigon/releases/tag/v2.38.0)
+> erigon version [v2.38.0](https://github.com/ledgerwatch/erigon/releases/tag/v2.38.0)
 ### Endpoint
-[erigon_data_20230213.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20230213.tar.lz4
-)
+[erigon_data_20230213.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20230213.tar.lz4)
 
 ### Usage
 
