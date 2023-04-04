@@ -39,46 +39,26 @@ Step 2: Download && Uncompress
 aria2c -o geth.tar.lz4 -s14 -x14 -k100M https://download.bsc-snapshot.workers.dev/{filename} -o geth.tar.lz4
 ```
 
-But aria2c may fail sometimes, you need to rerun the download command. To make it convient, you can use the follow script
+Tips: if you do not have aria2c yet, you may install it by:
 ```
-#!/bin/bash
-if [ $# -eq 1 ]; then 
-        dir=$(pwd)
-elif [ $# -eq 2 ]; then 
-        dir=$2
-else 
-        echo "Usage: $0 <uri> [filepath] "
-        exit 1
-fi
-uri=$1
-filename=$(basename "$uri")
-status=-1
-while (( status != 0 ))
-do 
-        PIDS=$(pgrep aria2c)
-        if [ -z "$PIDS" ]; then
-                aria2c -d $dir -o $filename -s14 -x14 -k100M $uri
-        fi
-        status=$?
-        pid=$(pidof aria2c)
-        wait $pid 
-        echo aria2c exit.
-        case $status in 
-                3)
-                        echo file not exist.
-                        exit 3
-                        ;;
-                9)
-                        echo No space left on device.
-                        exit 9
-                        ;;
-                *)
-                        continue
-                        ;;
-        esac
-done
-echo download succeed.
-exit 0
+sudo su -
+yum install -y gcc-c++
+yum install -y openssl-devel
+wget https://github.com/aria2/aria2/releases/download/release-1.36.0/aria2-1.36.0.tar.gz
+tar -zxvf aria2-1.36.0.tar.gz
+cd aria2-1.36.0
+## some dependencies should be met before compile aria2c, such as gcc, g++
+./configure ARIA2_STATIC=yes
+make -j8
+make install
+```
+
+But aria2c may fail sometimes, you need to rerun the download command. To make it easy, we provide a script: [aria2c_download.sh](script/aria2c_download.sh)
+```
+# download to the current folder:
+aria2c_download.sh https://download.bsc-snapshot.workers.dev/{filename}
+# download to a specific folder(/data):
+aria2c_download.sh https://download.bsc-snapshot.workers.dev/{filename} /data
 ```
 
 
