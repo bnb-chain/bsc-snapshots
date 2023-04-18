@@ -10,11 +10,11 @@ Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-c
 ### Endpoint
 
 
-[geth-20230313.tar.lz4
-](https://tf-dex-prod-public-snapshot-site3.s3.us-east-1.amazonaws.com/geth-20230313.tar.lz4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAYINE6SBQPUZDDRRO%2F20230316%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230316T132652Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=28c565cb1f44ca8dd487bb0c559754974d003b2141bcecca61b4f619439e8e2d
+[geth-20230418.tar.lz4
+](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-20230418.tar.lz4
 )
 
-MD5 checksum: 0b70d09bb2110040e6d1e8878c739341
+MD5 checksum: bac959a2645ec761e8d2ededfbe6f727
 
 
 
@@ -106,10 +106,11 @@ Step 3: Replace Data
 
 ## Erigon-BSC Snapshot
 
-> erigon version [v2.32.0](https://github.com/ledgerwatch/erigon/releases/tag/v2.38.0)
+> erigon version [v2.40.0-dev-3da15fcb](https://github.com/node-real/bsc-erigon/releases/tag/v1.0.2)
 ### Endpoint
-[erigon_data_20230220.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20230220.tar.lz4
+[erigon_data_20230410.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon-0410.tar.lz4
 )
+
 
 ### Usage
 
