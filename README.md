@@ -115,7 +115,7 @@ Step 3: Replace Data
 
 Step 1: Preparation
 
-- Make sure your hardware meets the [suggested requirement](https://github.com/ledgerwatch/erigon#system-requirements).
+- Make sure your hardware meets the [suggested requirement](https://github.com/node-real/bsc-erigon#system-requirements).
 - BSC Archive: 8TB. BSC Full: 2TB.
 
 Step 2: Download && Uncompress
