@@ -116,7 +116,7 @@ Step 3: Replace Data
 Step 1: Preparation
 
 - Make sure your hardware meets the [suggested requirement](https://github.com/ledgerwatch/erigon#system-requirements).
-- BSC Archive: 7TB. BSC Full: 1TB.
+- BSC Archive: 8TB. BSC Full: 2TB.
 
 Step 2: Download && Uncompress
 
