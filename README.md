@@ -105,9 +105,9 @@ Step 3: Replace Data
 
 ## Erigon-BSC Snapshot
 
-> erigon version [v2.40.0-dev-3da15fcb](https://github.com/node-real/bsc-erigon/releases/tag/v1.0.2)
+> erigon version [2.43.0-dev-7bfcc2bb](https://github.com/node-real/bsc-erigon/releases/tag/v1.0.4)
 ### Endpoint
-[erigon_data_20230410.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon-0410.tar.lz4
+[erigon_data_20230506.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon-0506.tar.lz4
 )
 
 
