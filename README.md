@@ -121,7 +121,7 @@ Step 1: Preparation
 Step 2: Download && Uncompress
 
 ```
-sudo yum install aria2c
+sudo yum install aria2
 aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/{filename} -o erigon.tar.lz4
 tar -I lz4 -xvf {filename}
 ```
