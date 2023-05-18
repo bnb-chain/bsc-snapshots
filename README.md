@@ -106,9 +106,23 @@ Step 3: Replace Data
 ## Erigon-BSC Snapshot
 
 > erigon version [2.43.0-dev-7bfcc2bb](https://github.com/node-real/bsc-erigon/releases/tag/v1.0.4)
+
+> For more granular upload & download to avoid big files error, split the files into several chunks, so please download them together and concatenate finally.
 ### Endpoint
-[erigon_data_20230506.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon-0506.tar.lz4
-)
+[erigon_data_20230516_prefixaa](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk/prefixaa)
+
+[erigon_data_20230516_prefixab](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk/prefixab)
+
+[erigon_data_20230516_prefixac](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk/prefixac)
+
+[erigon_data_20230516_prefixad](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk/prefixad)
+
+[erigon_data_20230516_prefixae](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk/prefixae)
 
 
 ### Usage
@@ -118,12 +132,13 @@ Step 1: Preparation
 - Make sure your hardware meets the [suggested requirement](https://github.com/node-real/bsc-erigon#system-requirements).
 - BSC Archive: 8TB. BSC Full: 2TB.
 
-Step 2: Download && Uncompress
+Step 2: Download && Concatenate && Uncompress
 
 ```
-sudo yum install aria2
-aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/{filename} -o erigon.tar.lz4
-tar -I lz4 -xvf {filename}
+sudo yum install aria2c
+aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk/{filename}
+cat /prefix* > mdbx.tar.lz4
+tar -I lz4 -xvf mdbx.tar.lz4
 ```
 Step 3: Replace Data And Restart erigon
 - Stop the running erigon client by `kill {pid}`
