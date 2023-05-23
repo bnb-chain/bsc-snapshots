@@ -105,24 +105,24 @@ Step 3: Replace Data
 
 ## Erigon-BSC Snapshot
 
-> erigon version [2.43.0-dev-7bfcc2bb](https://github.com/node-real/bsc-erigon/releases/tag/v1.0.4)
+> erigon version [v1.0.8](https://github.com/node-real/bsc-erigon/releases/tag/v1.0.8)
 
 > For more granular upload & download to avoid big files error, split the files into several chunks, so please download them together and concatenate finally.
 ### Endpoint
-[erigon_data_20230516_prefixaa](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk/prefixaa)
+[erigon_data_20230523_chunkaa](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk0523/chunkaa)
 
-[erigon_data_20230516_prefixab](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk/prefixab)
+[erigon_data_20230523_prefixab](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk0523/chunkab)
 
-[erigon_data_20230516_prefixac](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk/prefixac)
+[erigon_data_20230523_prefixac](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk0523/chunkac)
 
-[erigon_data_20230516_prefixad](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk/prefixad)
+[erigon_data_20230523_prefixad](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk0523/chunkad)
 
-[erigon_data_20230516_prefixae](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk/prefixae)
+[erigon_data_20230523_prefixae](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk0523/chunkae)
 
 
 ### Usage
@@ -147,7 +147,7 @@ Step 3: Replace Data And Restart erigon
 - Start the erigon client again and check logs
 
 ```shell
-./build/bin/erigon --chain bsc --db.pagesize=16k --datadir=${erigon_dir/data}
+./build/bin/erigon --sentry.drop-useless-peers --p2p.protocol=66 --txpool.disable --metrics.addr=0.0.0.0 --log.console.verbosity=dbug --db.pagesize=16k --datadir ${erigon_dir/data} --private.api.addr=localhost:9090 --chain=bsc --metrics --log.dir.path ${erigon_dir/log}
 ```
 
 
