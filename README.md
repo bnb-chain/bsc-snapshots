@@ -1,45 +1,29 @@
 
 # bsc-snapshots
 
+
 ## Database after Ancient Data Prune:
 
 Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-chain/bsc/releases/tag/v1.1.8)
 
-### Asia Endpoint
 
-[geth-20220216-prune-ancient.tar.lz4](https://tf-dex-prod-public-snapshot-site1.s3.amazonaws.com/geth-20220216-prune-ancient.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=5mV%2BitmrvyKlq3ZzIc%2FVlQIivwI%3D&Expires=1647660522)
-
-
-## Pruned database:
+### Endpoint
 
 
-### Asia Endpoint
-
-
-[geth-20220216.tar.lz4
-](https://tf-dex-prod-public-snapshot-site1.s3-accelerate.amazonaws.com/geth-20220216.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=1G2UW7DOAPGHPTsfn%2B7KFl5cVsw%3D&Expires=1647643476
-)
-
-### EU Endpoint
-
-
-[geth-20220216.tar.lz4
-](https://tf-dex-prod-public-snapshot.s3-accelerate.amazonaws.com/geth-20220216.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=mxFZ3%2BMhames%2FVRqEM35%2Bnw8oaw%3D&Expires=1647643476
+[geth-20230516.tar.lz4
+](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-20230516.tar.lz4
 )
 
 
-### US Endpoint
 
 
-[geth-20220216.tar.lz4
-](https://tf-dex-prod-public-snapshot-site3.s3-accelerate.amazonaws.com/geth-20220216.tar.lz4?AWSAccessKeyId=AKIAYINE6SBQPUZDDRRO&Signature=F1L5Fiq4kbsopSsv02mL2qeUnes%3D&Expires=1647643477
-)
+## Snapshots Provided by Community
 
-MD5 checksum: 41392f4c6facd542d5157cd7963fd4eb
+Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing another dump of snapshot, you can also refer [here](https://github.com/BNB48Club/bsc-snapshots) to download.
 
 
 
-# Usage 
+### Usage 
 
 Step 1: Preparation
 - Make sure your hardware meets the [suggested requirement](https://docs.binance.org/smart-chain/developer/fullnode.html).
@@ -47,20 +31,62 @@ Step 1: Preparation
 
 Step 2: Download && Uncompress
 - Copy the above snapshot URL.
-- Download:  `wget -O geth.tar.lz4  "<paste snapshot URL here>"` . It will take one or two hours to download the snapshot, you can put it in the backgroud by `nohup wget -O geth.tar.gz  "<paste snapshot URL here?" &`
+- Download:  `wget -O geth.tar.lz4  "<paste snapshot URL here>"` . It will take one or two hours to download the snapshot, you can put it in the backgroud by `nohup wget -O geth.tar.gz  "<paste snapshot URL here>" &`
 
 
 *If you need to speedup download, just use `aria2c`*
 ```
-aria2c -o geth.tar.lz4 -x 4 -s 12 "URL TO ASIA ENDPOINT" "URL TO EU ENDPOINT" "URL TO US ENDPOINT"
+aria2c -o geth.tar.lz4 -s14 -x14 -k100M https://download.bsc-snapshot.workers.dev/{filename}
+```
+
+But aria2c may fail sometimes, you need to rerun the download command. To make it convient, you can use the follow script
+```
+#!/bin/bash
+if [ $# -eq 1 ]; then 
+        dir=$(pwd)
+elif [ $# -eq 2 ]; then 
+        dir=$2
+else 
+        echo "Usage: $0 <uri> [filepath] "
+        exit 1
+fi
+uri=$1
+filename=$(basename "$uri")
+status=-1
+while (( status != 0 ))
+do 
+        PIDS=$(pgrep aria2c)
+        if [ -z "$PIDS" ]; then
+                aria2c -d $dir -o $filename -s14 -x14 -k100M $uri
+        fi
+        status=$?
+        pid=$(pidof aria2c)
+        wait $pid 
+        echo aria2c exit.
+        case $status in 
+                3)
+                        echo file not exist.
+                        exit 3
+                        ;;
+                9)
+                        echo No space left on device.
+                        exit 9
+                        ;;
+                *)
+                        continue
+                        ;;
+        esac
+done
+echo download succeed.
+exit 0
 ```
 
 
-- Uncompress: `tar -I lz4 -xvf geth.tar.lz4`. It will take more than two hours to uncompress. You can put it in the background by `nohup tar -I lz4 xvf geth.tar.lz4 &`
+- Uncompress: `tar -I lz4 -xvf geth.tar.lz4`. It will take more than two hours to uncompress. You can put it in the background by `nohup tar -I lz4 -xvf geth.tar.lz4 &`
 - You can combine the above steps by running a script:
 ```
 wget -O geth.tar.lz4  "<paste snapshot URL here>"
-tar -I lz4 xvf geth.tar.lz4
+tar -I lz4 -xvf geth.tar.lz4
 ```
 
 
@@ -75,4 +101,53 @@ Step 3: Replace Data
 - Consider backing up the original data: `mv ${BSC_DataDir}/geth/chaindata ${BSC_DataDir}/geth/chaindata_backup; mv ${BSC_DataDir}/geth/triecache ${BSC_DataDir}/geth/triecache_backup`
 - Replace the data: `mv server/data-seed/geth/chaindata ${BSC_DataDir}/geth/chaindata; mv server/data-seed/geth/triecache ${BSC_DataDir}/geth/triecache`
 - Start the bsc client again and check the logs
+
+
+## Erigon-BSC Snapshot
+
+> erigon version [v1.0.8](https://github.com/node-real/bsc-erigon/releases/tag/v1.0.8)
+
+> For more granular upload & download to avoid big files error, split the files into several chunks, so please download them together and concatenate finally.
+### Endpoint
+[erigon_data_20230523_chunkaa](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk0523/chunkaa)
+
+[erigon_data_20230523_prefixab](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk0523/chunkab)
+
+[erigon_data_20230523_prefixac](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk0523/chunkac)
+
+[erigon_data_20230523_prefixad](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk0523/chunkad)
+
+[erigon_data_20230523_prefixae](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk0523/chunkae)
+
+
+### Usage
+
+Step 1: Preparation
+
+- Make sure your hardware meets the [suggested requirement](https://github.com/node-real/bsc-erigon#system-requirements).
+- BSC Archive: 8TB. BSC Full: 2TB.
+
+Step 2: Download && Concatenate && Uncompress
+
+```
+sudo yum install aria2c
+aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk/{filename}
+cat /prefix* > mdbx.tar.lz4
+tar -I lz4 -xvf mdbx.tar.lz4
+```
+Step 3: Replace Data And Restart erigon
+- Stop the running erigon client by `kill {pid}`
+- Backing up the original data: `mv ${erigon_datadir}/chaindata/mdbx.dat  ${erigon_datadir}/chaindata/mdbx.dat `
+- Replace the data: `mv ${erigon_snapshot_dir}/erigon/chaindata/mdbx.dat ${erigon_datadir}/chaindata/mdbx.dat`
+- Start the erigon client again and check logs
+
+```shell
+./build/bin/erigon --sentry.drop-useless-peers --p2p.protocol=66 --txpool.disable --metrics.addr=0.0.0.0 --log.console.verbosity=dbug --db.pagesize=16k --datadir ${erigon_dir/data} --private.api.addr=localhost:9090 --chain=bsc --metrics --log.dir.path ${erigon_dir/log}
+```
+
 
