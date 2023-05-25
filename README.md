@@ -112,16 +112,22 @@ Step 3: Replace Data
 [erigon_data_20230523_chunkaa](
 https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk0523/chunkaa)
 
-[erigon_data_20230523_prefixab](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk0523/chunkab)
+[erigon_data_20230523_chunkab1](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkb1)
 
-[erigon_data_20230523_prefixac](
+[erigon_data_20230523_chunkab2](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkb2)
+
+[erigon_data_20230523_chunkab3](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkb3)
+
+[erigon_data_20230523_chunkac](
 https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk0523/chunkac)
 
-[erigon_data_20230523_prefixad](
+[erigon_data_20230523_chunkad](
 https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk0523/chunkad)
 
-[erigon_data_20230523_prefixae](
+[erigon_data_20230523_chunkae](
 https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk0523/chunkae)
 
 
@@ -137,7 +143,7 @@ Step 2: Download && Concatenate && Uncompress
 ```
 sudo yum install aria2c
 aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk/{filename}
-cat /prefix* > mdbx.tar.lz4
+cat /chunk* > mdbx.tar.lz4
 tar -I lz4 -xvf mdbx.tar.lz4
 ```
 Step 3: Replace Data And Restart erigon
