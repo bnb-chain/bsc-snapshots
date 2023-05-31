@@ -109,27 +109,32 @@ Step 3: Replace Data
 
 > For more granular upload & download to avoid big files error, split the files into several chunks, so please download them together and concatenate finally.
 ### Endpoint
-[erigon_data_20230523_chunkaa](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk0523/chunkaa)
+[erigon_data_20230530_chunkaa](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkaa)
 
-[erigon_data_20230523_chunkab1](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkb1)
+[erigon_data_20230530_chunkab](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkab)
 
-[erigon_data_20230523_chunkab2](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkb2)
+[erigon_data_20230530_chunkac](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkac)
 
-[erigon_data_20230523_chunkab3](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkb3)
+[erigon_data_20230530_chunkad](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkad)
 
-[erigon_data_20230523_chunkac](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk0523/chunkac)
+[erigon_data_20230530_chunkae](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkae)
 
-[erigon_data_20230523_chunkad](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk0523/chunkad)
+[erigon_data_20230530_chunkaf](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkaf)
 
-[erigon_data_20230523_chunkae](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk0523/chunkae)
+[erigon_data_20230530_chunkag](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkag)
 
+[erigon_data_20230530_chunkah](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkah)
+
+[erigon_data_20230530_chunkai](
+https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkai)
 
 ### Usage
 
