@@ -160,5 +160,7 @@ Step 3: Replace Data And Restart erigon
 ```shell
 ./build/bin/erigon --sentry.drop-useless-peers --p2p.protocol=66 --txpool.disable --metrics.addr=0.0.0.0 --log.console.verbosity=dbug --db.pagesize=16k --datadir ${erigon_dir/data} --private.api.addr=localhost:9090 --chain=bsc --metrics --log.dir.path ${erigon_dir/log}
 ```
-
++
++
+/#875
 
