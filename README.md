@@ -105,36 +105,30 @@ Step 3: Replace Data
 
 ## Erigon-BSC Snapshot
 
-> erigon version [v1.1.0](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.0)
+> erigon version [2.43.0-dev-6da3fa5e](https://github.com/node-real/bsc-erigon/commit/6da3fa5ec71039fbe61a40044715a766b3f77129)
 
 > For more granular upload & download to avoid big files error, split the files into several chunks, so please download them together and concatenate finally.
 ### Endpoint
-[erigon_data_20230606_chunkaa](
+[erigon_data_20230612_chunkaa](
 https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkaa)
 
-[erigon_data_20230606_chunkab](
+[erigon_data_20230612_chunkab](
 https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkab)
 
-[erigon_data_20230606_chunkac](
+[erigon_data_20230612_chunkac](
 https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkac)
 
-[erigon_data_20230606_chunkad](
+[erigon_data_20230612_chunkad](
 https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkad)
 
-[erigon_data_20230606_chunkae](
+[erigon_data_20230612_chunkae](
 https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkae)
 
-[erigon_data_20230606_chunkaf](
+[erigon_data_20230612_chunkaf](
 https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkaf)
 
-[erigon_data_20230606_chunkag](
+[erigon_data_20230612_chunkag](
 https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkag)
-
-[erigon_data_20230606_chunkah](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkah)
-
-[erigon_data_20230606_chunkai](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkai)
 
 ### Usage
 
@@ -147,8 +141,8 @@ Step 2: Download && Concatenate && Uncompress
 
 ```
 sudo yum install aria2c
-aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk/{filename}
-cat /chunk* > mdbx.tar.lz4
+aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunka[a]..chunka[g]
+cat ./chunk* > mdbx.tar.lz4
 tar -I lz4 -xvf mdbx.tar.lz4
 ```
 Step 3: Replace Data And Restart erigon
