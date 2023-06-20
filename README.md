@@ -105,29 +105,29 @@ Step 3: Replace Data
 
 ## Erigon-BSC Snapshot
 
-> erigon version [2.43.0-dev-6da3fa5e](https://github.com/node-real/bsc-erigon/commit/6da3fa5ec71039fbe61a40044715a766b3f77129)
+> erigon version [2.43.0-dev-9bab](https://github.com/node-real/bsc-erigon/commit/9bab0b6ca2e08a4b6dbd8bad8b75b1cc3f3ed0ba)
 
 > For more granular upload & download to avoid big files error, split the files into several chunks, so please download them together and concatenate finally.
 ### Endpoint
-[erigon_data_20230612_chunkaa](
+[erigon_data_20230619_chunkaa](
 https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkaa)
 
-[erigon_data_20230612_chunkab](
+[erigon_data_20230619_chunkab](
 https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkab)
 
-[erigon_data_20230612_chunkac](
+[erigon_data_20230619_chunkac](
 https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkac)
 
-[erigon_data_20230612_chunkad](
+[erigon_data_20230619_chunkad](
 https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkad)
 
-[erigon_data_20230612_chunkae](
+[erigon_data_20230619_chunkae](
 https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkae)
 
-[erigon_data_20230612_chunkaf](
+[erigon_data_20230619_chunkaf](
 https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkaf)
 
-[erigon_data_20230612_chunkag](
+[erigon_data_20230619_chunkag](
 https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunkag)
 
 ### Usage
