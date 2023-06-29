@@ -108,7 +108,9 @@ Step 3: Replace Data
 > erigon version [1.1.1-dev-a40b48a](https://github.com/node-real/bsc-erigon/commit/a40b48aaa1f47d2d4ceed082a4b86b653f5d6abf)
 
 > For more granular upload & download to avoid big files error, split the files into several chunks, so please download them together and concatenate finally.
-### Endpoint
+### Endpoint(Testnet): not ready yet(will update quarterly)
+
+### Endpoint(Mainnet): try to update bi-weekly
 [erigon_data_20230625_chunkaa](
 https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625aa)
 
