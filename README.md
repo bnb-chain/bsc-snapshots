@@ -4,7 +4,7 @@
 
 ## Database after Ancient Data Prune:
 
-Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/binance-chain/bsc/releases/tag/v1.1.8)
+Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/bnb-chain/bsc/releases/tag/v1.1.8)
 
 
 ### Endpoint
@@ -26,7 +26,7 @@ Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing ano
 ### Usage 
 
 Step 1: Preparation
-- Make sure your hardware meets the [suggested requirement](https://docs.binance.org/smart-chain/developer/fullnode.html).
+- Make sure your hardware meets the [suggested requirement](https://docs.bnbchain.org/docs/validator/fullnode).
 - A disk with enough free storage, at least twice the size of the snapshot.
 
 Step 2: Download && Uncompress
