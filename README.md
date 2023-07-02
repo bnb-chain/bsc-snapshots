@@ -103,34 +103,23 @@ Step 3: Replace Data
 - Start the bsc client again and check the logs
 
 
-## Erigon-BSC Snapshot
+## Erigon-BSC Snapshot(Archive Node)
 
-> erigon version [1.1.1-dev-a40b48a](https://github.com/node-real/bsc-erigon/commit/a40b48aaa1f47d2d4ceed082a4b86b653f5d6abf)
+> erigon version [v1.1.4](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.4)
 
 > For more granular upload & download to avoid big files error, split the files into several chunks, so please download them together and concatenate finally.
-### Endpoint(Testnet): not ready yet(will update quarterly)
+### Endpoint(Testnet): will update quarterly
+> erigon version [v1.1.4](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.4), Block: [31205834](https://testnet.bscscan.com/block/31205834)
+#### [testnet_erigon_DB_20230702.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/testnet_erigon_DB_20230702.tar.lz4/testnet_erigon_DB_20230702.tar.lz4)
 
 ### Endpoint(Mainnet): try to update bi-weekly
-[erigon_data_20230625_chunkaa](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625aa)
-
-[erigon_data_20230625_chunkab](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625ab)
-
-[erigon_data_20230625_chunkac](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625ac)
-
-[erigon_data_20230625_chunkad](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625ad)
-
-[erigon_data_20230625_chunkae](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625ae)
-
-[erigon_data_20230625_chunkaf](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625af)
-
-[erigon_data_20230625_chunkag](
-https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625ag)
+#### [erigon_data_20230625_chunkaa](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625aa)
+#### [erigon_data_20230625_chunkab](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625ab)
+#### [erigon_data_20230625_chunkac](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625ac)
+#### [erigon_data_20230625_chunkad](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625ad)
+#### [erigon_data_20230625_chunkae](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625ae)
+#### [erigon_data_20230625_chunkaf](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625af)
+#### [erigon_data_20230625_chunkag](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625ag)
 
 ### Usage
 
@@ -153,8 +142,13 @@ Step 3: Replace Data And Restart erigon
 - Replace the data: `mv ${erigon_snapshot_dir}/erigon/chaindata/mdbx.dat ${erigon_datadir}/chaindata/mdbx.dat`
 - Start the erigon client again and check logs
 
+- mainnet command sample: 
 ```shell
 ./build/bin/erigon --sentry.drop-useless-peers --p2p.protocol=66 --txpool.disable --metrics.addr=0.0.0.0 --log.console.verbosity=dbug --db.pagesize=16k --datadir ${erigon_dir/data} --private.api.addr=localhost:9090 --chain=bsc --metrics --log.dir.path ${erigon_dir/log}
+```
+-testnet command sample
+```shell
+./build/bin/erigon --txpool.disable --networkid=97 --db.pagesize=16k --p2p.protocol=66 --datadir ./data --chain=chapel --sentry.drop-useless-peers --nat=any --log.dir.path ./log --http.port=8545 --private.api.addr=127.0.0.1:9090 --http --ws --http.api=web3,net,eth,debug,trace,txpool --http.addr=0.0.0.0 --torrent.download.rate=256mb --metrics --metrics.addr=0.0.0.0
 ```
 
 
