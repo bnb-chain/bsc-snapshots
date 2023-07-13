@@ -113,13 +113,13 @@ Step 3: Replace Data
 #### [testnet_erigon_DB_20230702.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/testnet_erigon_DB_20230702.tar.lz4/testnet_erigon_DB_20230702.tar.lz4)
 
 ### Endpoint(Mainnet): try to update bi-weekly
-#### [erigon_data_20230625_chunkaa](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625aa)
-#### [erigon_data_20230625_chunkab](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625ab)
-#### [erigon_data_20230625_chunkac](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625ac)
-#### [erigon_data_20230625_chunkad](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625ad)
-#### [erigon_data_20230625_chunkae](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625ae)
-#### [erigon_data_20230625_chunkaf](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625af)
-#### [erigon_data_20230625_chunkag](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230625ag)
+#### [erigon_data_20230710_chunkaa](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230710aa)
+#### [erigon_data_20230710_chunkab](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230710ab)
+#### [erigon_data_20230710_chunkac](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230710ac)
+#### [erigon_data_20230710_chunkad](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230710ad)
+#### [erigon_data_20230710_chunkae](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230710ae)
+#### [erigon_data_20230710_chunkaf](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230710af)
+#### [erigon_data_20230710_chunkag](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230710ag)
 
 ### Usage
 
