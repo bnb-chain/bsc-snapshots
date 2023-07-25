@@ -105,21 +105,20 @@ Step 3: Replace Data
 
 ## Erigon-BSC Snapshot(Archive Node)
 
-> erigon version [v1.1.4](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.4)
-
 > For more granular upload & download to avoid big files error, split the files into several chunks, so please download them together and concatenate finally.
 ### Endpoint(Testnet): will update quarterly
 > erigon version [v1.1.4](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.4), Block: [31205834](https://testnet.bscscan.com/block/31205834)
 #### [testnet_erigon_DB_20230702.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/testnet_erigon_DB_20230702.tar.lz4/testnet_erigon_DB_20230702.tar.lz4)
 
-### Endpoint(Mainnet): try to update bi-weekly
-#### [erigon_data_20230710_chunkaa](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230710aa)
-#### [erigon_data_20230710_chunkab](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230710ab)
-#### [erigon_data_20230710_chunkac](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230710ac)
-#### [erigon_data_20230710_chunkad](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230710ad)
-#### [erigon_data_20230710_chunkae](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230710ae)
-#### [erigon_data_20230710_chunkaf](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230710af)
-#### [erigon_data_20230710_chunkag](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230710ag)
+### Endpoint(Mainnet): update bi-weekly
+> erigon version [v1.1.4](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.4)
+#### [erigon_data_20230724_chunkaa](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230724aa)
+#### [erigon_data_20230724_chunkab](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230724ab)
+#### [erigon_data_20230724_chunkac](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230724ac)
+#### [erigon_data_20230724_chunkad](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230724ad)
+#### [erigon_data_20230724_chunkae](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230724ae)
+#### [erigon_data_20230724_chunkaf](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_202307240af)
+#### [erigon_data_20230724_chunkag](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230724ag)
 
 ### Usage
 
