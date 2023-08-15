@@ -112,13 +112,14 @@ Step 3: Replace Data
 
 ### Endpoint(Mainnet): update bi-weekly
 > erigon version [v1.1.4](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.4)
-#### [erigon_data_20230724_chunkaa](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230724aa)
-#### [erigon_data_20230724_chunkab](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230724ab)
-#### [erigon_data_20230724_chunkac](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230724ac)
-#### [erigon_data_20230724_chunkad](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230724ad)
-#### [erigon_data_20230724_chunkae](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230724ae)
-#### [erigon_data_20230724_chunkaf](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_202307240af)
-#### [erigon_data_20230724_chunkag](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230724ag)
+#### [erigon_data_20230814_chunkaa](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230814aa)
+#### [erigon_data_20230814_chunkab](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230814ab)
+#### [erigon_data_20230814_chunkac](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230814ac)
+#### [erigon_data_20230814_chunkad](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230814ad)
+#### [erigon_data_20230814_chunkae](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230814ae)
+#### [erigon_data_20230814_chunkaf](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230814af)
+#### [erigon_data_20230814_chunkag](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230814ag)
+#### [erigon_data_20230814_chunkah](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/chunk_20230814ah)
 
 ### Usage
 
