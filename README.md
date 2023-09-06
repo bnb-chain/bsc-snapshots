@@ -36,10 +36,10 @@ Step 2: Download && Uncompress
 
 *If you need to speedup download, just use `aria2c`*
 ```
-aria2c -o geth.tar.lz4 -s14 -x14 -k100M https://download.bsc-snapshot.workers.dev/{filename}
+aria2c -o geth.tar.lz4 -s14 -x14 -k100M https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/{filename}
 ```
 
-But aria2c may fail sometimes, you need to rerun the download command. To make it convient, you can use the follow script
+But aria2c may fail sometimes, you need to rerun the download command. To make it convient, you can use the following script, save it into file `download.sh` and run: `nohup ./download.sh "<paste snapshot URL here>" <your dir> &`
 ```
 #!/bin/bash
 if [ $# -eq 1 ]; then 
@@ -80,7 +80,6 @@ done
 echo download succeed.
 exit 0
 ```
-
 
 - Uncompress: `tar -I lz4 -xvf geth.tar.lz4`. It will take more than two hours to uncompress. You can put it in the background by `nohup tar -I lz4 -xvf geth.tar.lz4 &`
 - You can combine the above steps by running a script:
