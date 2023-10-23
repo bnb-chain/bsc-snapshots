@@ -107,13 +107,13 @@ Step 3: Replace Data
 
 ### Endpoint(Mainnet): update bi-weekly
 > erigon version [v1.1.4](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.4)
-#### [erigon_data_20231011.7z.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231011.7z.001)
-#### [erigon_data_20231011.7z.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231011.7z.002)
-#### [erigon_data_20231011.7z.003](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231011.7z.003)
-#### [erigon_data_20231011.7z.004](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231011.7z.004)
-#### [erigon_data_20231011.7z.005](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231011.7z.005)
-#### [erigon_data_20231011.7z.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231011.7z.006)
-#### [erigon_data_20231011.7z.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231011.7z.007)
+#### [erigon_data_20231023.7z.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231023.7z.001)
+#### [erigon_data_20231023.7z.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231023.7z.002)
+#### [erigon_data_20231023.7z.003](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231023.7z.003)
+#### [erigon_data_20231023.7z.004](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231023.7z.004)
+#### [erigon_data_20231023.7z.005](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231023.7z.005)
+#### [erigon_data_20231023.7z.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231023.7z.006)
+#### [erigon_data_20231023.7z.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231023.7z.007)
 
 ### Usage
 
@@ -126,7 +126,7 @@ Step 2: Download && Concatenate && Uncompress
 
 ```
 sudo yum install aria2c p7zip
-aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231011.7z.[1]..erigon_data_20231011.7z.[7]
+aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231023.7z.[1]..erigon_data_20231023.7z.[7]
 7za e erigon_data_*.001
 ```
 Step 3: Replace Data And Restart erigon
