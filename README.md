@@ -9,9 +9,14 @@ Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/bnb-chain
 
 ### Endpoint
 
+Hash-Base-State-Scheme:
+
 - mainnet: [geth-20231104.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-20231104.tar.lz4)
 - testnet: [testnet-geth-20230911.tar.lz4](https://pub-5809538c476542388ad6ca3e681ea85f.r2.dev/testnet-geth-20230911.tar.lz4)
 
+Path-Base-State-Scheme:
+
+- mainnet: [geth-pbss-20231115.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-20231115.tar.lz4)
 
 ## Snapshots Provided by Community
 
