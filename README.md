@@ -13,7 +13,7 @@ Hash-Base-State-Scheme:
 
 - mainnet: 1) leveldb:[geth-20231114.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-20231114.tar.lz4)
      
-    2）pebble:[geth-pebble-20231128.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pebble-20231128.tar.lz4)
+           2) pebble:[geth-pebble-20231128.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pebble-20231128.tar.lz4)
 
 - testnet: [testnet-geth-20230911.tar.lz4](https://pub-5809538c476542388ad6ca3e681ea85f.r2.dev/testnet-geth-20230911.tar.lz4)
 
