@@ -123,6 +123,9 @@ Step 3: Replace Data
 #### [erigon_data_20231030.lz4.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231030.lz4.006)
 #### [erigon_data_20231030.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231030.lz4.007)
 
+### Endpoint(Mainnet torrent)
+#### [erigon_snapshots_20231130.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_snapshots_20231130.tar.lz4/erigon_snapshots_20231130.tar.lz4)
+
 ### Usage
 
 Step 1: Preparation
@@ -144,11 +147,12 @@ Step 3: Replace Data And Restart erigon
 - Stop the running erigon client by `kill {pid}`
 - Backing up the original data: `mv ${erigon_datadir}/chaindata/mdbx.dat  ${erigon_datadir}/chaindata/mdbx.dat `
 - Replace the data: `mv ${erigon_snapshot_dir}/erigon/chaindata/mdbx.dat ${erigon_datadir}/chaindata/mdbx.dat`
+- Replace the torrent: `mv ${erigon_torrent_dir}/snapshots ${erigon_datadir}/`
 - Start the erigon client again and check logs
 
 - mainnet command sample: 
 ```shell
-./build/bin/erigon --sentry.drop-useless-peers --p2p.protocol=66 --txpool.disable --metrics.addr=0.0.0.0 --log.console.verbosity=dbug --db.pagesize=16k --datadir ${erigon_dir/data} --private.api.addr=localhost:9090 --chain=bsc --metrics --log.dir.path ${erigon_dir/log}
+./build/bin/erigon --p2p.protocol=66 --txpool.disable --metrics.addr=0.0.0.0 ----log.console.verbosity=dbug --db.pagesize=16k --datadir ${erigon_dir/data} --private.api.addr=localhost:9090 --chain=bsc --metrics --log.dir.path ${erigon_dir/log}
 ```
 -testnet command sample
 ```shell
