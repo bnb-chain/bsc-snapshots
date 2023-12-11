@@ -109,11 +109,12 @@ Step 3: Replace Data
 
 > For more granular upload & download to avoid big files error, split the files into several chunks, so please download them together and concatenate finally.
 ### Endpoint(Testnet): update every 6 months
-> erigon version [v1.1.4](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.4), Block: [31205834](https://testnet.bscscan.com/block/31205834)
-#### [testnet_erigon_DB_20230702.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/testnet_erigon_DB_20230702.tar.lz4/testnet_erigon_DB_20230702.tar.lz4)
+> erigon version [v1.1.10](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.10), Block: [35851654](https://testnet.bscscan.com/block/35851654)
+#### [testnet_erigon_DB_20231211.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/testnet_erigon_DB_20231211.tar.lz4)
+#### SHA256 = 7c59f6846eba146a5668e44d3863545375ee52c6c70d3707ab55c2d8fdfdc6bb
 
 ### Endpoint(Mainnet): update bi-weekly
-> erigon version [v1.1.4](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.4)
+> erigon version [v1.1.10](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.10)
 #### [erigon_data_20231130.lz4.000](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231130.lz4.000)
 #### [erigon_data_20231130.lz4.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231130.lz4.001)
 #### [erigon_data_20231130.lz4.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231130.lz4.002)
