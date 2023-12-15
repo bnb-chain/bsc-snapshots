@@ -19,6 +19,7 @@ Hash-Base-State-Scheme:
 Path-Base-State-Scheme:
 
 - mainnet: [geth-pbss-pebble-20231210.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-pebble-20231210.tar.lz4)
+- testnet: [geth-testnet-pbss-pebble-20231215.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-testnet-pbss-pebble-20231215.tar.lz4)
 
 ## Snapshots Provided by Community
 
