@@ -116,17 +116,17 @@ Step 3: Replace Data
 
 ### Endpoint(Mainnet): update bi-weekly
 > erigon version [v1.1.10](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.10)
-#### [erigon_data_20231130.lz4.000](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231130.lz4.000)
-#### [erigon_data_20231130.lz4.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231130.lz4.001)
-#### [erigon_data_20231130.lz4.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231130.lz4.002)
-#### [erigon_data_20231130.lz4.003](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231130.lz4.003)
-#### [erigon_data_20231130.lz4.004](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231130.lz4.004)
-#### [erigon_data_20231130.lz4.005](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231130.lz4.005)
-#### [erigon_data_20231130.lz4.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231130.lz4.006)
-#### [erigon_data_20231130.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231130.lz4.007)
+#### [erigon_data_20231225.lz4.000](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231225.lz4.000)
+#### [erigon_data_20231225.lz4.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231225.lz4.001)
+#### [erigon_data_20231225.lz4.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231225.lz4.002)
+#### [erigon_data_20231225.lz4.003](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231225.lz4.003)
+#### [erigon_data_20231225.lz4.004](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231225.lz4.004)
+#### [erigon_data_20231225.lz4.005](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231225.lz4.005)
+#### [erigon_data_20231225.lz4.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231225.lz4.006)
+#### [erigon_data_20231225.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231225.lz4.007)
 
 ### Endpoint(Mainnet torrent)
-#### [erigon_snapshots_20231130.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_snapshots_20231130.tar.lz4/erigon_snapshots_20231130.tar.lz4)
+#### [erigon_snapshots_20231225.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_snapshots_20231225.tar.lz4/erigon_snapshots_20231225.tar.lz4)
 
 ### Usage
 
@@ -139,11 +139,11 @@ Step 2: Download && Concatenate && Uncompress
 
 ```
 sudo yum install aria2c
-aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231130.lz4.[0]..erigon_data_20231130.lz4.[7]
-cat "erigon_data_20231130.lz4."* > combined_compressed_file.lz4
+aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231225.lz4.[0]..erigon_data_20231225.lz4.[7]
+cat "erigon_data_20231225.lz4."* > combined_compressed_file.lz4
 lz4 -d combined_compressed_file.lz4 mdbx.dat
 or
-cat "erigon_data_20231130.lz4."* | lz4 -d -c > mdbx.dat
+cat "erigon_data_20231225.lz4."* | lz4 -d -c > mdbx.dat
 ```
 Step 3: Replace Data And Restart erigon
 - Stop the running erigon client by `kill {pid}`
