@@ -126,7 +126,7 @@ Step 3: Replace Data
 #### [erigon_data_20231225.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231225.lz4.007)
 
 ### Endpoint(Mainnet torrent)
-#### [erigon_snapshots_20231225.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_snapshots_20231225.tar.lz4/erigon_snapshots_20231225.tar.lz4)
+#### [erigon_snapshots_20231130.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_snapshots_20231130.tar.lz4/erigon_snapshots_20231130.tar.lz4)
 
 ### Usage
 
