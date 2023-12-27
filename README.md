@@ -39,12 +39,12 @@ Step 2: Download && Uncompress
 
 
 *If you need to speedup download, just use `aria2c`*
-```
+```shell
 aria2c -o geth.tar.lz4 -s14 -x14 -k100M https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/{filename}
 ```
 
 But aria2c may fail sometimes, you need to rerun the download command. To make it convient, you can use the following script, save it into file `download.sh` and run: `nohup ./download.sh "<paste snapshot URL here>" <your dir> &`
-```
+```bash
 #!/bin/bash
 if [ $# -eq 1 ]; then 
         dir=$(pwd)
@@ -87,14 +87,14 @@ exit 0
 
 - Uncompress: `tar -I lz4 -xvf geth.tar.lz4`. It will take more than two hours to uncompress. You can put it in the background by `nohup tar -I lz4 -xvf geth.tar.lz4 &`
 - You can combine the above steps by running a script:
-```
+```shell
 wget -O geth.tar.lz4  "<paste snapshot URL here>"
 tar -I lz4 -xvf geth.tar.lz4
 ```
 
 
 - If you do not need to store the archive for use with other nodes, you may also extract it while downloading to save time and disk space:
-```
+```shell
 wget -q -O - <snapshot URL> | tar -I lz4 -xvf -
 ```
 
@@ -137,12 +137,12 @@ Step 1: Preparation
 
 Step 2: Download && Concatenate && Uncompress
 
-```
+```shell
 sudo yum install aria2c
 aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231225.lz4.[0]..erigon_data_20231225.lz4.[7]
 cat "erigon_data_20231225.lz4."* > combined_compressed_file.lz4
 lz4 -d combined_compressed_file.lz4 mdbx.dat
-or
+# or
 cat "erigon_data_20231225.lz4."* | lz4 -d -c > mdbx.dat
 ```
 Step 3: Replace Data And Restart erigon
@@ -156,9 +156,7 @@ Step 3: Replace Data And Restart erigon
 ```shell
 ./build/bin/erigon --p2p.protocol=66 --txpool.disable --metrics.addr=0.0.0.0 --log.console.verbosity=dbug --db.pagesize=16k --datadir ${erigon_dir/data} --private.api.addr=localhost:9090 --chain=bsc --metrics --log.dir.path ${erigon_dir/log}
 ```
--testnet command sample
+- testnet command sample:
 ```shell
 ./build/bin/erigon --txpool.disable --networkid=97 --db.pagesize=16k --p2p.protocol=66 --datadir ./data --chain=chapel --sentry.drop-useless-peers --nat=any --log.dir.path ./log --http.port=8545 --private.api.addr=127.0.0.1:9090 --http --ws --http.api=web3,net,eth,debug,trace,txpool --http.addr=0.0.0.0 --torrent.download.rate=256mb --metrics --metrics.addr=0.0.0.0
 ```
-
-
