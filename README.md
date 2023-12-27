@@ -9,16 +9,17 @@ Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/bnb-chain
 
 ### Endpoint
 
+Here are snapshots of HBSS with leveldb and PBSS snapshots with pebble.
+
 Hash-Base-State-Scheme:
 
-- mainnet:
-  - leveldb: [geth-20231114.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-20231114.tar.lz4)
-  - pebble: [geth-pebble-20231128.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pebble-20231128.tar.lz4)
-
+- mainnet:[geth-20231211.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-20231211.tar.lz4) 
+- testnet: [testnet-geth-20230911.tar.lz4](https://pub-5809538c476542388ad6ca3e681ea85f.r2.dev/testnet-geth-20230911.tar.lz4)
   
 Path-Base-State-Scheme:
 
-- mainnet: [geth-pbss-20231115.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-20231115.tar.lz4)
+- mainnet: [geth-pbss-pebble-20231217.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-pebble-20231217.tar.lz4)
+- testnet: [testnet-geth-pbss-pebble-20231219.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/testnet-geth-pbss-pebble-20231219.tar.lz4)
 
 ## Snapshots Provided by Community
 
@@ -109,19 +110,20 @@ Step 3: Replace Data
 
 > For more granular upload & download to avoid big files error, split the files into several chunks, so please download them together and concatenate finally.
 ### Endpoint(Testnet): update every 6 months
-> erigon version [v1.1.4](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.4), Block: [31205834](https://testnet.bscscan.com/block/31205834)
-#### [testnet_erigon_DB_20230702.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/testnet_erigon_DB_20230702.tar.lz4/testnet_erigon_DB_20230702.tar.lz4)
+> erigon version [v1.1.10](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.10), Block: [35851654](https://testnet.bscscan.com/block/35851654)
+#### [testnet_erigon_DB_20231211.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/testnet_erigon_DB_20231211.tar.lz4)
+#### SHA256 = 7c59f6846eba146a5668e44d3863545375ee52c6c70d3707ab55c2d8fdfdc6bb
 
 ### Endpoint(Mainnet): update bi-weekly
-> erigon version [v1.1.4](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.4)
-#### [erigon_data_20231130.lz4.000](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231130.lz4.000)
-#### [erigon_data_20231130.lz4.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231130.lz4.001)
-#### [erigon_data_20231130.lz4.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231130.lz4.002)
-#### [erigon_data_20231130.lz4.003](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231130.lz4.003)
-#### [erigon_data_20231130.lz4.004](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231130.lz4.004)
-#### [erigon_data_20231130.lz4.005](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231130.lz4.005)
-#### [erigon_data_20231130.lz4.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231130.lz4.006)
-#### [erigon_data_20231130.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231130.lz4.007)
+> erigon version [v1.1.10](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.10)
+#### [erigon_data_20231225.lz4.000](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231225.lz4.000)
+#### [erigon_data_20231225.lz4.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231225.lz4.001)
+#### [erigon_data_20231225.lz4.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231225.lz4.002)
+#### [erigon_data_20231225.lz4.003](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231225.lz4.003)
+#### [erigon_data_20231225.lz4.004](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231225.lz4.004)
+#### [erigon_data_20231225.lz4.005](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231225.lz4.005)
+#### [erigon_data_20231225.lz4.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231225.lz4.006)
+#### [erigon_data_20231225.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231225.lz4.007)
 
 ### Endpoint(Mainnet torrent)
 #### [erigon_snapshots_20231130.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_snapshots_20231130.tar.lz4/erigon_snapshots_20231130.tar.lz4)
@@ -137,11 +139,11 @@ Step 2: Download && Concatenate && Uncompress
 
 ```shell
 sudo yum install aria2c
-aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231130.lz4.[0]..erigon_data_20231130.lz4.[7]
-cat "erigon_data_20231130.lz4."* > combined_compressed_file.lz4
+aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231225.lz4.[0]..erigon_data_20231225.lz4.[7]
+cat "erigon_data_20231225.lz4."* > combined_compressed_file.lz4
 lz4 -d combined_compressed_file.lz4 mdbx.dat
 # or
-cat "erigon_data_20231130.lz4."* | lz4 -d -c > mdbx.dat
+cat "erigon_data_20231225.lz4."* | lz4 -d -c > mdbx.dat
 ```
 Step 3: Replace Data And Restart erigon
 - Stop the running erigon client by `kill {pid}`
