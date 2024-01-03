@@ -13,7 +13,9 @@ Here are snapshots of HBSS with leveldb and PBSS snapshots with pebble.
 
 Hash-Base-State-Scheme:
 
-- mainnet:[geth-20231211.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-20231225.tar.lz4) 
+- mainnet:[geth-20231211.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-20231225.tar.lz4)
+
+  md5: 2df95d4d4f2867b4a9721263482b1a00
 - testnet: [testnet-geth-20230911.tar.lz4](https://pub-5809538c476542388ad6ca3e681ea85f.r2.dev/testnet-geth-20230911.tar.lz4)
   
 Path-Base-State-Scheme:
