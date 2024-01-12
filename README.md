@@ -17,10 +17,14 @@ Hash-Base-State-Scheme:
 
   md5: 0ff55f3837b7e660ea3b36e02b58380a
 - testnet: [testnet-geth-20230911.tar.lz4](https://pub-5809538c476542388ad6ca3e681ea85f.r2.dev/testnet-geth-20230911.tar.lz4)
-  
+
+  need to remove "data-seed/geth/nodekey", after uncompress `testnet-geth-20230911.tar.lz4`
+ 
 Path-Base-State-Scheme:
 
 - mainnet: [geth-pbss-pebble-20231217.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-pebble-20231217.tar.lz4)
+
+  need to remove "\<datadir\>/geth/nodekey", after uncompress `geth-pbss-pebble-20231217.tar.lz4`
 - testnet: [testnet-geth-pbss-pebble-20231219.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/testnet-geth-pbss-pebble-20231219.tar.lz4)
 
 ## Snapshots Provided by Community
