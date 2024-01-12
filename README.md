@@ -11,7 +11,16 @@ Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/bnb-chain
 
 Here are snapshots of HBSS with leveldb and PBSS snapshots with pebble.
 
-Hash-Base-State-Scheme:
+**Path-Base-State-Scheme(recommand)**
+
+- mainnet: [geth-pbss-pebble-20231217.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-pebble-20231217.tar.lz4)
+
+  need to remove "\<datadir\>/geth/nodekey", after uncompress `geth-pbss-pebble-20231217.tar.lz4`
+- testnet: [testnet-geth-pbss-pebble-20231219.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/testnet-geth-pbss-pebble-20231219.tar.lz4)
+
+
+**Hash-Base-State-Scheme(not recommand)**
+> Warning: will stop maintain hash base snapshot after Mid Mar 2024
 
 - mainnet:[geth-20240111.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-20240111.tar.lz4)
 
@@ -20,13 +29,6 @@ Hash-Base-State-Scheme:
 
   need to remove "\<datadir\>/geth/nodekey", after uncompress `testnet-geth-20230911.tar.lz4`
  
-Path-Base-State-Scheme:
-
-- mainnet: [geth-pbss-pebble-20231217.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-pebble-20231217.tar.lz4)
-
-  need to remove "\<datadir\>/geth/nodekey", after uncompress `geth-pbss-pebble-20231217.tar.lz4`
-- testnet: [testnet-geth-pbss-pebble-20231219.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/testnet-geth-pbss-pebble-20231219.tar.lz4)
-
 ## Snapshots Provided by Community
 
 Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing another dump of snapshot, you can also refer [here](https://github.com/BNB48Club/bsc-snapshots) to download.
