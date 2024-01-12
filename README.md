@@ -18,7 +18,7 @@ Hash-Base-State-Scheme:
   md5: 0ff55f3837b7e660ea3b36e02b58380a
 - testnet: [testnet-geth-20230911.tar.lz4](https://pub-5809538c476542388ad6ca3e681ea85f.r2.dev/testnet-geth-20230911.tar.lz4)
 
-  need to remove "data-seed/geth/nodekey", after uncompress `testnet-geth-20230911.tar.lz4`
+  need to remove "\<datadir\>/geth/nodekey", after uncompress `testnet-geth-20230911.tar.lz4`
  
 Path-Base-State-Scheme:
 
