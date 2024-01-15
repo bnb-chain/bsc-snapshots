@@ -123,7 +123,7 @@ Step 3: Replace Data
 #### SHA256 = 7c59f6846eba146a5668e44d3863545375ee52c6c70d3707ab55c2d8fdfdc6bb
 
 ### Endpoint(Mainnet): update bi-weekly
-> erigon version [v1.1.10](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.10)
+> erigon version [v1.1.12](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.12)
 #### [erigon_data_20240112.lz4.000](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240112.lz4.000) md5=2f085a2c718163323d5c9561b6619398
 #### [erigon_data_20240112.lz4.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240112.lz4.001) md5=d449bcf682c2685f6efb31a8d9faf12e
 #### [erigon_data_20240112.lz4.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240112.lz4.002) md5=cf348dc67304d918ccb936d194322b23
