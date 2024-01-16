@@ -13,11 +13,12 @@ Here are snapshots of HBSS with leveldb and PBSS snapshots with pebble.
 
 **Path-Base-State-Scheme(recommand)**
 
-- mainnet: [geth-pbss-pebble-20231217.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-pebble-20231217.tar.lz4)
+- mainnet: [geth-pbss-pebble-20240115.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-pebble-20240115.tar.lz4)
 
-  need to remove "\<datadir\>/geth/nodekey", after uncompress `geth-pbss-pebble-20231217.tar.lz4`
-- testnet: [testnet-geth-pbss-pebble-20231219.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/testnet-geth-pbss-pebble-20231219.tar.lz4)
+  md5: 93da5bfaf450e9682d5919c98d1d3343
+- testnet: [testnet-geth-pbss-20240115.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/testnet-geth-pbss-20240115.tar.lz4)
 
+  md5: fd8eb63e4fd133150e4a16f1325724c7
 
 **Hash-Base-State-Scheme(not recommand)**
 > Warning: will stop maintain hash base snapshot after Mid Mar 2024
