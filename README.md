@@ -123,16 +123,16 @@ Step 3: Replace Data
 #### [testnet_erigon_DB_20231211.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/testnet_erigon_DB_20231211.tar.lz4)
 #### SHA256 = 7c59f6846eba146a5668e44d3863545375ee52c6c70d3707ab55c2d8fdfdc6bb
 
-### Endpoint(Mainnet): update bi-weekly
-> erigon version [v1.1.12](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.12)
-#### [erigon_data_20240112.lz4.000](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240112.lz4.000) md5=2f085a2c718163323d5c9561b6619398
-#### [erigon_data_20240112.lz4.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240112.lz4.001) md5=d449bcf682c2685f6efb31a8d9faf12e
-#### [erigon_data_20240112.lz4.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240112.lz4.002) md5=cf348dc67304d918ccb936d194322b23
-#### [erigon_data_20240112.lz4.003](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240112.lz4.003) md5=a8ec1cfeea9cf29dc514c1e8695fcec1
-#### [erigon_data_20240112.lz4.004](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240112.lz4.004) md5=171416cf29795f65d7c339f72ef5605f
-#### [erigon_data_20240112.lz4.005](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240112.lz4.005) md5=8edc09d743b122f9232aa4495add9568
-#### [erigon_data_20240112.lz4.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240112.lz4.006) md5=893365f8b1a61d025bfa44181773d672
-#### [erigon_data_20240112.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240112.lz4.007) md5=188a46ef8161c0e0c15c78f4928224ff
+### Endpoint(Mainnet): update every three week
+> erigon version [v1.1.13](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.13)
+#### [erigon_data_20240205.lz4.000](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240205.lz4.000) md5=e4f83e18197535d0a860492b4ce1a397
+#### [erigon_data_20240205.lz4.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240205.lz4.001) md5=8ea994f4339f633b18f74b3d453a41ce
+#### [erigon_data_20240205.lz4.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240205.lz4.002) md5=14564727fb405c35f52559b2570e3952
+#### [erigon_data_20240205.lz4.003](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240205.lz4.003) md5=e5e176d2b0e2348ea8845e78effaaa96
+#### [erigon_data_20240205.lz4.004](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240205.lz4.004) md5=26abec4143f0f7ff14ccd2ca2b3118c7
+#### [erigon_data_20240205.lz4.005](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240205.lz4.005) md5=4cb39625d59595e9c566d54104a9dce0
+#### [erigon_data_20240205.lz4.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240205.lz4.006) md5=485642b9b90310ad5ccf794c442a5c1d
+#### [erigon_data_20240205.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240205.lz4.007) md5=f682cc8664989e16cccf5fba34dbf819
 
 ### Endpoint(Mainnet torrent,the block range[0, 35,000,000))
 #### [erigon_snapshots_20240116.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_snapshots_20240116.tar.lz4/erigon_snapshots_20240116.tar.lz4) md5=3d3a58836ec56f29c0eef1fc4c7fee54
