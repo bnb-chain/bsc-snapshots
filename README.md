@@ -148,7 +148,7 @@ Step 2: Download && Concatenate && Uncompress
 
 ```shell
 sudo yum install aria2c
-aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240205.lz4.{001..007}
+aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240205.lz4.00{0..7}
 cat "erigon_data_20231225.lz4."* > combined_compressed_file.lz4
 lz4 -d combined_compressed_file.lz4 mdbx.dat
 # or
