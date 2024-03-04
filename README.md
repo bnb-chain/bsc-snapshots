@@ -124,18 +124,18 @@ Step 3: Replace Data
 #### SHA256 = 7c59f6846eba146a5668e44d3863545375ee52c6c70d3707ab55c2d8fdfdc6bb
 
 ### Endpoint(Mainnet): update every three week
-> erigon version [v1.1.13](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.13)
-#### [erigon_data_20240205.lz4.000](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240205.lz4.000) md5=e4f83e18197535d0a860492b4ce1a397
-#### [erigon_data_20240205.lz4.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240205.lz4.001) md5=8ea994f4339f633b18f74b3d453a41ce
-#### [erigon_data_20240205.lz4.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240205.lz4.002) md5=14564727fb405c35f52559b2570e3952
-#### [erigon_data_20240205.lz4.003](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240205.lz4.003) md5=e5e176d2b0e2348ea8845e78effaaa96
-#### [erigon_data_20240205.lz4.004](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240205.lz4.004) md5=26abec4143f0f7ff14ccd2ca2b3118c7
-#### [erigon_data_20240205.lz4.005](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240205.lz4.005) md5=4cb39625d59595e9c566d54104a9dce0
-#### [erigon_data_20240205.lz4.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240205.lz4.006) md5=485642b9b90310ad5ccf794c442a5c1d
-#### [erigon_data_20240205.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240205.lz4.007) md5=f682cc8664989e16cccf5fba34dbf819
+> erigon version [v1.1.14](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.13)
+#### [erigon_data_20240302.lz4.000](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240302.lz4.000) md5=dfcec1a1f46fcb5d9396a92c351faf40
+#### [erigon_data_20240302.lz4.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240302.lz4.001) md5=cc6b1bb1e2189d9e262698f7f5804f42
+#### [erigon_data_20240302.lz4.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240302.lz4.002) md5=a5256719150b20f4eda7824ddc7f16d2
+#### [erigon_data_20240302.lz4.003](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240302.lz4.003) md5=dd055f7c412ca859cadd5e2c6e8cc1a9
+#### [erigon_data_20240302.lz4.004](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240302.lz4.004) md5=864cafd4c7688be051a464ac7a25751a
+#### [erigon_data_20240302.lz4.005](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240302.lz4.005) md5=026a412fe732c38689ddf65b8e5ef36f
+#### [erigon_data_20240302.lz4.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240302.lz4.006) md5=04064472fb1f8949b1e41aed31004509
+#### [erigon_data_20240302.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240302.lz4.007) md5=313ac4c2f87c77fa54991462caa63c09
 
-### Endpoint(Mainnet torrent,the block range[0, 35,000,000))
-#### [erigon_snapshots_20240116.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_snapshots_20240116.tar.lz4/erigon_snapshots_20240116.tar.lz4) md5=3d3a58836ec56f29c0eef1fc4c7fee54
+### Endpoint(Mainnet torrent,the block range[0, 36,500,000))
+#### [erigon_snapshots_20240301.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_snapshots_20240301.tar.lz4/erigon_snapshots_20240301.tar.lz4) md5=04238a8fb079904f4f1c8a9862054d7e
 
 ### Usage
 
@@ -148,11 +148,11 @@ Step 2: Download && Concatenate && Uncompress
 
 ```shell
 sudo yum install aria2c
-aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20231225.lz4.[0]..erigon_data_20231225.lz4.[7]
-cat "erigon_data_20231225.lz4."* > combined_compressed_file.lz4
+aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240302.lz4.[0]..erigon_data_20240302.lz4.[7]
+cat "erigon_data_20240302.lz4."* > combined_compressed_file.lz4
 lz4 -d combined_compressed_file.lz4 mdbx.dat
 # or
-cat "erigon_data_20231225.lz4."* | lz4 -d -c > mdbx.dat
+cat "erigon_data_20240302.lz4."* | lz4 -d -c > mdbx.dat
 ```
 Step 3: Replace Data And Restart erigon
 - Stop the running erigon client by `kill {pid}`
