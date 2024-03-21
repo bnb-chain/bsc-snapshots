@@ -26,9 +26,7 @@ Here are snapshots of HBSS with leveldb and PBSS snapshots with pebble.
 - mainnet:[geth-20240320.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-20240320.tar.lz4)
 
   md5: d7bb69f44897467ada3b81037fdf0ccb
-- testnet: [testnet-geth-20230911.tar.lz4](https://pub-5809538c476542388ad6ca3e681ea85f.r2.dev/testnet-geth-20230911.tar.lz4)
-
-  need to remove "\<datadir\>/geth/nodekey", after uncompress `testnet-geth-20230911.tar.lz4`
+- testnet: [testnet-geth-20240321.tar.lz4](https://pub-5809538c476542388ad6ca3e681ea85f.r2.dev/testnet-geth-20240321.tar.lz4)
  
 ## Snapshots Provided by Community
 
