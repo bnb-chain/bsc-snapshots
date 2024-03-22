@@ -27,7 +27,8 @@ Here are snapshots of HBSS with leveldb and PBSS snapshots with pebble.
 
   md5: d7bb69f44897467ada3b81037fdf0ccb
 - testnet: [testnet-geth-20240321.tar.lz4](https://pub-5809538c476542388ad6ca3e681ea85f.r2.dev/testnet-geth-20240321.tar.lz4)
- 
+
+  md5: 0aab161f54b5184fb4992cd5484a4ac5
 ## Snapshots Provided by Community
 
 Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing another dump of snapshot, you can also refer [here](https://github.com/BNB48Club/bsc-snapshots) to download.
