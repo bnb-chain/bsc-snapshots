@@ -133,6 +133,17 @@ Step 3: Replace Data
 #### [erigon_data_20240302.lz4.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240302.lz4.006) md5=04064472fb1f8949b1e41aed31004509
 #### [erigon_data_20240302.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240302.lz4.007) md5=313ac4c2f87c77fa54991462caa63c09
 
+> erigon version [v1.2.2](https://github.com/node-real/bsc-erigon/releases/tag/v1.2.2)
+#### [erigon_data_20240326.lz4.000](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240326.lz4.000) md5=dfd6f8288a59b2e588cc5c9f96d0a3a7
+#### [erigon_data_20240326.lz4.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240326.lz4.001) md5=945bcf3de8afbf1f8883e051f373e2b4
+#### [erigon_data_20240326.lz4.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240326.lz4.002) md5=63cd18cb0d39eb622f5151383a8eecc5
+#### [erigon_data_20240326.lz4.003](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240326.lz4.003) md5=11a9990ff0a4392a5c7f5fab1778dfa2
+#### [erigon_data_20240326.lz4.004](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240326.lz4.004) md5=f5e5f183c4ebb531f4c9521c41727e4b
+#### [erigon_data_20240326.lz4.005](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240326.lz4.005) md5=f0c877decdc2bbff97b0d913fe402d88
+#### [erigon_data_20240326.lz4.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240326.lz4.006) md5=e2d3ad79294fb0be4a5b24fb52479401
+#### [erigon_data_20240326.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240326.lz4.007) md5=61387f1b5c6c8753fc8a57b53eaa967e
+#### [erigon_data_20240326.lz4.008](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240326.lz4.008) md5=0d01b38188079212e9fa362de59fbb7f
+
 ### Endpoint(Mainnet torrent,the block range[0, 36,500,000))
 #### [erigon_snapshots_20240301.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_snapshots_20240301.tar.lz4/erigon_snapshots_20240301.tar.lz4) md5=04238a8fb079904f4f1c8a9862054d7e
 
