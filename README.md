@@ -35,7 +35,7 @@ Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing ano
 
 
 
-### Usage 
+### Usage
 
 Step 1: Preparation
 - Make sure your hardware meets the [suggested requirement](https://docs.bnbchain.org/docs/validator/fullnode).
@@ -123,26 +123,16 @@ Step 3: Replace Data
 #### SHA256 = 7c59f6846eba146a5668e44d3863545375ee52c6c70d3707ab55c2d8fdfdc6bb
 
 ### Endpoint(Mainnet): update every three week
-> erigon version [v1.1.14](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.13)
-#### [erigon_data_20240302.lz4.000](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240302.lz4.000) md5=dfcec1a1f46fcb5d9396a92c351faf40
-#### [erigon_data_20240302.lz4.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240302.lz4.001) md5=cc6b1bb1e2189d9e262698f7f5804f42
-#### [erigon_data_20240302.lz4.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240302.lz4.002) md5=a5256719150b20f4eda7824ddc7f16d2
-#### [erigon_data_20240302.lz4.003](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240302.lz4.003) md5=dd055f7c412ca859cadd5e2c6e8cc1a9
-#### [erigon_data_20240302.lz4.004](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240302.lz4.004) md5=864cafd4c7688be051a464ac7a25751a
-#### [erigon_data_20240302.lz4.005](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240302.lz4.005) md5=026a412fe732c38689ddf65b8e5ef36f
-#### [erigon_data_20240302.lz4.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240302.lz4.006) md5=04064472fb1f8949b1e41aed31004509
-#### [erigon_data_20240302.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240302.lz4.007) md5=313ac4c2f87c77fa54991462caa63c09
-
-> erigon version [v1.2.2](https://github.com/node-real/bsc-erigon/releases/tag/v1.2.2)
-#### [erigon_data_20240326.lz4.000](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240326.lz4.000) md5=dfd6f8288a59b2e588cc5c9f96d0a3a7
-#### [erigon_data_20240326.lz4.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240326.lz4.001) md5=945bcf3de8afbf1f8883e051f373e2b4
-#### [erigon_data_20240326.lz4.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240326.lz4.002) md5=63cd18cb0d39eb622f5151383a8eecc5
-#### [erigon_data_20240326.lz4.003](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240326.lz4.003) md5=11a9990ff0a4392a5c7f5fab1778dfa2
-#### [erigon_data_20240326.lz4.004](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240326.lz4.004) md5=f5e5f183c4ebb531f4c9521c41727e4b
-#### [erigon_data_20240326.lz4.005](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240326.lz4.005) md5=f0c877decdc2bbff97b0d913fe402d88
-#### [erigon_data_20240326.lz4.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240326.lz4.006) md5=e2d3ad79294fb0be4a5b24fb52479401
-#### [erigon_data_20240326.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240326.lz4.007) md5=61387f1b5c6c8753fc8a57b53eaa967e
-#### [erigon_data_20240326.lz4.008](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240326.lz4.008) md5=0d01b38188079212e9fa362de59fbb7f
+> erigon version [v1.2.5](https://github.com/node-real/bsc-erigon/releases/tag/v1.2.5)
+#### SHA256(mdbx.dat) = ae8d37af9f49bb169e47ce705c5fa846d553e174597ce376fca07d46cd4d2d84
+#### [erigon_data_20240416.lz4.000](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.000) md5=d7c4ccaa0b85c4f4e535765338d97f57
+#### [erigon_data_20240416.lz4.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.001) md5=b4c6f298eeeaaed13225b0661a4f1438
+#### [erigon_data_20240416.lz4.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.002) md5=cc9012c2b47513ce1d2212bd1f2c6196
+#### [erigon_data_20240416.lz4.003](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.003) md5=c74e1bb098f88345abfd81e116fe3d49
+#### [erigon_data_20240416.lz4.004](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.004) md5=7955e265b34ef9daa7b0995eea0c6cf1
+#### [erigon_data_20240416.lz4.005](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.005) md5=6b710f68f72d855ed83a8723fd01f0b0
+#### [erigon_data_20240416.lz4.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.006) md5=438f5357735374e7beeba130835b58ba
+#### [erigon_data_20240416.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.007) md5=88d3ceeb4418c9d1df16542c2118f978
 
 ### Endpoint(Mainnet torrent,the block range[0, 36,500,000))
 #### [erigon_snapshots_20240301.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_snapshots_20240301.tar.lz4/erigon_snapshots_20240301.tar.lz4) md5=04238a8fb079904f4f1c8a9862054d7e
@@ -158,11 +148,10 @@ Step 2: Download && Concatenate && Uncompress
 
 ```shell
 sudo yum install aria2c
-aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240302.lz4.[0]..erigon_data_20240302.lz4.[7]
-cat "erigon_data_20240302.lz4."* > combined_compressed_file.lz4
-lz4 -d combined_compressed_file.lz4 mdbx.dat
-# or
-cat "erigon_data_20240302.lz4."* | lz4 -d -c > mdbx.dat
+aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.[0]..erigon_data_20240416.lz4.[7]
+lz4 -d erigon_data_20240416.lz4.[0]..erigon_data_20240416.lz4.[7]
+cat "erigon_data_20240416"* > mdbx.dat
+
 ```
 Step 3: Replace Data And Restart erigon
 - Stop the running erigon client by `kill {pid}`
@@ -171,7 +160,7 @@ Step 3: Replace Data And Restart erigon
 - Replace the torrent: `mv ${erigon_torrent_dir}/snapshots ${erigon_datadir}/`
 - Start the erigon client again and check logs
 
-- mainnet command sample: 
+- mainnet command sample:
 ```shell
 ./build/bin/erigon --p2p.protocol=66 --txpool.disable --metrics.addr=0.0.0.0 --log.console.verbosity=dbug --db.pagesize=16k --datadir ${erigon_dir/data} --private.api.addr=localhost:9090 --chain=bsc --metrics --log.dir.path ${erigon_dir/log}
 ```
