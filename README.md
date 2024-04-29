@@ -6,6 +6,10 @@
 
 Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/bnb-chain/bsc/releases/tag/v1.1.8)
 
+## DataBase with Multi-DataBases
+
+Multi-databases is a new feature in [bsc v1.4.6](https://github.com/bnb-chain/bsc/releases/tag/v1.4.6)
+When the user runs node with the new snapshot of the multi-databases below, the feature will be enabled automatically.
 
 ### Endpoint
 
@@ -29,6 +33,12 @@ Here are snapshots of HBSS with leveldb and PBSS snapshots with pebble.
 - testnet: [testnet-geth-20240321.tar.lz4](https://pub-5809538c476542388ad6ca3e681ea85f.r2.dev/testnet-geth-20240321.tar.lz4)
 
   md5: 0aab161f54b5184fb4992cd5484a4ac5
+
+**Multi-Databases-PBSS(new feature)**
+- mainnet: [geth-pbss-multidatabase-20240428.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-multidatabase-20240428.tar.lz4)
+
+  md5: 644f1bb7dee97888825f92b748f79389
+
 ## Snapshots Provided by Community
 
 Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing another dump of snapshot, you can also refer [here](https://github.com/BNB48Club/bsc-snapshots) to download.
@@ -113,6 +123,25 @@ Step 3: Replace Data
 - Replace the data: `mv server/data-seed/geth/chaindata ${BSC_DataDir}/geth/chaindata; mv server/data-seed/geth/triecache ${BSC_DataDir}/geth/triecache`
 - Start the bsc client again and check the logs
 
+#### Snapshot with multi-database
+
+The Chaindata of the snapshot will be divided into three stores, BlockStore, TrieStore, and OriginalStore.
+
+TrieStore: All trie nodes of the current state and historical state data of nearly 9w blocks are stored here. The data is stored in  ${BSC_DataDir}/geth/chaindata/state.
+
+BlockStore: Block-related data is stored in this store, including headers, bodies, receipts, difficulties, number-to-hash indexes, hash-to-number indexes,
+and historical block data. The data is stored in ${BSC_DataDir}/geth/chaindata/block.
+
+If the user intends to store the databases on the same storage disk, they just need to start the client by following the same steps after extracting the snap file, without requiring any additional startup parameters.
+
+If the user want to store different databases on different disks, you can move the folder corresponding to TrieStore or BlockStore to a different directory and create a symbolic link with the same name as the folder using an absolute path in the chaindata directory.
+For example:
+```
+mv ${BSC_DataDir}/geth//chaindata/state <move-directory>
+ln -s <move-directory>  ${BSC_DataDir}/geth/chaindata/state
+```
+After the symbolic link is created, you can start the bsc client again and check the logs.
+Due to the larger size of the trie store, we recommend that the trie database be stored on different disks to achieve better performance.
 
 ## Erigon-BSC Snapshot(Archive Node)
 
