@@ -1,20 +1,10 @@
 
 # bsc-snapshots
 
+## 1.Legacy Full Node
 
-## Database after Ancient Data Prune:
-
-Ancient Data Prune is a new feature in [bsc v1.1.8](https://github.com/bnb-chain/bsc/releases/tag/v1.1.8)
-
-## DataBase with Multi-DataBases
-
-Multi-databases is a new feature in [bsc v1.4.6](https://github.com/bnb-chain/bsc/releases/tag/v1.4.6)
-When the user runs node with the new snapshot of the multi-databases below, the feature will be enabled automatically.
-
-### Endpoint
-
-Here are snapshots of HBSS with leveldb and PBSS snapshots with pebble.
-
+The snapshot listed below are all PBSS&PebbleDB mode, if you need Hash based snapshot, check out [FAQ-Q2](https://github.com/bnb-chain/bsc-snapshots/issues/349)
+### 1.1.Endpoints
 **Path-Base-State-Scheme(recommand)**
 
 - mainnet: [geth-pbss-pebble-20240412.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-pebble-20240412.tar.lz4)
@@ -24,28 +14,15 @@ Here are snapshots of HBSS with leveldb and PBSS snapshots with pebble.
 
   md5: da9cac9b702123f63f9254c1de698eab
 
-**Hash-Base-State-Scheme(not recommand)**
-> Warning: will stop maintain hash base snapshot after Mid Mar 2024
-
-- mainnet:[geth-20240320.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-20240320.tar.lz4)
-
-  md5: d7bb69f44897467ada3b81037fdf0ccb
-- testnet: [testnet-geth-20240321.tar.lz4](https://pub-5809538c476542388ad6ca3e681ea85f.r2.dev/testnet-geth-20240321.tar.lz4)
-
-  md5: 0aab161f54b5184fb4992cd5484a4ac5
-
 **Multi-Databases-PBSS(new feature)**
+Multi-databases is a new feature in [bsc v1.4.6](https://github.com/bnb-chain/bsc/releases/tag/v1.4.6)
+When the user runs node with the new snapshot of the multi-databases below, the feature will be enabled automatically.
+
 - mainnet: [geth-pbss-multidatabase-20240428.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-multidatabase-20240428.tar.lz4)
 
   md5: 644f1bb7dee97888825f92b748f79389
 
-## Snapshots Provided by Community
-
-Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing another dump of snapshot, you can also refer [here](https://github.com/BNB48Club/bsc-snapshots) to download.
-
-
-
-### Usage
+### 1.2.Usage
 
 Step 1: Preparation
 - Make sure your hardware meets the [suggested requirement](https://docs.bnbchain.org/docs/validator/fullnode).
@@ -123,7 +100,7 @@ Step 3: Replace Data
 - Replace the data: `mv server/data-seed/geth/chaindata ${BSC_DataDir}/geth/chaindata; mv server/data-seed/geth/triecache ${BSC_DataDir}/geth/triecache`
 - Start the bsc client again and check the logs
 
-#### Snapshot with multi-database
+### 1.3.About Snapshot with multi-database
 
 The Chaindata of the snapshot will be divided into three stores, BlockStore, TrieStore, and OriginalStore.
 
@@ -143,30 +120,47 @@ ln -s <move-directory>  ${BSC_DataDir}/geth/chaindata/state
 After the symbolic link is created, you can start the bsc client again and check the logs.
 Due to the larger size of the trie store, we recommend that the trie database be stored on different disks to achieve better performance.
 
-## Erigon-BSC Snapshot(Archive Node)
+## 2.Snapshots Provided by Community
 
+Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing another dump of snapshot, you can also refer [here](https://github.com/BNB48Club/bsc-snapshots) to download.
+
+## 3.Erigon-BSC Snapshot(Archive Node)
+
+### 3.1.Endpoints
 > For more granular upload & download to avoid big files error, split the files into several chunks, so please download them together and concatenate finally.
-### Endpoint(Testnet): update every 6 months
+#### a.Endpoint(Testnet): update every 6 months
 > erigon version [v1.1.10](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.10), Block: [35851654](https://testnet.bscscan.com/block/35851654)
-#### [testnet_erigon_DB_20231211.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/testnet_erigon_DB_20231211.tar.lz4)
-#### SHA256 = 7c59f6846eba146a5668e44d3863545375ee52c6c70d3707ab55c2d8fdfdc6bb
+>
+> SHA256 = 7c59f6846eba146a5668e44d3863545375ee52c6c70d3707ab55c2d8fdfdc6bb
+>
+> [testnet_erigon_DB_20231211.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/testnet_erigon_DB_20231211.tar.lz4)
 
-### Endpoint(Mainnet): update every three week
+
+#### b.Endpoint(Mainnet): update every three week
 > erigon version [v1.2.5](https://github.com/node-real/bsc-erigon/releases/tag/v1.2.5)
-#### SHA256(mdbx.dat) = ae8d37af9f49bb169e47ce705c5fa846d553e174597ce376fca07d46cd4d2d84
-#### [erigon_data_20240416.lz4.000](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.000) md5=d7c4ccaa0b85c4f4e535765338d97f57
-#### [erigon_data_20240416.lz4.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.001) md5=b4c6f298eeeaaed13225b0661a4f1438
-#### [erigon_data_20240416.lz4.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.002) md5=cc9012c2b47513ce1d2212bd1f2c6196
-#### [erigon_data_20240416.lz4.003](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.003) md5=c74e1bb098f88345abfd81e116fe3d49
-#### [erigon_data_20240416.lz4.004](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.004) md5=7955e265b34ef9daa7b0995eea0c6cf1
-#### [erigon_data_20240416.lz4.005](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.005) md5=6b710f68f72d855ed83a8723fd01f0b0
-#### [erigon_data_20240416.lz4.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.006) md5=438f5357735374e7beeba130835b58ba
-#### [erigon_data_20240416.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.007) md5=88d3ceeb4418c9d1df16542c2118f978
+>
+> SHA256(mdbx.dat) = ae8d37af9f49bb169e47ce705c5fa846d553e174597ce376fca07d46cd4d2d84
+> 
+> [erigon_data_20240416.lz4.000](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.000) md5=d7c4ccaa0b85c4f4e535765338d97f57
+> 
+> [erigon_data_20240416.lz4.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.001) md5=b4c6f298eeeaaed13225b0661a4f1438
+> 
+> [erigon_data_20240416.lz4.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.002) md5=cc9012c2b47513ce1d2212bd1f2c6196
+>
+> [erigon_data_20240416.lz4.003](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.003) md5=c74e1bb098f88345abfd81e116fe3d49
+>
+> [erigon_data_20240416.lz4.004](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.004) md5=7955e265b34ef9daa7b0995eea0c6cf1
+>
+> [erigon_data_20240416.lz4.005](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.005) md5=6b710f68f72d855ed83a8723fd01f0b0
+>
+> [erigon_data_20240416.lz4.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.006) md5=438f5357735374e7beeba130835b58ba
+>
+> [erigon_data_20240416.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.007) md5=88d3ceeb4418c9d1df16542c2118f978
 
-### Endpoint(Mainnet torrent,the block range[0, 36,500,000))
-#### [erigon_snapshots_20240301.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_snapshots_20240301.tar.lz4/erigon_snapshots_20240301.tar.lz4) md5=04238a8fb079904f4f1c8a9862054d7e
+#### c.Endpoint(Mainnet torrent,the block range[0, 36,500,000))
+> [erigon_snapshots_20240301.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_snapshots_20240301.tar.lz4/erigon_snapshots_20240301.tar.lz4) md5=04238a8fb079904f4f1c8a9862054d7e
 
-### Usage
+### 3.2.Usage
 
 Step 1: Preparation
 
