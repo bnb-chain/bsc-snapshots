@@ -25,7 +25,7 @@ When the user runs node with the new snapshot of the multi-databases below, the 
 ### 1.2.Usage
 
 Step 1: Preparation
-- Make sure your hardware meets the [suggested requirement](https://docs.bnbchain.org/docs/validator/fullnode).
+- Make sure your hardware meets the [suggested requirement](https://docs.bnbchain.org/bnb-smart-chain/developers/node_operators/node_best_practices/).
 - A disk with enough free storage, at least twice the size of the snapshot.
 
 Step 2: Download && Uncompress
