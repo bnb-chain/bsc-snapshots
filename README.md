@@ -15,7 +15,7 @@ The snapshot listed below are all PBSS&PebbleDB mode, if you need Hash based sna
   md5: da9cac9b702123f63f9254c1de698eab
 
 **Multi-Databases-PBSS(new feature)**
-Multi-databases is a new feature in [bsc v1.4.6](https://github.com/bnb-chain/bsc/releases/tag/v1.4.6)
+Multi-databases are a new feature in [bsc v1.4.6](https://github.com/bnb-chain/bsc/releases/tag/v1.4.6).
 When the user runs node with the new snapshot of the multi-databases below, the feature will be enabled automatically.
 
 - mainnet: [geth-pbss-multidatabase-20240428.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-multidatabase-20240428.tar.lz4)
