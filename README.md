@@ -123,33 +123,33 @@ Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing ano
 ### 3.1.Endpoints
 > For more granular upload & download to avoid big files error, split the files into several chunks, so please download them together and concatenate finally.
 #### a.Endpoint(Testnet): update every 6 months
-> erigon version [v1.1.10](https://github.com/node-real/bsc-erigon/releases/tag/v1.1.10), Block: [35851654](https://testnet.bscscan.com/block/35851654)
+> erigon version [v1.2.10](https://github.com/node-real/bsc-erigon/releases/tag/v1.2.10), Block: [41637308](https://testnet.bscscan.com/block/41637308)
 >
-> SHA256 = 7c59f6846eba146a5668e44d3863545375ee52c6c70d3707ab55c2d8fdfdc6bb
+> md5 = 9bba1e9f5fa342879c070b93156dce76
 >
-> [testnet_erigon_DB_20231211.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/testnet_erigon_DB_20231211.tar.lz4)
+> [testnet_erigon_DB_20240629.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/testnet_erigon_DB_20240629.tar.lz4)
 
 
 #### b.Endpoint(Mainnet): update every three week
-> erigon version [v1.2.8](https://github.com/node-real/bsc-erigon/releases/tag/v1.2.8)
+> erigon version [v1.2.10](https://github.com/node-real/bsc-erigon/releases/tag/v1.2.10)
 >
-> SHA256(mdbx.dat) = 31fdebebe89ab25bf5842fa2055428a14281c8279ce2499eef93fece5a94deea
+> SHA256(mdbx.dat) = 1d097e383fc5b0973d9eec18bdc1cc848352b2756a51fed48073c5d696383638
 > 
-> [erigon_data_20240520.lz4.000](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240520.lz4.000) md5=5983392858e54bf40e05853294399303
+> [erigon_data_20240625.lz4.000](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240625.lz4.000) md5=4461fe02ad1eb079ca6202f255acf4b3
 > 
-> [erigon_data_20240520.lz4.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240520.lz4.001) md5=14ac48c4f866c6f754ac3a2c661d6eb4
+> [erigon_data_20240625.lz4.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240625.lz4.001) md5=6b6d6b7bb872df73cad0b56289303a75
 > 
-> [erigon_data_20240520.lz4.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240520.lz4.002) md5=c7c95f96200d35b81e52d50f8ed52ebf
+> [erigon_data_20240625.lz4.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240625.lz4.002) md5=a02dfec1edaaff671cd9ec4dd459074e
 >
-> [erigon_data_20240520.lz4.003](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240520.lz4.003) md5=2f2d918363c992bb9254dd6504d8a541
+> [erigon_data_20240625.lz4.003](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240625.lz4.003) md5=a9f8e563f3aaeff5c2ce1bf4eedb3f1b
 >
-> [erigon_data_20240520.lz4.004](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240520.lz4.004) md5=9cd5075e8e611a35c44eec3cd31305f0
+> [erigon_data_20240625.lz4.004](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240625.lz4.004) md5=61353dbe9b67c01ce77a0c3017d10a10
 >
-> [erigon_data_20240520.lz4.005](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240520.lz4.005) md5=0bd256afaf42bfb4b163354142cfda0d
+> [erigon_data_20240625.lz4.005](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240625.lz4.005) md5=98aad96c7a24efead991fe23c6af6ebb
 >
-> [erigon_data_20240520.lz4.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240520.lz4.006) md5=4f31de846555841326fa04ccd00b5b67
+> [erigon_data_20240625.lz4.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240625.lz4.006) md5=c3a96554962b5831ecd62a41829234bc
 >
-> [erigon_data_20240520.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240520.lz4.007) md5=e2750053a2656b6cbaf743459480c144
+> [erigon_data_20240625.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240625.lz4.007) md5=f79cc9a1839aea4c11fe5e32e1f8931d
 
 ### 3.2.Usage
 
