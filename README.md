@@ -7,7 +7,7 @@ The snapshot listed below are all PBSS&PebbleDB mode, if you need Hash based sna
 ### 1.1.Endpoints
 **Path-Base-State-Scheme(recommand)**
 
-- mainnet: [geth-pbss-pebble-20240612.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-pebble-20240612.tar.lz4)(md5: NA)
+- mainnet: [geth-pbss-pebble-20240705.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-pebble-20240705.tar.lz4)(md5: 8efeec9f823015b114491a253727b8c8)
 - testnet: [testnet-geth-pbss-20240607.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/testnet-geth-pbss-20240607.tar.lz4)(md5: 6ae3704330c71289cbed00204323451a)
 
 **Multi-Databases-PBSS(new feature)**
