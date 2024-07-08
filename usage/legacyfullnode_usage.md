@@ -21,5 +21,5 @@
 - Start the bsc client again and check the logs
 
 # 2.Advanced Usage
-The snapshot listed homepage are based the default mode(PBSS&Pebble). For other customized usage, pls refer [Advanced Usage](./usage/legacy_usage_advanced.md).
+The snapshot listed homepage are based the default mode(PBSS&Pebble). For other customized usage, pls refer [Advanced Usage](./legacyfullnode_usage_advanced.md).
 

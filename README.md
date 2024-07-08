@@ -9,7 +9,7 @@ Endpoints:
 > - **mainnet(every 3 weeks)**: [geth-pbss-pebble-20240705.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-pebble-20240705.tar.lz4)(md5: 8efeec9f823015b114491a253727b8c8)
 > - **testnet(every 6 months)**: [testnet-geth-pbss-20240607.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/testnet-geth-pbss-20240607.tar.lz4)(md5: 6ae3704330c71289cbed00204323451a)
 
-## Source-2: Pruned FullNode(~900GB) & FastNode(~200GB) By 48Club
+## Source-2: Pruned FullNode(~900GB) & FastNode(~300GB) By 48Club
 Usage: [https://github.com/BNB48Club/bsc-snapshots](https://github.com/BNB48Club/bsc-snapshots)
 > Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing another dump of snapshot.
 
@@ -17,7 +17,6 @@ Usage: [https://github.com/BNB48Club/bsc-snapshots](https://github.com/BNB48Club
 Usage: [usage/erigon_archivenode_usage.md](./usage/erigon_archivenode_usage.md)
 
 Endpoints:
-> For more granular upload & download to avoid big files error, split the files into several chunks, so please download them together and concatenate finally.
 > - **Mainnet(every three weeks)**
 > erigon version [v1.2.10](https://github.com/node-real/bsc-erigon/releases/tag/v1.2.10)
 >
@@ -43,6 +42,5 @@ Endpoints:
 >
 > erigon version [v1.2.10](https://github.com/node-real/bsc-erigon/releases/tag/v1.2.10), Block: [41637308](https://testnet.bscscan.com/block/41637308)
 >
-> md5 = 9bba1e9f5fa342879c070b93156dce76
->
-> [testnet_erigon_DB_20240629.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/testnet_erigon_DB_20240629.tar.lz4)
+> [testnet_erigon_DB_20240629.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/testnet_erigon_DB_20240629.tar.lz4) md5 = 9bba1e9f5fa342879c070b93156dce76
+

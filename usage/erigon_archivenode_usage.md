@@ -8,9 +8,9 @@
 
 ```shell
 sudo yum install aria2c
-aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240416.lz4.[0]..erigon_data_20240416.lz4.[7]
-lz4 -d erigon_data_20240416.lz4.[0]..erigon_data_20240416.lz4.[7]
-cat "erigon_data_20240416"* > mdbx.dat
+aria2c -s14 -x14 -k100M https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240625.lz4.[0]..erigon_data_20240625.lz4.[7]
+lz4 -d erigon_data_20240625.lz4.[0]..erigon_data_20240625.lz4.[7]
+cat "erigon_data_20240625"* > mdbx.dat
 ```
 
 ## Step 3: Replace Data And Restart erigon
