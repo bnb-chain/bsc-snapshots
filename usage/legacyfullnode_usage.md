@@ -4,8 +4,8 @@
 - A disk with enough free storage, at least twice the size of the snapshot.
 
 ## Step 2: Download
-- Copy the above snapshot URL.
 *As the snapshot is getting larger, now it is difficult to download it by simply `wget`, you need to use `aria2c` as it supports resumable transmission. And `aria2c` may fail sometimes, we provide a script to make it easier.*
+- Copy the above snapshot URL.
 - install it first: `sudo yum install aria2c`
 - download the script: [download.sh](./download.sh)
 - run: `nohup ./download.sh "<paste snapshot URL here>" <your dir> &`
