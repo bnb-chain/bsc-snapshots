@@ -7,7 +7,7 @@ Usage: [usage/legacyfullnode_usage.md](./usage/legacyfullnode_usage.md)
 
 Endpoints:
 > - **mainnet(every 3 weeks)**: [geth-pbss-pebble-20240705.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-pebble-20240705.tar.lz4)(md5: 8efeec9f823015b114491a253727b8c8)
-> - **testnet(every 6 months)**: (broken, recovering)(md5: NA)
+> - **testnet(every 6 months)**: [testnet-geth-pbss-20240711.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/testnet-geth-pbss-20240711.tar.lz4)(md5: 64626987189d739bd1a3ee743387f8a6)
 
 ## Source-2: Pruned FullNode(~900GB) & FastNode(~300GB) By 48Club
 Usage: [https://github.com/BNB48Club/bsc-snapshots](https://github.com/BNB48Club/bsc-snapshots)
