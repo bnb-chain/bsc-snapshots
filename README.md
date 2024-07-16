@@ -17,7 +17,7 @@ Usage: [https://github.com/BNB48Club/bsc-snapshots](https://github.com/BNB48Club
 Usage: [usage/erigon_archivenode_usage.md](./usage/erigon_archivenode_usage.md)
 
 Endpoints:
-> - **Mainnet(every three weeks)**
+> - **Mainnet(every 3 weeks)**
 > erigon version [v1.2.10](https://github.com/node-real/bsc-erigon/releases/tag/v1.2.10)
 >
 > SHA256(mdbx.dat) = 1d097e383fc5b0973d9eec18bdc1cc848352b2756a51fed48073c5d696383638
@@ -38,6 +38,8 @@ Endpoints:
 >
 > [erigon_data_20240625.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240625.lz4.007) md5=f79cc9a1839aea4c11fe5e32e1f8931d
 >
+> [${erigon_datadir}/parlia/mdbx.dat](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/parlia/mdbx.dat) md5=073b5ce16ab6a30243ee50d426228db7
+> 
 > - **Testnet(every 6 months)**
 >
 > erigon version [v1.2.10](https://github.com/node-real/bsc-erigon/releases/tag/v1.2.10), Block: [41637308](https://testnet.bscscan.com/block/41637308)

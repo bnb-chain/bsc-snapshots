@@ -2,7 +2,7 @@
 ## Step 1: Preparation
 
 - Make sure your hardware meets the [suggested requirement](https://github.com/node-real/bsc-erigon#system-requirements).
-- BSC Archive: 8TB. BSC Full: 2TB.
+- BSC Archive: 10TB.
 
 ## Step 2: Download && Concatenate && Uncompress
 
@@ -18,6 +18,7 @@ cat "erigon_data_20240625"* > mdbx.dat
 - Backing up the original data: `mv ${erigon_datadir}/chaindata/mdbx.dat  ${erigon_datadir}/chaindata/mdbx.dat `
 - Replace the data: `mv ${erigon_snapshot_dir}/erigon/chaindata/mdbx.dat ${erigon_datadir}/chaindata/mdbx.dat`
 - Replace the torrent: `mv ${erigon_torrent_dir}/snapshots ${erigon_datadir}/`
+- Replace the parlia: `cd  ${erigon_datadir}/parlia/ && wget https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/parlia/mdbx.dat/`
 - Start the erigon client again and check logs
 
 - mainnet command sample:
