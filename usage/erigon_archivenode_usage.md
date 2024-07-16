@@ -2,7 +2,7 @@
 ## Step 1: Preparation
 
 - Make sure your hardware meets the [suggested requirement](https://github.com/node-real/bsc-erigon#system-requirements).
-- BSC Archive: 8TB. BSC Full: 2TB.
+- BSC Archive: 10TB.
 
 ## Step 2: Download && Concatenate && Uncompress
 
