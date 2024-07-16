@@ -38,6 +38,8 @@ Endpoints:
 >
 > [erigon_data_20240625.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240625.lz4.007) md5=f79cc9a1839aea4c11fe5e32e1f8931d
 >
+> [Data/parlia/mdbx.dat](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/parlia/mdbx.dat) md5=073b5ce16ab6a30243ee50d426228db7
+> 
 > - **Testnet(every 6 months)**
 >
 > erigon version [v1.2.10](https://github.com/node-real/bsc-erigon/releases/tag/v1.2.10), Block: [41637308](https://testnet.bscscan.com/block/41637308)
