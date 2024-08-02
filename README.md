@@ -6,7 +6,7 @@ Currently, there are 3 sources of BSC snapshot could be used, if you are unclear
 Usage: [usage/legacyfullnode_usage.md](./usage/legacyfullnode_usage.md)
 
 Endpoints:
-> - **mainnet(every 3 weeks)**: [geth-pbss-pebble-20240705.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-pebble-20240705.tar.lz4)(md5: 8efeec9f823015b114491a253727b8c8)
+> - **mainnet(monthly)**: [geth-pbss-pebble-20240705.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-pebble-20240705.tar.lz4)(md5: 8efeec9f823015b114491a253727b8c8)
 > - **testnet(every 6 months)**: [testnet-geth-pbss-20240711.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/testnet-geth-pbss-20240711.tar.lz4)(md5: 64626987189d739bd1a3ee743387f8a6)
 
 ## Source-2: Pruned FullNode(~900GB) & FastNode(~300GB) By 48Club
@@ -17,7 +17,7 @@ Usage: [https://github.com/BNB48Club/bsc-snapshots](https://github.com/BNB48Club
 Usage: [usage/erigon_archivenode_usage.md](./usage/erigon_archivenode_usage.md)
 
 Endpoints:
-> - **Mainnet(every 3 weeks)**
+> - **Mainnet(monthly)**
 > erigon version [v1.2.10](https://github.com/node-real/bsc-erigon/releases/tag/v1.2.10)
 >
 > SHA256(mdbx.dat) = 1d097e383fc5b0973d9eec18bdc1cc848352b2756a51fed48073c5d696383638
