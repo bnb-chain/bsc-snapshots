@@ -18,25 +18,25 @@ Usage: [usage/erigon_archivenode_usage.md](./usage/erigon_archivenode_usage.md)
 
 Endpoints:
 > - **Mainnet(monthly)**
-> erigon version [v1.2.10](https://github.com/node-real/bsc-erigon/releases/tag/v1.2.10)
+> erigon version [v1.2.13](https://github.com/node-real/bsc-erigon/releases/tag/v1.2.13)
 >
-> SHA256(mdbx.dat) = 1d097e383fc5b0973d9eec18bdc1cc848352b2756a51fed48073c5d696383638
+> SHA256(mdbx.dat) = 07baf99a5f7743bd83bf80f9f57cead12f3ad7d481bffc5c4a84bfbcd9f862f9
 > 
-> [erigon_data_20240625.lz4.000](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240625.lz4.000) md5=4461fe02ad1eb079ca6202f255acf4b3
+> [erigon_data_20240803.lz4.000](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240803.lz4.000) md5=d4f9bb8086fdcb830526c695a17a3d12
 > 
-> [erigon_data_20240625.lz4.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240625.lz4.001) md5=6b6d6b7bb872df73cad0b56289303a75
+> [erigon_data_20240803.lz4.001](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240803.lz4.001) md5=c0c6512d47005d44174220ac912a1a69
 > 
-> [erigon_data_20240625.lz4.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240625.lz4.002) md5=a02dfec1edaaff671cd9ec4dd459074e
+> [erigon_data_20240803.lz4.002](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240803.lz4.002) md5=af79d7a0a9b52588e479083f9fc3ed1a
 >
-> [erigon_data_20240625.lz4.003](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240625.lz4.003) md5=a9f8e563f3aaeff5c2ce1bf4eedb3f1b
+> [erigon_data_20240803.lz4.003](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240803.lz4.003) md5=84dc5c02a03497f1b910cd08a8cabcb6
 >
-> [erigon_data_20240625.lz4.004](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240625.lz4.004) md5=61353dbe9b67c01ce77a0c3017d10a10
+> [erigon_data_20240803.lz4.004](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240803.lz4.004) md5=067e9db5ff97fb6283c6598dc480e60d
 >
-> [erigon_data_20240625.lz4.005](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240625.lz4.005) md5=98aad96c7a24efead991fe23c6af6ebb
+> [erigon_data_20240803.lz4.005](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240803.lz4.005) md5=b4f514cf2fa6057c29fc88274c9d0c45
 >
-> [erigon_data_20240625.lz4.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240625.lz4.006) md5=c3a96554962b5831ecd62a41829234bc
+> [erigon_data_20240803.lz4.006](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240803.lz4.006) md5=7a8f03207b83b709c5d4b989ca8efa47
 >
-> [erigon_data_20240625.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240625.lz4.007) md5=f79cc9a1839aea4c11fe5e32e1f8931d
+> [erigon_data_20240803.lz4.007](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/erigon_data_20240803.lz4.007) md5=ad7882164f8019f0fb1958df26d6a3fa
 >
 > [${erigon_datadir}/parlia/mdbx.dat](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/parlia/mdbx.dat) md5=073b5ce16ab6a30243ee50d426228db7
 > 
