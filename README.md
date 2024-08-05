@@ -41,5 +41,5 @@ Endpoints:
 > [${erigon_datadir}/parlia/mdbx.dat](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/parlia/mdbx.dat) md5=073b5ce16ab6a30243ee50d426228db7
 > 
 > - **Testnet**
-> Never support erigon2 snapshots. Use the erigon3(No need extra snapshot) [v1.3.0-alpha1](https://github.com/node-real/bsc-erigon/releases/tag/v1.3.0-alpha1).
+> No longer support erigon2 snapshot. Use the erigon3(No need extra snapshot) [v1.3.0-alpha1](https://github.com/node-real/bsc-erigon/releases/tag/v1.3.0-alpha1).
 
