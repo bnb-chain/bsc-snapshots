@@ -40,11 +40,6 @@ Endpoints:
 >
 > [${erigon_datadir}/parlia/mdbx.dat](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/parlia/mdbx.dat) md5=073b5ce16ab6a30243ee50d426228db7
 > 
-> - **Testnet(every 6 months)**
->
-> erigon version [v1.2.10](https://github.com/node-real/bsc-erigon/releases/tag/v1.2.10), Block: [41637308](https://testnet.bscscan.com/block/41637308)
->
-> [testnet_erigon_DB_20240629.tar.lz4](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/testnet_erigon_DB_20240629.tar.lz4) md5 = 9bba1e9f5fa342879c070b93156dce76
-> 
-> [${erigon_datadir}/parlia/mdbx.dat](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/parlia/chapel/mdbx.dat) md5 = 44734d79bd3713c34f4dff0858d7ae9a
+> - **Testnet**
+> No longer support erigon2 snapshot. Use the erigon3(No need extra snapshot) [v1.3.0-alpha1](https://github.com/node-real/bsc-erigon/releases/tag/v1.3.0-alpha1).
 
