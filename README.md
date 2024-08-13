@@ -18,7 +18,7 @@ Usage: [usage/erigon_archivenode_usage.md](./usage/erigon_archivenode_usage.md)
 
 Endpoints:
 > - **Mainnet(monthly)**
-> erigon version [v1.2.13](https://github.com/node-real/bsc-erigon/releases/tag/v1.2.13)
+> erigon version (Use the latest release)
 >
 > SHA256(mdbx.dat) = 07baf99a5f7743bd83bf80f9f57cead12f3ad7d481bffc5c4a84bfbcd9f862f9
 > 
@@ -41,5 +41,5 @@ Endpoints:
 > [${erigon_datadir}/parlia/mdbx.dat](https://pub-60a193f9bd504900a520f4f260497d1c.r2.dev/parlia/mdbx.dat) md5=073b5ce16ab6a30243ee50d426228db7
 > 
 > - **Testnet**
-> No longer support erigon2 snapshot. Use the erigon3(No need extra snapshot) [v1.3.0-alpha1](https://github.com/node-real/bsc-erigon/releases/tag/v1.3.0-alpha1).
+> No longer support erigon2 snapshot. Use the erigon3(No need extra snapshot) [v1.3.0-alpha2](https://github.com/node-real/bsc-erigon/releases/tag/v1.3.0-alpha2).
 
