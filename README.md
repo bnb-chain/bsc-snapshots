@@ -14,9 +14,6 @@ Usage: [https://github.com/BNB48Club/bsc-snapshots](https://github.com/BNB48Club
 > Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing another dump of snapshot.
 
 ## Source-3: Erigon Archive Node(~5TB)
-Usage: [usage/erigon3_archivenode_usage.md](./usage/erigon3_archivenode_usage.md)
+Usage: [usage/erigon3_archivenode_usage.md](./usage/erigon3_archivenode_usage.md), Erigon 3 release: [v1.3.0-alpha4](https://github.com/node-real/bsc-erigon/releases/tag/v1.3.0-alpha4)
 
-Erigon 3 release: [v1.3.0-alpha4](https://github.com/node-real/bsc-erigon/releases/tag/v1.3.0-alpha4)
-
-Endpoints:
-> Erigon 2 support has been discontinued, it has been replaced by Erigon 3, which does not need to download snapshot any more.
+> Endpoints: Since Erigon 3, snapshot is no longer needed.
