@@ -1,12 +1,12 @@
 # 1.Usage
 
-Erigon 3 was supported on BSC since early Aug 2024, which greatly reduced the disk demand to run a BSC archive node and also make it eailier to run BSC archive node. For more information, pls refer [Erigon 3 - New version of BSC Erigon Client](https://www.bnbchain.org/en/blog/erigon-3-new-version-of-bsc-erigon-client-reduced-sync-time-from-weeks-to-10-hours-2)
+Erigon 3 has been supported on the BNB Smart Chain (BSC) since early August 2024, significantly reducing the disk space requirements for operating a BSC archive node and simplifying the process. For further details, please refer to the article [Erigon 3 - New version of BSC Erigon Client](https://www.bnbchain.org/en/blog/erigon-3-new-version-of-bsc-erigon-client-reduced-sync-time-from-weeks-to-10-hours-2).
 
 ## Step 1: Preparation
 
 - Make sure your hardware meets the [suggested requirement](https://github.com/node-real/bsc-erigon#system-requirements).
-- BSC Archive: 5TB (Mainnet)
-- BSC Archive: 500GB (Testnet)
+- BSC Mainnet Archive: 5TB
+- BSC Testnet Archive: 500GB
 
 ## Step 2: Sync With Erigon 3
 
