@@ -11,7 +11,7 @@ Endpoints:
 
 ## Source-2: Pruned FullNode(~900GB) & FastNode(~300GB) By 48Club
 Usage: [https://github.com/BNB48Club/bsc-snapshots](https://github.com/BNB48Club/bsc-snapshots)
-> Special thanks to [BNB48Club](https://twitter.com/bnb48club) on contributing another dump of snapshot.
+> Special thanks to [BNB48Club](https://x.com/48Club_Official) on contributing another dump of snapshot.
 
 ## Source-3: Erigon Archive Node(~5TB)
 Usage: [usage/erigon3_archivenode_usage.md](./usage/erigon3_archivenode_usage.md), Erigon 3 release: [v1.3.0-alpha4](https://github.com/node-real/bsc-erigon/releases/tag/v1.3.0-alpha4)
