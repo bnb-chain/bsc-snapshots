@@ -36,6 +36,8 @@ Latest Snapshot: testnet-geth-pbss-20241203.
 You can download the mainnet or testnet files separately in the list and unzip them in a same directory. Or you can use the following script:
 
 ```bash
+# install aria2 on your os
+yum install aria2
 wget https://raw.githubusercontent.com/bnb-chain/bsc-snapshots/main/dist/fetch-snapshot.sh
 
 # download & checksum the mainnet or testnet snapshot
