@@ -7,13 +7,13 @@ Usage: [usage/legacyfullnode_usage.md](./usage/legacyfullnode_usage.md)
 
 ### mainnet(monthly update)
 
-Full Snapshot: [mainnet-geth-pbss-20250104](dist/mainnet-geth-pbss-20250104.csv), records the info of split snapshot, including file name, URL, MD5, and size.
+Full Snapshot: [mainnet-geth-pbss-20250104](dist/mainnet-geth-pbss-20250104.csv), it records snapshot parts with FileName, URL, MD5, Size infos.
 
 ### testnet(update every 4 months)
 
-Full Snapshot: [testnet-geth-pbss-20241203](dist/testnet-geth-pbss-20241203.csv), records the info of split snapshot, including file name, URL, MD5, and size.
+Full Snapshot: [testnet-geth-pbss-20241203](dist/testnet-geth-pbss-20241203.csv), it records snapshot parts with FileName, URL, MD5, Size infos.
 
-### Download
+### download
 
 You can download the mainnet or testnet files separately in the list and unzip them in a same directory. Or you can use the following script:
 
