@@ -7,11 +7,11 @@ Usage: [usage/legacyfullnode_usage.md](./usage/legacyfullnode_usage.md)
 
 ### mainnet(monthly update)
 
-Full Snapshot: [mainnet-geth-pbss-20250104](dist/mainnet-geth-pbss-20250104.csv), it records snapshot parts with FileName, URL, MD5, Size infos.
+Full Snapshot: [mainnet-geth-pbss-20250104](dist/mainnet-geth-pbss-20250104.csv), records the info of split snapshot, including file name, URL, MD5, and size.
 
 ### testnet(update every 4 months)
 
-Full Snapshot: [testnet-geth-pbss-20241203](dist/testnet-geth-pbss-20241203.csv), it records snapshot parts with FileName, URL, MD5, Size infos.
+Full Snapshot: [testnet-geth-pbss-20241203](dist/testnet-geth-pbss-20241203.csv), records the info of split snapshot, including file name, URL, MD5, and size.
 
 ### download
 
