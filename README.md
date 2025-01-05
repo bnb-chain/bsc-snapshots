@@ -13,7 +13,7 @@ Full Snapshot: [mainnet-geth-pbss-20250104](dist/mainnet-geth-pbss-20250104.csv)
 
 Full Snapshot: [testnet-geth-pbss-20241203](dist/testnet-geth-pbss-20241203.csv), records the info of split snapshot, including file name, URL, MD5, and size.
 
-### download
+### Download
 
 You can download the mainnet or testnet files separately in the list and unzip them in a same directory. Or you can use the following script:
 
