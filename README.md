@@ -11,7 +11,7 @@ Usage: [usage/legacyfullnode_usage.md](./usage/legacyfullnode_usage.md)
 
 Full Snapshot: [mainnet-geth-pbss-20250208](dist/mainnet-geth-pbss-20250208.csv), the total size is **~3TB**.
 
-Pruned Snapshot: [mainnet-geth-pbss-20250208-pruneancient](dist/mainnet-geth-pbss-20250208-pruneancient.csv), the total size is **~1TB**, it need bsc client >=[1.5.5](https://github.com/bnb-chain/bsc/releases/tag/v1.5.5).
+Pruned Snapshot: [mainnet-geth-pbss-20250208-pruneancient](dist/mainnet-geth-pbss-20250208-pruneancient.csv), the total size is **~900GB**, it need bsc client >=[1.5.5](https://github.com/bnb-chain/bsc/releases/tag/v1.5.5).
 
 ### testnet(update every 4 months)
 
@@ -58,7 +58,7 @@ bash fetch-snapshot.sh -d -e -c -p --auto-delete -D {download_dir} -E {extract_d
 - **testnet**:
   - [testnet-geth-pbss-20240711.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/testnet-geth-pbss-20240711.tar.lz4)(md5: 64626987189d739bd1a3ee743387f8a6)
 
-## Source-2: Pruned FullNode(~1TB) & FastNode(~300GB) By 48Club
+## Source-2: Pruned FullNode(~900GB) & FastNode(~300GB) By 48Club
 Usage: [https://github.com/BNB48Club/bsc-snapshots](https://github.com/BNB48Club/bsc-snapshots)
 > Special thanks to [BNB48Club](https://x.com/48Club_Official) on contributing another dump of snapshot.
 
