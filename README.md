@@ -7,15 +7,20 @@ Usage: [usage/legacyfullnode_usage.md](./usage/legacyfullnode_usage.md)
 
 > Currently, snapshots are provided as block history data divided by year. Each list includes world states, historical block files, URL, MD5, file size. Users can use the provided tools to quickly download.
 
+> The Pruned Snapshot is better for internal/private nodes, it only keeps the latest 9w historical blocks and requires BSC client >=[v1.5.5](https://github.com/bnb-chain/bsc/releases/tag/v1.5.5).
+
 ### mainnet(monthly update)
 
-Full Snapshot: [mainnet-geth-pbss-20250208](dist/mainnet-geth-pbss-20250208.csv), the total size is **~3TB**.
-
-Pruned Snapshot: [mainnet-geth-pbss-20250208-pruneancient](dist/mainnet-geth-pbss-20250208-pruneancient.csv), the total size is **~900GB**, it need bsc client >=[1.5.5](https://github.com/bnb-chain/bsc/releases/tag/v1.5.5).
+| Snapshot Type   | Snapshot File                                                                               | TotalSize  | remark        |
+|-----------------|---------------------------------------------------------------------------------------------|------------|---------------|
+| Full Snapshot   | [mainnet-geth-pbss-20250208](dist/mainnet-geth-pbss-20250208.csv)                           | **~3TB**   |               |
+| Pruned Snapshot | [mainnet-geth-pbss-20250208-pruneancient](dist/mainnet-geth-pbss-20250208-pruneancient.csv) | **~900GB** | BSC >= v1.5.5 |
 
 ### testnet(update every 4 months)
 
-Full Snapshot: [testnet-geth-pbss-20241203](dist/testnet-geth-pbss-20241203.csv), the total size is **~300GB**.
+| Snapshot Type | Snapshot File                                                     | TotalSize  | remark |
+|---------------|-------------------------------------------------------------------|------------|--------|
+| Full Snapshot | [testnet-geth-pbss-20241203](dist/testnet-geth-pbss-20241203.csv) | **~300GB** |        |
 
 ### Download
 
