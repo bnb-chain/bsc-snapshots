@@ -15,9 +15,7 @@ Pruned Snapshot: [mainnet-geth-pbss-20250208-pruneancient](dist/mainnet-geth-pbs
 
 ### testnet(update every 4 months)
 
-Full Snapshot: [testnet-geth-pbss-20250208](dist/testnet-geth-pbss-20250208.csv), the total size is **~300GB**.
-
-Pruned Snapshot: [testnet-geth-pbss-20250208-pruneancient](dist/testnet-geth-pbss-20250208-pruneancient.csv), the total size is **~120GB**, it need bsc client >=[1.5.5](https://github.com/bnb-chain/bsc/releases/tag/v1.5.5).
+Full Snapshot: [testnet-geth-pbss-20241203](dist/testnet-geth-pbss-20241203.csv), the total size is **~300GB**.
 
 ### Download
 
@@ -29,12 +27,12 @@ yum install aria2
 wget https://raw.githubusercontent.com/bnb-chain/bsc-snapshots/main/dist/fetch-snapshot.sh
 
 # download & checksum the mainnet or testnet snapshot
-bash fetch-snapshot.sh -d -c -D {download_dir} {mainnet-geth-pbss-20250208|testnet-geth-pbss-20250208}
+bash fetch-snapshot.sh -d -c -D {download_dir} {mainnet-geth-pbss-20250208|testnet-geth-pbss-20241203}
 # download & checksum the pruned mainnet or testnet snapshot
-bash fetch-snapshot.sh -d -c -p -D {download_dir} {mainnet-geth-pbss-20250208|testnet-geth-pbss-20250208}
+bash fetch-snapshot.sh -d -c -p -D {download_dir} {mainnet-geth-pbss-20250208}
 
 # extract the downloaded snapshot
-bash fetch-snapshot.sh -e -D {download_dir} -E {extract_dir} {mainnet-geth-pbss-20250208|testnet-geth-pbss-20250208}
+bash fetch-snapshot.sh -e -D {download_dir} -E {extract_dir} {mainnet-geth-pbss-20250208|testnet-geth-pbss-20241203}
 ```
 
 You can remove the `-c` option to skip md5 checking. You can use help to get more detailed command parameters.
@@ -58,8 +56,6 @@ bash fetch-snapshot.sh -d -e -c -p --auto-delete -D {download_dir} -E {extract_d
   - [mainnet-geth-pbss-20241202](dist/mainnet-geth-pbss-20241202.csv)
   - [geth-pbss-pebble-20241028.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-pebble-20241028.tar.lz4)(md5: 50d63167e825a4e53258c4655d8ce040)
 - **testnet**:
-  - [testnet-geth-pbss-20250105](dist/testnet-geth-pbss-20250105.csv)
-  - [testnet-geth-pbss-20241203](dist/testnet-geth-pbss-20241203.csv)
   - [testnet-geth-pbss-20240711.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/testnet-geth-pbss-20240711.tar.lz4)(md5: 64626987189d739bd1a3ee743387f8a6)
 
 ## Source-2: Pruned FullNode(~1TB) & FastNode(~300GB) By 48Club
