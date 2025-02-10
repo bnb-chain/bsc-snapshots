@@ -11,14 +11,14 @@ Usage: [usage/legacyfullnode_usage.md](./usage/legacyfullnode_usage.md)
 
 ### mainnet(monthly update)
 
-| Snapshot Type   | Snapshot File                                                                               | TotalSize  | remark        |
+| Snapshot Type   | Snapshot File                                                                               | Total Size | Remark        |
 |-----------------|---------------------------------------------------------------------------------------------|------------|---------------|
 | Full Snapshot   | [mainnet-geth-pbss-20250208](dist/mainnet-geth-pbss-20250208.csv)                           | **~3TB**   |               |
 | Pruned Snapshot | [mainnet-geth-pbss-20250208-pruneancient](dist/mainnet-geth-pbss-20250208-pruneancient.csv) | **~900GB** | BSC >= v1.5.5 |
 
 ### testnet(update every 4 months)
 
-| Snapshot Type | Snapshot File                                                     | TotalSize  | remark |
+| Snapshot Type | Snapshot File                                                     | Total Size | Remark |
 |---------------|-------------------------------------------------------------------|------------|--------|
 | Full Snapshot | [testnet-geth-pbss-20241203](dist/testnet-geth-pbss-20241203.csv) | **~300GB** |        |
 
