@@ -87,22 +87,20 @@ done
 
 #echo $PRUNE_ANCIENT $DOWNLOAD $EXTRACT $CHECKSUM $CLEAN $AUTO_DELETE $DOWNLOAD_DIR $EXTRACT_DIR
 
-if [[ "$PRUNE_ANCIENT" = true ]]; then
-    echo "--prune-ancient is not supported now..."
-    exit 1
-fi
-
 if [[ -z "$CSV_FILE" ]]; then
     echo "Error: CSV file is required."
     show_help
     exit 1
 fi
 
+if [[ ! "$CSV_FILE" =~ \.csv$ ]] && [[ "$PRUNE_ANCIENT" = true ]]; then
+    CSV_FILE=$CSV_FILE-pruneancient
+fi
 if [[ ! -f "$CSV_FILE" ]]; then
     if [[ ! -f "$CSV_FILE.csv" ]]; then
-      remote_file=https://raw.githubusercontent.com/bnb-chain/bsc-snapshots/main/dist/$CSV_FILE.csv
-      echo "try to download $CSV_FILE.csv from $remote_file"
-      wget -O $CSV_FILE.csv $remote_file
+        remote_file=https://raw.githubusercontent.com/bnb-chain/bsc-snapshots/main/dist/$CSV_FILE.csv
+        echo "try to download $CSV_FILE.csv from $remote_file"
+        wget -O $CSV_FILE.csv $remote_file
     fi
     CSV_FILE=$CSV_FILE.csv
 fi
@@ -117,13 +115,6 @@ if [[ "$DOWNLOAD" = true ]]; then
         [[ "$filename" == "filename" ]] && continue
 
         download_path="$DOWNLOAD_DIR/$filename"
-
-        # check ancient block files
-        if [[ "$PRUNE_ANCIENT" = true && "$filename" == *"-blocks-"* ]]; then
-            echo "Skipping $filename - contains '-blocks-'"
-            continue
-        fi
-
         downloaded=false
         # check if the file has been downloaded
         if [[ -f "$download_path" ]] && [[ ! -f "$download_path.aria2" ]]; then
@@ -183,12 +174,6 @@ if [[ "$EXTRACT" = true && "$AUTO_DELETE" = false ]]; then
     while IFS=',' read -r filename url md5 size; do
         # skip the title row
         [[ "$filename" == "filename" ]] && continue
-
-        # check ancient block files
-        if [[ "$PRUNE_ANCIENT" = true && "$filename" == *"-blocks-"* ]]; then
-            echo "Skipping $filename - contains '-blocks-'"
-            continue
-        fi
 
         download_path="$DOWNLOAD_DIR/$filename"
         extract_path="$EXTRACT_DIR/$filename"
