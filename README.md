@@ -13,8 +13,8 @@ Usage: [usage/legacyfullnode_usage.md](./usage/legacyfullnode_usage.md)
 
 | Snapshot Type   | Snapshot File                                                                               | Total Size | Remark        |
 |-----------------|---------------------------------------------------------------------------------------------|------------|---------------|
-| Full Snapshot   | [mainnet-geth-pbss-20250208](dist/mainnet-geth-pbss-20250208.csv)                           | **~3TB**   |               |
-| Pruned Snapshot | [mainnet-geth-pbss-20250208-pruneancient](dist/mainnet-geth-pbss-20250208-pruneancient.csv) | **~900GB** | BSC >= v1.5.5 |
+| Full Snapshot   | [mainnet-geth-pbss-20250310](dist/mainnet-geth-pbss-20250310.csv)                           | **~3TB**   |               |
+| Pruned Snapshot | [mainnet-geth-pbss-20250310-pruneancient](dist/mainnet-geth-pbss-20250310-pruneancient.csv) | **~900GB** | BSC >= v1.5.5 |
 
 ### testnet(update every 4 months)
 
@@ -32,12 +32,12 @@ yum install aria2
 wget https://raw.githubusercontent.com/bnb-chain/bsc-snapshots/main/dist/fetch-snapshot.sh
 
 # download & checksum the mainnet or testnet snapshot
-bash fetch-snapshot.sh -d -c -D {download_dir} {mainnet-geth-pbss-20250208|testnet-geth-pbss-20241203}
+bash fetch-snapshot.sh -d -c -D {download_dir} {mainnet-geth-pbss-2025310|testnet-geth-pbss-20241203}
 # download & checksum the pruned mainnet or testnet snapshot
 bash fetch-snapshot.sh -d -c -p -D {download_dir} {mainnet-geth-pbss-20250208}
 
 # extract the downloaded snapshot
-bash fetch-snapshot.sh -e -D {download_dir} -E {extract_dir} {mainnet-geth-pbss-20250208|testnet-geth-pbss-20241203}
+bash fetch-snapshot.sh -e -D {download_dir} -E {extract_dir} {mainnet-geth-pbss-20250310|testnet-geth-pbss-20241203}
 ```
 
 You can remove the `-c` option to skip md5 checking. You can use help to get more detailed command parameters.
@@ -57,6 +57,7 @@ bash fetch-snapshot.sh -d -e -c -p --auto-delete -D {download_dir} -E {extract_d
 ### Previous snapshot
 
 - **mainnet**:
+  - [mainnet-geth-pbss-20250208](dist/mainnet-geth-pbss-20250208.csv), [mainnet-geth-pbss-20250208-pruneancient](dist/mainnet-geth-pbss-20250208-pruneancient.csv)
   - [mainnet-geth-pbss-20250104](dist/mainnet-geth-pbss-20250104.csv)
   - [mainnet-geth-pbss-20241202](dist/mainnet-geth-pbss-20241202.csv)
   - [geth-pbss-pebble-20241028.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-pebble-20241028.tar.lz4)(md5: 50d63167e825a4e53258c4655d8ce040)
