@@ -68,10 +68,10 @@ bash fetch-snapshot.sh -d -e -c -p --auto-delete -D {download_dir} -E {extract_d
 Usage: [https://github.com/BNB48Club/bsc-snapshots](https://github.com/BNB48Club/bsc-snapshots)
 > Special thanks to [BNB48Club](https://x.com/48Club_Official) on contributing another dump of snapshot.
 
-## Source-3: Erigon Archive Node(~5TB)
+## Source-3: Erigon Mainnet Archive Node(~5TB)
 Usage: [usage/erigon3_archivenode_usage.md](./usage/erigon3_archivenode_usage.md), Erigon 3 release: [v1.3.0-alpha4](https://github.com/node-real/bsc-erigon/releases/tag/v1.3.0-alpha4)
 
-> Endpoints: Since Erigon 3, snapshot is no longer needed.
+> Endpoints: [erigon_47120125](dist/erigon-47120125.csv)
 
 ## FAQ
 
