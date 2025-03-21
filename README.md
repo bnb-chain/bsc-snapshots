@@ -21,6 +21,7 @@ Usage: [usage/legacyfullnode_usage.md](./usage/legacyfullnode_usage.md)
 | Snapshot Type | Snapshot File                                                     | Total Size | Remark |
 |---------------|-------------------------------------------------------------------|------------|--------|
 | Full Snapshot | [testnet-geth-pbss-20241203](dist/testnet-geth-pbss-20241203.csv) | **~300GB** |        |
+| Full Snapshot | [testnet-geth-pbss-20250321](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/testnet-geth-pbss-20250321.tar.lz4) | **~320GB** |   this is the latest testnet snapshot in one file <br> md5: 34b7a23589c654700252320c65e05285 |
 
 ### Download
 
