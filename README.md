@@ -13,8 +13,8 @@ Usage: [usage/legacyfullnode_usage.md](./usage/legacyfullnode_usage.md)
 
 | Snapshot Type   | Snapshot File                                                                               | Total Size | Remark        |
 |-----------------|---------------------------------------------------------------------------------------------|------------|---------------|
-| Full Snapshot   | [mainnet-geth-pbss-20250310](dist/mainnet-geth-pbss-20250310.csv)                           | **~3TB**   |               |
-| Pruned Snapshot | [mainnet-geth-pbss-20250310-pruneancient](dist/mainnet-geth-pbss-20250310-pruneancient.csv) | **~900GB** | BSC >= v1.5.5 |
+| Full Snapshot   | [mainnet-geth-pbss-20250404](dist/mainnet-geth-pbss-20250404.csv)                           | **~3TB**   |               |
+| Pruned Snapshot | [mainnet-geth-pbss-20250404-pruneancient](dist/mainnet-geth-pbss-20250404-pruneancient.csv) | **~900GB** | BSC >= v1.5.5 |
 
 ### testnet(update every 4 months)
 
@@ -58,6 +58,7 @@ bash fetch-snapshot.sh -d -e -c -p --auto-delete -D {download_dir} -E {extract_d
 ### Previous snapshot
 
 - **mainnet**:
+  - [mainnet-geth-pbss-20250310](dist/mainnet-geth-pbss-20250310.csv), [mainnet-geth-pbss-20250310-pruneancient](dist/mainnet-geth-pbss-20250310-pruneancient.csv)
   - [mainnet-geth-pbss-20250208](dist/mainnet-geth-pbss-20250208.csv), [mainnet-geth-pbss-20250208-pruneancient](dist/mainnet-geth-pbss-20250208-pruneancient.csv)
   - [mainnet-geth-pbss-20250104](dist/mainnet-geth-pbss-20250104.csv)
   - [mainnet-geth-pbss-20241202](dist/mainnet-geth-pbss-20241202.csv)
