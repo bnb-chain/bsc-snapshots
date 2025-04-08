@@ -64,9 +64,9 @@ bash fetch-snapshot.sh -d -e -c -p --auto-delete -D {download_dir} -E {extract_d
   - [mainnet-geth-pbss-20241202](dist/mainnet-geth-pbss-20241202.csv)
   - [geth-pbss-pebble-20241028.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/geth-pbss-pebble-20241028.tar.lz4)(md5: 50d63167e825a4e53258c4655d8ce040)
 - **testnet**:
-  - [testnet-geth-pbss-20241203](dist/testnet-geth-pbss-20241203.csv)
   - [testnet-geth-pbss-20250321](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/testnet-geth-pbss-20250321.tar.lz4)
   - [testnet-geth-pbss-20240711.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/testnet-geth-pbss-20240711.tar.lz4)(md5: 64626987189d739bd1a3ee743387f8a6)
+  - [testnet-geth-pbss-20241203](dist/testnet-geth-pbss-20241203.csv)
 
 ## Source-2: Pruned FullNode(~900GB) & FastNode(~300GB) By 48Club
 Usage: [https://github.com/BNB48Club/bsc-snapshots](https://github.com/BNB48Club/bsc-snapshots)
