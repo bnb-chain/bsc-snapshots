@@ -13,15 +13,17 @@ Usage: [usage/legacyfullnode_usage.md](./usage/legacyfullnode_usage.md)
 
 | Snapshot Type   | Snapshot File                                                                               | Total Size | Remark        |
 |-----------------|---------------------------------------------------------------------------------------------|------------|---------------|
-| Full Snapshot   | [mainnet-geth-pbss-20250906](dist/mainnet-geth-pbss-20250906.csv)                           | **~3.8TB**   |               |
-| Pruned Snapshot | [mainnet-geth-pbss-20250906-pruneancient](dist/mainnet-geth-pbss-20250906-pruneancient.csv) | **~1TB** | BSC >= v1.5.5 |
+| Full Snapshot   | [mainnet-geth-pbss-20251013](dist/mainnet-geth-pbss-20251013.csv)                           | **~3.8TB**   | BSC >= v1.6.1-beta |
+| Pruned Snapshot | [mainnet-geth-pbss-20251013-pruneancient](dist/mainnet-geth-pbss-20251013-pruneancient.csv) | **~1TB** | BSC >= v1.6.1-beta |
 
 ### testnet(update every 4 months)
 
 | Snapshot Type   | Snapshot File                                                                               | Total Size | Remark        |
 |-----------------|---------------------------------------------------------------------------------------------|------------|---------------|
-| Full Snapshot   | [testnet-geth-pbss-20250610](dist/testnet-geth-pbss-20250610.csv)                           | **~300GB** |               |
-| Pruned Snapshot | [testnet-geth-pbss-20250610-pruneancient](dist/testnet-geth-pbss-20250610-pruneancient.csv) | **~120GB** | BSC >= v1.5.5 |
+| Full Snapshot   | [testnet-geth-pbss-20251013](dist/testnet-geth-pbss-20251013.csv)                           | **~300GB** | BSC >= v1.6.1-beta |
+| Pruned Snapshot | [testnet-geth-pbss-20251013-pruneancient](dist/testnet-geth-pbss-20251013-pruneancient.csv) | **~120GB** | BSC >= v1.6.1-beta |
+
+> Attention: The 20251013 snapshot has no filtermap index with flag `--history.logs.disable`.
 
 ### Download
 
@@ -58,6 +60,7 @@ bash fetch-snapshot.sh -d -e -c -p --auto-delete -D {download_dir} -E {extract_d
 ### Previous snapshot
 
 - **mainnet**:
+  - [mainnet-geth-pbss-20250906](dist/mainnet-geth-pbss-20250906.csv), [mainnet-geth-pbss-20250906-pruneancient](dist/mainnet-geth-pbss-20250906-pruneancient.csv)
   - [mainnet-geth-pbss-20250806](dist/mainnet-geth-pbss-20250806.csv), [mainnet-geth-pbss-20250806-pruneancient](dist/mainnet-geth-pbss-20250806-pruneancient.csv)
   - [mainnet-geth-pbss-20250715](dist/mainnet-geth-pbss-20250715.csv), [mainnet-geth-pbss-20250715-pruneancient](dist/mainnet-geth-pbss-20250715-pruneancient.csv)
   - [mainnet-geth-pbss-20250605](dist/mainnet-geth-pbss-20250605.csv), [mainnet-geth-pbss-20250605-pruneancient](dist/mainnet-geth-pbss-20250605-pruneancient.csv)
@@ -66,6 +69,7 @@ bash fetch-snapshot.sh -d -e -c -p --auto-delete -D {download_dir} -E {extract_d
   - [mainnet-geth-pbss-20250404](dist/mainnet-geth-pbss-20250404.csv), [mainnet-geth-pbss-20250404-pruneancient](dist/mainnet-geth-pbss-20250404-pruneancient.csv)
   - [mainnet-geth-pbss-20250310](dist/mainnet-geth-pbss-20250310.csv), [mainnet-geth-pbss-20250310-pruneancient](dist/mainnet-geth-pbss-20250310-pruneancient.csv)
 - **testnet**:
+  - [testnet-geth-pbss-20250610](dist/testnet-geth-pbss-20250610.csv), [testnet-geth-pbss-20250610-pruneancient](dist/testnet-geth-pbss-20250610-pruneancient.csv)
   - [testnet-geth-pbss-20250407](dist/testnet-geth-pbss-20250407.csv), [testnet-geth-pbss-20250407-pruneancient](dist/testnet-geth-pbss-20250407-pruneancient.csv)
   - [testnet-geth-pbss-20240711.tar.lz4](https://pub-c0627345c16f47ab858c9469133073a8.r2.dev/testnet-geth-pbss-20240711.tar.lz4)(md5: 64626987189d739bd1a3ee743387f8a6)
 
