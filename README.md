@@ -83,6 +83,31 @@ Usage: [usage/erigon3_archivenode_usage.md](./usage/erigon3_archivenode_usage.md
 
 > Endpoints: [erigon_51600000](dist/erigon_51600000.csv)
 
+## Incremental Snapshots
+
+Incremental snapshots is a feature that allows you to download only the changes made since the last snapshot, significantly reducing the amount of data you need to transfer.
+
+If this is your first time using snapshots, start by downloading the full snapshot; thereafter, use incremental snapshots to keep your node up to date.
+
+### Usage
+
+To enable incremental snapshots, use the following flags when starting your BSC node:
+
+- `--incr.use-remote`: Enable incremental snapshots
+- `--incr.remote-url="https://download.snapshots.bnbchain.world/incr-snapshot"`: Set the remote URL
+- `--incr.datadir`: Specify a directory for storing incremental data
+
+### Example
+
+```bash
+geth --incr.use-remote \
+     --incr.remote-url="https://download.snapshots.bnbchain.world/incr-snapshot" \
+     --incr.datadir=/path/to/incremental/data \
+     <other-flags>
+```
+
+> Note: This feature requires BSC client >= [v1.6.0-alpha-feature-incr-snapshot](https://github.com/bnb-chain/bsc/releases/tag/v1.6.0-alpha-feature-incr-snapshot)
+
 ## FAQ
 
 ### Why split snapshot into multiple files?
