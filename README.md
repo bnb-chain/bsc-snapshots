@@ -85,6 +85,23 @@ Usage: [usage/erigon3_archivenode_usage.md](./usage/erigon3_archivenode_usage.md
 
 > Endpoints: [erigon_51600000](dist/erigon_51600000.csv)
 
+## Source-4: BSC Reth Snapshots
+
+Usage: [reth-bsc snapshot usage](https://github.com/bnb-chain/reth-bsc/blob/main/SNAPSHOT.md)
+
+### Snapshots (Monthly Update)
+
+| Type | Network | File | Size | Special Parameters |
+| ---- | ------- | ---- | ---- | ------------------ |
+| Archive | BSC-MainNet | [20260202_mainnet_reth_mdbx_static_files_archive_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260202_mainnet_reth_mdbx_static_files_archive_node.tar.zst) <br> [20260202_mainnet_reth_mdbx_db_archive_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260202_mainnet_reth_mdbx_db_archive_node.tar.zst) | 2.65 TiB <br> 3.28 TiB | `--db.max-size=12TB` <br> `--db.page-size=8KB` |
+| Archive | BSC-TestNet | [20260202_testnet_reth_mdbx_archive_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260202_testnet_reth_mdbx_archive_node.tar.zst) | 423.58 GiB | - |
+| Full | BSC-TestNet | [20260202_testnet_reth_mdbx_full_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260202_testnet_reth_mdbx_full_node.tar.zst) | 270.69 GiB | - |
+| Full | BSC-MainNet | [20260202_mainnet_reth_mdbx_full_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260202_mainnet_reth_mdbx_full_node.tar.zst) | 3.0 TiB | - |
+| Full TrieDB | BSC-TestNet | [20260202_testnet_reth_triedb_full_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260202_testnet_reth_triedb_full_node.tar.zst) | 356.63 GiB | - |
+| Full TrieDB | BSC-MainNet | [20260202_mainnet_reth_triedb_full_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260202_mainnet_reth_triedb_full_node.tar.zst) | 3.64 TiB | - |
+| Archive TrieDB | BSC-TestNet | [20260202_testnet_reth_triedb_archive_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260202_testnet_reth_triedb_archive_node.tar.zst) | 463.92 GiB | - |
+| Archive TrieDB | BSC-MainNet | [20260202_mainnet_reth_triedb_static_files_archive_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260202_mainnet_reth_triedb_static_files_archive_node.tar.zst) <br> [20260202_mainnet_reth_triedb_db_archive_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260202_mainnet_reth_triedb_db_archive_node.tar.zst) <br> [20260202_mainnet_reth_triedb_triedb_archive_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260202_mainnet_reth_triedb_triedb_archive_node.tar.zst) | 2.65 TiB <br> 3.0 TiB <br> 798.13 GiB | `--db.max-size=12TB` <br> `--db.page-size=8KB` |
+
 ## Incremental Snapshots
 
 Incremental snapshots is a feature that allows you to download only the changes made since the last snapshot, significantly reducing the amount of data you need to transfer.
