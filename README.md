@@ -34,14 +34,17 @@ You can download the mainnet or testnet files separately in the list and unzip t
 yum install aria2
 wget https://raw.githubusercontent.com/bnb-chain/bsc-snapshots/main/dist/fetch-snapshot.sh
 
-# download & checksum the mainnet or testnet snapshot
-bash fetch-snapshot.sh -d -c -D {download_dir} {mainnet-geth-pbss-20250404|testnet-geth-pbss-20250407}
-# download & checksum the pruned mainnet or testnet snapshot
-bash fetch-snapshot.sh -d -c -p -D {download_dir} {mainnet-geth-pbss-20250208}
+# download & checksum the full snapshot
+bash fetch-snapshot.sh -d -c -D {download_dir} mainnet-geth-pbss-20260202
+# download & checksum the pruned snapshot (-p auto-appends "-pruneancient" to the snapshot name)
+bash fetch-snapshot.sh -d -c -p -D {download_dir} mainnet-geth-pbss-20260202
 
-# extract the downloaded snapshot
-bash fetch-snapshot.sh -e -D {download_dir} -E {extract_dir} {mainnet-geth-pbss-20250404|testnet-geth-pbss-20250407}
+# extract the downloaded snapshot to the node datadir
+# -E should point to the node's --datadir (e.g. /data/bsc), the script auto-strips any internal path prefix
+bash fetch-snapshot.sh -e -D {download_dir} -E {extract_dir} mainnet-geth-pbss-20260202
 ```
+
+> **Note:** The `-p` flag auto-appends `-pruneancient` to the snapshot name. Do NOT pass the full name with `-pruneancient` suffix when using `-p`, otherwise it will be appended twice.
 
 You can remove the `-c` option to skip md5 checking. You can use help to get more detailed command parameters.
 
