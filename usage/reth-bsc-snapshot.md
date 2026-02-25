@@ -28,7 +28,7 @@ After building, the binary will be located at `./target/maxperf/reth-bsc`.
 
 **Snapshots**
 
-All reth-bsc snapshots are moved to [BSC Reth Snapshots](https://github.com/bnb-chain/bsc-snapshots#source-4-bsc-reth-snapshots) to download.
+All reth-bsc snapshots are moved to [BSC Reth Snapshots](https://github.com/bnb-chain/bsc-snapshots#source-4-reth-bsc-snapshots) to download.
 
 ## Installation Instructions
 
