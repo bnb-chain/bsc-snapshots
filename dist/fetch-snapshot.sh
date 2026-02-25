@@ -8,6 +8,24 @@ handle_interrupt() {
 }
 trap handle_interrupt SIGINT
 
+# Detect the number of leading path components to strip before "geth/".
+# e.g. "server/data-seed/geth/chaindata/..." -> strip 2 ("server/data-seed/")
+detect_strip_components() {
+    local archive="$1"
+    local first_file
+    first_file=$(tar -I lz4 -tf "$archive" 2>/dev/null | head -1)
+    if [[ -z "$first_file" ]]; then
+        echo 0
+        return
+    fi
+    local prefix="${first_file%%geth/*}"
+    if [[ "$prefix" == "$first_file" ]]; then
+        echo 0
+    else
+        echo "$prefix" | tr -cd '/' | wc -c | tr -d ' '
+    fi
+}
+
 show_help() {
     echo "Usage: $0 [options] <CSV_FILE>"
     echo "Options:"
@@ -156,8 +174,9 @@ if [[ "$DOWNLOAD" = true ]]; then
 
         # if enable auto delete, just uncompress the file and delete
         if [[ "$EXTRACT" = true && "$AUTO_DELETE" = true ]]; then
-          echo "Extracting $filename"
-          tar -I lz4 -xvf "$download_path" -C "$EXTRACT_DIR"
+          strip=$(detect_strip_components "$download_path")
+          echo "Extracting $filename (strip-components=$strip)"
+          tar -I lz4 -xvf "$download_path" -C "$EXTRACT_DIR" --strip-components="$strip"
           if [[ $? -eq 0 ]]; then
               rm -f "$download_path"
               echo "Extraction complete and removed: $filename"
@@ -193,8 +212,9 @@ if [[ "$EXTRACT" = true && "$AUTO_DELETE" = false ]]; then
           fi
         fi
 
-        echo "Extracting $filename"
-        tar -I lz4 -xvf "$download_path" -C "$EXTRACT_DIR"
+        strip=$(detect_strip_components "$download_path")
+        echo "Extracting $filename (strip-components=$strip)"
+        tar -I lz4 -xvf "$download_path" -C "$EXTRACT_DIR" --strip-components="$strip"
 
         if [[ $? -eq 0 ]]; then
             echo "Extraction complete: $filename"
