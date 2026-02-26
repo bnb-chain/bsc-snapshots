@@ -12,18 +12,14 @@ trap handle_interrupt SIGINT
 # e.g. "server/data-seed/geth/chaindata/..." -> strip 2 ("server/data-seed/")
 detect_strip_components() {
     local archive="$1"
-    local first_file
-    first_file=$(tar -I lz4 -tf "$archive" 2>/dev/null | head -1)
-    if [[ -z "$first_file" ]]; then
+    local match
+    match=$(tar -I lz4 -tf "$archive" 2>/dev/null | grep -m1 'geth/' || true)
+    if [[ -z "$match" ]]; then
         echo 0
         return
     fi
-    local prefix="${first_file%%geth/*}"
-    if [[ "$prefix" == "$first_file" ]]; then
-        echo 0
-    else
-        echo "$prefix" | tr -cd '/' | wc -c | tr -d ' '
-    fi
+    local prefix="${match%%geth/*}"
+    echo "$prefix" | tr -cd '/' | wc -c | tr -d ' '
 }
 
 show_help() {

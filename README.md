@@ -33,30 +33,38 @@ You can download the mainnet or testnet files separately in the list and unzip t
 # install aria2 on your os
 yum install aria2
 wget https://raw.githubusercontent.com/bnb-chain/bsc-snapshots/main/dist/fetch-snapshot.sh
-
-# download & checksum the full snapshot
-bash fetch-snapshot.sh -d -c -D {download_dir} mainnet-geth-pbss-20260202
-# download & checksum the pruned snapshot (-p auto-appends "-pruneancient" to the snapshot name)
-bash fetch-snapshot.sh -d -c -p -D {download_dir} mainnet-geth-pbss-20260202
-
-# extract the downloaded snapshot to the node datadir
-# -E should point to the node's --datadir (e.g. /data/bsc), the script auto-strips any internal path prefix
-bash fetch-snapshot.sh -e -D {download_dir} -E {extract_dir} mainnet-geth-pbss-20260202
 ```
 
-> **Note:** The `-p` flag auto-appends `-pruneancient` to the snapshot name. Do NOT pass the full name with `-pruneancient` suffix when using `-p`, otherwise it will be appended twice.
+**Parameters:**
+- `-d` download, `-e` extract, `-c` verify MD5 checksum, `-p` use pruned snapshot
+- `-D <dir>` directory to store downloaded archives
+- `-E <dir>` extraction target, should be the node's `--datadir` (e.g. `/data/bsc`), files will be extracted to `<dir>/geth/chaindata/...`
+- `--auto-delete` delete each archive immediately after extraction to save disk space
+- `-p` auto-appends `-pruneancient` to the snapshot name, do **NOT** use with a name that already has the suffix
 
-You can remove the `-c` option to skip md5 checking. You can use help to get more detailed command parameters.
+**Quick start (download, verify, extract, auto-delete in one step):**
 
 ```bash
-bash fetch-snapshot.sh --help
-# download, checksum, extract the snapshot, it need at least 6TB empty size for mainnet.
-bash fetch-snapshot.sh -d -e -c -D {download_dir} -E {extract_dir} {snapshot_name}
-# download, checksum, extract the snapshot, and auto delete the decompressed file, it need at least 4TB empty size for mainnet.
-bash fetch-snapshot.sh -d -e -c --auto-delete -D {download_dir} -E {extract_dir} {snapshot_name}
-# download, checksum, extract the pruned snapshot, and auto delete the decompressed file, it need at least 2TB empty size for mainnet.
-bash fetch-snapshot.sh -d -e -c -p --auto-delete -D {download_dir} -E {extract_dir} {snapshot_name}
+# full snapshot (~5TB, needs at least 6TB free, or 4TB with --auto-delete)
+bash fetch-snapshot.sh -d -e -c --auto-delete -D /data/snapshot -E /data/bsc mainnet-geth-pbss-20260202
+
+# pruned snapshot (~1.4TB, needs at least 2TB free with --auto-delete)
+bash fetch-snapshot.sh -d -e -c -p --auto-delete -D /data/snapshot -E /data/bsc mainnet-geth-pbss-20260202
 ```
+
+After extraction, files will be at `/data/bsc/geth/chaindata/...`, start geth with `--datadir /data/bsc`.
+
+**Step by step (download first, extract later):**
+
+```bash
+# step 1: download & checksum
+bash fetch-snapshot.sh -d -c -D /data/snapshot mainnet-geth-pbss-20260202
+
+# step 2: extract to datadir
+bash fetch-snapshot.sh -e -D /data/snapshot -E /data/bsc mainnet-geth-pbss-20260202
+```
+
+You can remove the `-c` option to skip MD5 checking. Run `bash fetch-snapshot.sh --help` for all options.
 
 > Please keep `fetch-snapshot.sh` the latest version.
 
