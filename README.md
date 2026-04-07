@@ -13,8 +13,8 @@ Usage: [usage/legacyfullnode_usage.md](./usage/legacyfullnode_usage.md)
 
 | Snapshot Type   | Snapshot File                                                                               | Total Size | Remark        |
 |-----------------|---------------------------------------------------------------------------------------------|------------|---------------|
-| Full Snapshot   | [mainnet-geth-pbss-20260402](dist/mainnet-geth-pbss-20260402.csv)                           | **~6.1TB** | BSC >= v1.6.4 |
-| Pruned Snapshot | [mainnet-geth-pbss-20260402-pruneancient](dist/mainnet-geth-pbss-20260402-pruneancient.csv) | **~2.2TB** | BSC >= v1.6.4 |
+| Full Snapshot   | [mainnet-geth-pbss-20260402](dist/mainnet-geth-pbss-20260402.csv)                           | **~6.1TB** | BSC >= v1.7.2 |
+| Pruned Snapshot | [mainnet-geth-pbss-20260402-pruneancient](dist/mainnet-geth-pbss-20260402-pruneancient.csv) | **~2.2TB** | BSC >= v1.7.2 |
 
 ### testnet(update every 4 months)
 
