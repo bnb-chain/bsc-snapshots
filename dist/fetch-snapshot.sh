@@ -124,7 +124,7 @@ mkdir -p "$EXTRACT_DIR"
 
 if [[ "$DOWNLOAD" = true ]]; then
     echo "download file into $DOWNLOAD_DIR ..."
-    while IFS=',' read -r filename url md5 size; do
+    while IFS=',' read -r filename url md5 size || [[ -n "$filename" ]]; do
         # skip the title roe
         [[ "$filename" == "filename" ]] && continue
 
@@ -186,7 +186,7 @@ fi
 
 if [[ "$EXTRACT" = true && "$AUTO_DELETE" = false ]]; then
     echo "extract file into $EXTRACT_DIR..."
-    while IFS=',' read -r filename url md5 size; do
+    while IFS=',' read -r filename url md5 size || [[ -n "$filename" ]]; do
         # skip the title row
         [[ "$filename" == "filename" ]] && continue
 
@@ -222,7 +222,7 @@ if [[ "$EXTRACT" = true && "$AUTO_DELETE" = false ]]; then
 fi
 
 if [[ "$CLEAN" = true ]]; then
-    while IFS=',' read -r filename url md5 size; do
+    while IFS=',' read -r filename url md5 size || [[ -n "$filename" ]]; do
         [[ "$filename" == "filename" ]] && continue
 
         download_path="$DOWNLOAD_DIR/$filename"
