@@ -13,8 +13,8 @@ Usage: [usage/legacyfullnode_usage.md](./usage/legacyfullnode_usage.md)
 
 | Snapshot Type   | Snapshot File                                                                               | Total Size | Remark        |
 |-----------------|---------------------------------------------------------------------------------------------|------------|---------------|
-| Full Snapshot   | [mainnet-geth-pbss-20260525](dist/mainnet-geth-pbss-20260525.csv)                           | **~6.0TB** | BSC >= v1.7.2 |
-| Pruned Snapshot | [mainnet-geth-pbss-20260525-pruneancient](dist/mainnet-geth-pbss-20260525-pruneancient.csv) | **~1.6TB** | BSC >= v1.7.2 |
+| Full Snapshot   | [mainnet-geth-pbss-20260626](dist/mainnet-geth-pbss-20260626.csv)                           | **~6.1TB** | BSC >= v1.7.2 |
+| Pruned Snapshot | [mainnet-geth-pbss-20260626-pruneancient](dist/mainnet-geth-pbss-20260626-pruneancient.csv) | **~1.6TB** | BSC >= v1.7.2 |
 
 ### testnet(update every 4 months)
 
@@ -43,11 +43,11 @@ wget https://raw.githubusercontent.com/bnb-chain/bsc-snapshots/main/dist/fetch-s
 **Quick start (download, verify, extract, auto-delete in one step):**
 
 ```bash
-# full snapshot (~6.0TB, needs at least 7TB free, or 6TB with --auto-delete)
-bash fetch-snapshot.sh -d -e -c --auto-delete -D /data/snapshot -E /data/bsc mainnet-geth-pbss-20260525
+# full snapshot (~6.1TB, needs at least 7TB free, or 6TB with --auto-delete)
+bash fetch-snapshot.sh -d -e -c --auto-delete -D /data/snapshot -E /data/bsc mainnet-geth-pbss-20260626
 
 # pruned snapshot (~1.6TB, needs at least 2TB free with --auto-delete)
-bash fetch-snapshot.sh -d -e -c -p --auto-delete -D /data/snapshot -E /data/bsc mainnet-geth-pbss-20260525
+bash fetch-snapshot.sh -d -e -c -p --auto-delete -D /data/snapshot -E /data/bsc mainnet-geth-pbss-20260626
 ```
 
 After extraction, files will be at `/data/bsc/geth/chaindata/...`, start geth with `--datadir /data/bsc`.
@@ -56,10 +56,10 @@ After extraction, files will be at `/data/bsc/geth/chaindata/...`, start geth wi
 
 ```bash
 # step 1: download & checksum
-bash fetch-snapshot.sh -d -c -D /data/snapshot mainnet-geth-pbss-20260525
+bash fetch-snapshot.sh -d -c -D /data/snapshot mainnet-geth-pbss-20260626
 
 # step 2: extract to datadir
-bash fetch-snapshot.sh -e -D /data/snapshot -E /data/bsc mainnet-geth-pbss-20260525
+bash fetch-snapshot.sh -e -D /data/snapshot -E /data/bsc mainnet-geth-pbss-20260626
 ```
 
 You can remove the `-c` option to skip MD5 checking. Run `bash fetch-snapshot.sh --help` for all options.
@@ -69,6 +69,7 @@ You can remove the `-c` option to skip MD5 checking. Run `bash fetch-snapshot.sh
 ### Previous snapshot
 
 - **mainnet**:
+  - [mainnet-geth-pbss-20260525](dist/mainnet-geth-pbss-20260525.csv), [mainnet-geth-pbss-20260525-pruneancient](dist/mainnet-geth-pbss-20260525-pruneancient.csv)
   - [mainnet-geth-pbss-20260408](dist/mainnet-geth-pbss-20260408.csv), [mainnet-geth-pbss-20260408-pruneancient](dist/mainnet-geth-pbss-20260408-pruneancient.csv)
   - [mainnet-geth-pbss-20260306](dist/mainnet-geth-pbss-20260306.csv), [mainnet-geth-pbss-20260306-pruneancient](dist/mainnet-geth-pbss-20260306-pruneancient.csv)
   - [mainnet-geth-pbss-20260202](dist/mainnet-geth-pbss-20260202.csv), [mainnet-geth-pbss-20260202-pruneancient](dist/mainnet-geth-pbss-20260202-pruneancient.csv)
