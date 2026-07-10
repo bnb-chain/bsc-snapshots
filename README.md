@@ -110,7 +110,7 @@ Usage: [reth-bsc snapshot usage](./usage/reth-bsc-snapshot.md)
 | Type | Network | File | Size | Special Parameters |
 | ---- | ------- | ---- | ---- | ------------------ |
 | Archive MDBX | BSC-MainNet | [20260402_mainnet_reth_mdbx_static_files_archive_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260302_mainnet_reth_mdbx_static_files_archive_node.tar.zst) <br> [20260402_mainnet_reth_mdbx_db_archive_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260402_mainnet_reth_mdbx_db_archive_node.tar.zst) | 2.88 TiB <br> 3.45 TiB | `--db.max-size=12TB` <br> `--db.page-size=8KB` |
-| Archive MDBX | BSC-TestNet | [20260402_testnet_reth_mdbx_archive_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260402_testnet_reth_mdbx_archive_node.tar.zst) | 454.94 GiB | - |
+| Archive MDBX | BSC-TestNet | [20260710_testnet_reth_mdbx_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260710_testnet_reth_mdbx_archive_node_v2.tar.zst) | 404.90 GiB | - |
 | Full MDBX | BSC-TestNet | [20260625_testnet_reth_mdbx_full_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260625_testnet_reth_mdbx_full_node_v2.tar.zst) | 258.82 GiB | - |
 | Full MDBX | BSC-MainNet | [20260626_mainnet_reth_mdbx_full_node_v2.tar.zst ](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260626_mainnet_reth_mdbx_full_node_v2.tar.zst) | 2.97 TiB | - |
 | Full TrieDB | BSC-TestNet | [20260422_testnet_reth_triedb_full_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260422_testnet_reth_triedb_full_node.tar.zst) | 358.76 GiB | - |
