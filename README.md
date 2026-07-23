@@ -118,31 +118,6 @@ Usage: [reth-bsc snapshot usage](./usage/reth-bsc-snapshot.md)
 | Archive TrieDB | BSC-TestNet | [20260422_testnet_reth_triedb_archive_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260422_testnet_reth_triedb_archive_node.tar.zst) | 522.31 GiB | - |
 | Archive TrieDB | BSC-MainNet | [20260422_mainnet_reth_triedb_static_files_archive_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260422_mainnet_reth_triedb_static_files_archive_node.tar.zst) <br> [20260422_mainnet_reth_triedb_db_archive_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260422_mainnet_reth_triedb_db_archive_node.tar.zst) <br> [20260422_mainnet_reth_triedb_triedb_archive_node.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260422_mainnet_reth_triedb_triedb_archive_node.tar.zst) | 2.94 TiB <br> 3.54 TiB <br> 647.84 GiB | `--db.max-size=12TB` <br> `--db.page-size=8KB` |
 
-## Incremental Snapshots
-
-Incremental snapshots is a feature that allows you to download only the changes made since the last snapshot, significantly reducing the amount of data you need to transfer.
-
-If this is your first time using snapshots, start by downloading the full snapshot; thereafter, use incremental snapshots to keep your node up to date.
-
-### Usage
-
-To enable incremental snapshots, use the following flags when starting your BSC node:
-
-- `--incr.use-remote`: Enable incremental snapshots
-- `--incr.remote-url="https://download.snapshots.bnbchain.world/incr-snapshot"`: Set the remote URL
-- `--incr.datadir`: Specify a directory for storing incremental data
-
-### Example
-
-```bash
-geth --incr.use-remote \
-     --incr.remote-url="https://download.snapshots.bnbchain.world/incr-snapshot" \
-     --incr.datadir=/path/to/incremental/data \
-     <other-flags>
-```
-
-> Note: This feature requires BSC client >= [v1.6.0-alpha-feature-incr-snapshot](https://github.com/bnb-chain/bsc/releases/tag/v1.6.0-alpha-feature-incr-snapshot)
-
 ## FAQ
 
 ### Why split snapshot into multiple files?
