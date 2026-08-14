@@ -28,7 +28,8 @@ show_help() {
     echo "  -p, --prune-ancient    Skip files containing '-blocks-', and will support later"
     echo "  -d, --download        Download files from CSV"
     echo "  -e, --extract         Extract downloaded archives from CSV"
-    echo "  -c, --checksum        Verify MD5 checksums"
+    echo "  -c, --checksum        Verify MD5 checksums (default)"
+    echo "      --no-checksum     Skip checksum verification (not recommended)"
     echo "  -C, --clean           Delete all files listed in the CSV"
     echo "  -D, --download-dir <dir>  Set the download directory (default: .)"
     echo "  -E, --extract-dir <dir>   Set the extract directory (default: same as download dir)"
@@ -39,7 +40,7 @@ show_help() {
 PRUNE_ANCIENT=false
 DOWNLOAD=false
 EXTRACT=false
-CHECKSUM=false
+CHECKSUM=true
 CLEAN=false
 DOWNLOAD_DIR="./"
 EXTRACT_DIR="$DOWNLOAD_DIR"
@@ -63,6 +64,10 @@ while [[ $# -gt 0 ]]; do
         ;;
         -c|--checksum)
         CHECKSUM=true
+        shift
+        ;;
+        --no-checksum)
+        CHECKSUM=false
         shift
         ;;
         -C|--clean)
