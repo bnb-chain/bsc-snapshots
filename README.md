@@ -105,15 +105,29 @@ Usage: [usage/erigon3_archivenode_usage.md](./usage/erigon3_archivenode_usage.md
 Usage: [reth-bsc snapshot usage](./usage/reth-bsc-snapshot.md)
 
 ### Snapshots (Monthly Update)
-** Archive MDBX currently has block height at around 20260403. An updated snapshot will be released once we have the synced version <br>
-** Archive rocksDb is small as `TransactionHashNumbers`, `AccountsHistory`, `StoragesHistory` are currently empty. They will be rebuilt during stage sync
 
 | Type | Network | File | Size | Special Parameters |
 | ---- | ------- | ---- | ---- | ------------------ |
-| Archive MDBX | BSC-MainNet | [20260729_mainnet_reth_mdbx_static_files_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260729_mainnet_reth_mdbx_static_files_archive_node_v2.tar.zst) <br> [20260729_mainnet_reth_mdbx_db_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260729_mainnet_reth_mdbx_db_archive_node_v2.tar.zst) <br> [20260729_mainnet_reth_mdbx_rocksdb_archive_node_v2](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260729_mainnet_reth_mdbx_rocksdb_archive_node_v2.tar.zst) | 4.53 TiB <br> 269 GB <br> 97kB**| `--db.max-size=12TB` <br> `--db.page-size=8KB` |
-| Archive MDBX | BSC-TestNet | [20260804_testnet_reth_mdbx_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260804_testnet_reth_mdbx_archive_node_v2.tar.zst) | 428.54 GiB | - |
-| Full MDBX | BSC-TestNet | [20260802_testnet_reth_mdbx_full_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260802_testnet_reth_mdbx_full_node_v2.tar.zst) | 278.98 GiB | - |
-| Full MDBX | BSC-MainNet | [20260802_mainnet_reth_mdbx_full_node_v2.tar.zst ](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260802_mainnet_reth_mdbx_full_node_v2.tar.zst) | 3.15 TiB | - |
+| Archive MDBX | BSC-MainNet | [8 files - see below](#bsc-mainnet-archive-files) | 7.02 TiB | `--db.max-size=12TB` <br> `--db.page-size=8KB` |
+| Archive MDBX | BSC-TestNet | [20260907_testnet_reth_mdbx_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260907_testnet_reth_mdbx_archive_node_v2.tar.zst) | 457.62 GiB | - |
+| Full MDBX | BSC-TestNet | [20260902_testnet_reth_mdbx_full_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260902_testnet_reth_mdbx_full_node_v2.tar.zst) | 295.53 GiB | - |
+| Full MDBX | BSC-MainNet | [20260902_mainnet_reth_mdbx_full_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260902_mainnet_reth_mdbx_full_node_v2.tar.zst) | 3.23 TiB | - |
+
+#### BSC-MainNet Archive Files
+
+All 8 files are required. The six `static_files` segments extract into the same `static_files` directory.
+
+| Content | File | Size |
+| ------- | ---- | ---- |
+| static_files / headers | [20260908_mainnet_reth_mdbx_static_files_headers_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260908_mainnet_reth_mdbx_static_files_headers_archive_node_v2.tar.zst) | 61.79 GiB |
+| static_files / transactions | [20260908_mainnet_reth_mdbx_static_files_transactions_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260908_mainnet_reth_mdbx_static_files_transactions_archive_node_v2.tar.zst) | 2.13 TiB |
+| static_files / transaction-senders | [20260908_mainnet_reth_mdbx_static_files_transaction-senders_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260908_mainnet_reth_mdbx_static_files_transaction-senders_archive_node_v2.tar.zst) | 125.15 GiB |
+| static_files / receipts | [20260908_mainnet_reth_mdbx_static_files_receipts_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260908_mainnet_reth_mdbx_static_files_receipts_archive_node_v2.tar.zst) | 1.42 TiB |
+| static_files / account-change-sets | [20260908_mainnet_reth_mdbx_static_files_account-change-sets_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260908_mainnet_reth_mdbx_static_files_account-change-sets_archive_node_v2.tar.zst) | 315.73 GiB |
+| static_files / storage-change-sets | [20260908_mainnet_reth_mdbx_static_files_storage-change-sets_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260908_mainnet_reth_mdbx_static_files_storage-change-sets_archive_node_v2.tar.zst) | 1.58 TiB |
+| db | [20260908_mainnet_reth_mdbx_db_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260908_mainnet_reth_mdbx_db_archive_node_v2.tar.zst) | 512.11 GiB |
+| rocksdb | [20260908_mainnet_reth_mdbx_rocksdb_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260908_mainnet_reth_mdbx_rocksdb_archive_node_v2.tar.zst) | 915.60 GiB |
+| **Total** | | **7.02 TiB** |
 
 ## FAQ
 

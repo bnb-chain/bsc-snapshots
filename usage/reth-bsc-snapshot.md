@@ -24,7 +24,7 @@ After building, the binary will be located at `./target/maxperf/reth-bsc`.
 
 ## Snapshots Download link
 
-> **Note**: BSC MainNet Archive node snapshot is split into two parts for easier download. Both files are required for a complete archive node setup.
+> **Note**: The BSC MainNet Archive node snapshot is split into multiple files for easier download: six `static_files` segments (headers, transactions, transaction-senders, receipts, account-change-sets, storage-change-sets) plus the `db` file. All of them are required for a complete archive node setup.
 
 **Snapshots**
 
@@ -34,7 +34,7 @@ All reth-bsc snapshots are moved to [BSC Reth Snapshots](https://github.com/bnb-
 
 ### BSC MainNet Archive Node Setup
 
-After downloading both snapshot files, follow these steps to set up your archive node:
+After downloading all snapshot files, follow these steps to set up your archive node:
 
 1. **Create your data directory** (if it doesn't exist):
    ```bash
@@ -42,23 +42,25 @@ After downloading both snapshot files, follow these steps to set up your archive
    cd /path/to/your/reth-data-dir
    ```
 
-2. **Extract the static files**:
+2. **Extract the static files** (all six segments extract into the same `static_files` directory):
    ```bash
-   zstd -d -T0 --long=31 -c reth_static_files_20251126.tar.zst | tar -xvf -
+   for segment in headers transactions transaction-senders receipts account-change-sets storage-change-sets; do
+     zstd -d -T0 --long=31 -c 20260908_mainnet_reth_mdbx_static_files_${segment}_archive_node_v2.tar.zst | tar -xvf -
+   done
    # This will create/populate the 'static_files' directory
    ```
 
 3. **Extract the database files**:
    ```bash
-   zstd -d -T0 --long=31 -c reth_db_20251126.tar.zst | tar -xvf -
+   zstd -d -T0 --long=31 -c 20260908_mainnet_reth_mdbx_db_archive_node_v2.tar.zst | tar -xvf -
    # This will create/populate the 'db' directory
    ```
 
 4. **Verify the directory structure**:
    Your data directory should contain:
    ```
-   ├── db/                # Database files (from reth_db.tar.zst)
-   ├── static_files/      # Static files (from reth_static_files.tar.zst)
+   ├── db/                # Database files (from the db .tar.zst)
+   ├── static_files/      # Static files (from the six static_files .tar.zst segments)
    ├── blobstore/         # Will be created during runtime
    ├── logs/              # Will be created during runtime
    ├── parlia_snapshots/  # Will be created during runtime
