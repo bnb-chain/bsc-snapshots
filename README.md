@@ -20,8 +20,8 @@ Usage: [usage/legacyfullnode_usage.md](./usage/legacyfullnode_usage.md)
 
 | Snapshot Type   | Snapshot File                                                                               | Total Size | Remark        |
 |-----------------|---------------------------------------------------------------------------------------------|------------|---------------|
-| Full Snapshot   | [testnet-geth-pbss-20260407](dist/testnet-geth-pbss-20260407.csv)                           | **~440GB** | BSC >= v1.7.2 |
-| Pruned Snapshot | [testnet-geth-pbss-20260407-pruneancient](dist/testnet-geth-pbss-20260407-pruneancient.csv) | **~180GB** | BSC >= v1.7.2 |
+| Full Snapshot   | [testnet-geth-pbss-20260917](dist/testnet-geth-pbss-20260917.csv)                           | **~520GB** | BSC >= v1.7.2 |
+| Pruned Snapshot | [testnet-geth-pbss-20260917-pruneancient](dist/testnet-geth-pbss-20260917-pruneancient.csv) | **~180GB** | BSC >= v1.7.2 |
 
 ### Download
 
@@ -86,6 +86,7 @@ You can remove the `-c` option to skip MD5 checking. Run `bash fetch-snapshot.sh
   - [mainnet-geth-pbss-20250404](dist/mainnet-geth-pbss-20250404.csv), [mainnet-geth-pbss-20250404-pruneancient](dist/mainnet-geth-pbss-20250404-pruneancient.csv)
   - [mainnet-geth-pbss-20250310](dist/mainnet-geth-pbss-20250310.csv), [mainnet-geth-pbss-20250310-pruneancient](dist/mainnet-geth-pbss-20250310-pruneancient.csv)
 - **testnet**:
+  - [testnet-geth-pbss-20260407](dist/testnet-geth-pbss-20260407.csv), [testnet-geth-pbss-20260407-pruneancient](dist/testnet-geth-pbss-20260407-pruneancient.csv)
   - [testnet-geth-pbss-20251013](dist/testnet-geth-pbss-20251013.csv), [testnet-geth-pbss-20251013-pruneancient](dist/testnet-geth-pbss-20251013-pruneancient.csv)
   - [testnet-geth-pbss-20250610](dist/testnet-geth-pbss-20250610.csv), [testnet-geth-pbss-20250610-pruneancient](dist/testnet-geth-pbss-20250610-pruneancient.csv)
   - [testnet-geth-pbss-20250407](dist/testnet-geth-pbss-20250407.csv), [testnet-geth-pbss-20250407-pruneancient](dist/testnet-geth-pbss-20250407-pruneancient.csv)
