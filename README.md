@@ -34,7 +34,8 @@ wget https://raw.githubusercontent.com/bnb-chain/bsc-snapshots/main/dist/fetch-s
 ```
 
 **Parameters:**
-- `-d` download, `-e` extract, `-c` verify MD5 checksum, `-p` use pruned snapshot
+- `-d` download, `-e` extract, `-p` use pruned snapshot
+- MD5 checksum verification is enabled by default; use `--no-checksum` only when intentionally opting out
 - `-D <dir>` directory to store downloaded archives
 - `-E <dir>` extraction target, should be the node's `--datadir` (e.g. `/data/bsc`), files will be extracted to `<dir>/geth/chaindata/...`
 - `--auto-delete` delete each archive immediately after extraction to save disk space
@@ -44,10 +45,10 @@ wget https://raw.githubusercontent.com/bnb-chain/bsc-snapshots/main/dist/fetch-s
 
 ```bash
 # full snapshot (~6.6TB, needs at least 8TB free, or 7TB with --auto-delete)
-bash fetch-snapshot.sh -d -e -c --auto-delete -D /data/snapshot -E /data/bsc mainnet-geth-pbss-20260805
+bash fetch-snapshot.sh -d -e --auto-delete -D /data/snapshot -E /data/bsc mainnet-geth-pbss-20260805
 
 # pruned snapshot (~1.7TB, needs at least 2TB free with --auto-delete)
-bash fetch-snapshot.sh -d -e -c -p --auto-delete -D /data/snapshot -E /data/bsc mainnet-geth-pbss-20260805
+bash fetch-snapshot.sh -d -e -p --auto-delete -D /data/snapshot -E /data/bsc mainnet-geth-pbss-20260805
 ```
 
 After extraction, files will be at `/data/bsc/geth/chaindata/...`, start geth with `--datadir /data/bsc`.
@@ -56,13 +57,13 @@ After extraction, files will be at `/data/bsc/geth/chaindata/...`, start geth wi
 
 ```bash
 # step 1: download & checksum
-bash fetch-snapshot.sh -d -c -D /data/snapshot mainnet-geth-pbss-20260805
+bash fetch-snapshot.sh -d -D /data/snapshot mainnet-geth-pbss-20260805
 
 # step 2: extract to datadir
 bash fetch-snapshot.sh -e -D /data/snapshot -E /data/bsc mainnet-geth-pbss-20260805
 ```
 
-You can remove the `-c` option to skip MD5 checking. Run `bash fetch-snapshot.sh --help` for all options.
+Run `bash fetch-snapshot.sh --help` for all options.
 
 > Please keep `fetch-snapshot.sh` the latest version.
 
