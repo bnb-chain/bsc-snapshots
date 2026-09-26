@@ -51,6 +51,7 @@ bash fetch-snapshot.sh -d -e -c -p --auto-delete -D /data/snapshot -E /data/bsc 
 ```
 
 After extraction, files will be at `/data/bsc/geth/chaindata/...`, start geth with `--datadir /data/bsc`.
+The helper extracts without applying archive-supplied ownership or permission bits to the host filesystem.
 
 **Step by step (download first, extract later):**
 
