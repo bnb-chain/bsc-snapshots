@@ -109,10 +109,10 @@ Usage: [reth-bsc snapshot usage](./usage/reth-bsc-snapshot.md)
 
 | Type | Network | File | Size | Special Parameters |
 | ---- | ------- | ---- | ---- | ------------------ |
-| Archive MDBX | BSC-MainNet | [8 files - see below](#bsc-mainnet-archive-files) | 7.02 TiB | `--db.max-size=12TB` <br> `--db.page-size=8KB` |
-| Archive MDBX | BSC-TestNet | [20260907_testnet_reth_mdbx_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260907_testnet_reth_mdbx_archive_node_v2.tar.zst) | 457.62 GiB | - |
-| Full MDBX | BSC-TestNet | [20260902_testnet_reth_mdbx_full_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260902_testnet_reth_mdbx_full_node_v2.tar.zst) | 295.53 GiB | - |
-| Full MDBX | BSC-MainNet | [20260902_mainnet_reth_mdbx_full_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260902_mainnet_reth_mdbx_full_node_v2.tar.zst) | 3.23 TiB | - |
+| Archive MDBX | BSC-MainNet | [8 files - see below](#bsc-mainnet-archive-files) | 7461.58 GB | `--db.max-size=12TB` <br> `--db.page-size=8KB` |
+| Archive MDBX | BSC-TestNet | [20261002_testnet_reth_mdbx_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20261002_testnet_reth_mdbx_archive_node_v2.tar.zst) | 482.52 GB | - |
+| Full MDBX | BSC-TestNet | [20261002_testnet_reth_mdbx_full_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20261002_testnet_reth_mdbx_full_node_v2.tar.zst) | 312.27 GB | - |
+| Full MDBX | BSC-MainNet | [20261002_mainnet_reth_mdbx_full_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20261002_mainnet_reth_mdbx_full_node_v2.tar.zst) | 3473.25 GB | - |
 
 #### BSC-MainNet Archive Files
 
@@ -120,15 +120,15 @@ All 8 files are required. The six `static_files` segments extract into the same 
 
 | Content | File | Size |
 | ------- | ---- | ---- |
-| static_files / headers | [20260908_mainnet_reth_mdbx_static_files_headers_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260908_mainnet_reth_mdbx_static_files_headers_archive_node_v2.tar.zst) | 61.79 GiB |
-| static_files / transactions | [20260908_mainnet_reth_mdbx_static_files_transactions_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260908_mainnet_reth_mdbx_static_files_transactions_archive_node_v2.tar.zst) | 2.13 TiB |
-| static_files / transaction-senders | [20260908_mainnet_reth_mdbx_static_files_transaction-senders_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260908_mainnet_reth_mdbx_static_files_transaction-senders_archive_node_v2.tar.zst) | 125.15 GiB |
-| static_files / receipts | [20260908_mainnet_reth_mdbx_static_files_receipts_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260908_mainnet_reth_mdbx_static_files_receipts_archive_node_v2.tar.zst) | 1.42 TiB |
-| static_files / account-change-sets | [20260908_mainnet_reth_mdbx_static_files_account-change-sets_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260908_mainnet_reth_mdbx_static_files_account-change-sets_archive_node_v2.tar.zst) | 315.73 GiB |
-| static_files / storage-change-sets | [20260908_mainnet_reth_mdbx_static_files_storage-change-sets_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260908_mainnet_reth_mdbx_static_files_storage-change-sets_archive_node_v2.tar.zst) | 1.58 TiB |
-| db | [20260908_mainnet_reth_mdbx_db_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260908_mainnet_reth_mdbx_db_archive_node_v2.tar.zst) | 512.11 GiB |
-| rocksdb | [20260908_mainnet_reth_mdbx_rocksdb_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260908_mainnet_reth_mdbx_rocksdb_archive_node_v2.tar.zst) | 915.60 GiB |
-| **Total** | | **7.02 TiB** |
+| static_files / headers | [20261002_mainnet_reth_mdbx_static_files_headers_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20261002_mainnet_reth_mdbx_static_files_headers_archive_node_v2.tar.zst) | 64.44 GB |
+| static_files / transactions | [20261002_mainnet_reth_mdbx_static_files_transactions_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20261002_mainnet_reth_mdbx_static_files_transactions_archive_node_v2.tar.zst) | 2263.34 GB |
+| static_files / transaction-senders | [20261002_mainnet_reth_mdbx_static_files_transaction-senders_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20261002_mainnet_reth_mdbx_static_files_transaction-senders_archive_node_v2.tar.zst) | 128.16 GB |
+| static_files / receipts | [20261002_mainnet_reth_mdbx_static_files_receipts_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20261002_mainnet_reth_mdbx_static_files_receipts_archive_node_v2.tar.zst) | 1526.18 GB |
+| static_files / account-change-sets | [20261002_mainnet_reth_mdbx_static_files_account-change-sets_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20261002_mainnet_reth_mdbx_static_files_account-change-sets_archive_node_v2.tar.zst) | 324.28 GB |
+| static_files / storage-change-sets | [20261002_mainnet_reth_mdbx_static_files_storage-change-sets_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20261002_mainnet_reth_mdbx_static_files_storage-change-sets_archive_node_v2.tar.zst) | 1686.63 GB |
+| db | [20261002_mainnet_reth_mdbx_db_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20261002_mainnet_reth_mdbx_db_archive_node_v2.tar.zst) | 535.13 GB |
+| rocksdb | [20261002_mainnet_reth_mdbx_rocksdb_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20261002_mainnet_reth_mdbx_rocksdb_archive_node_v2.tar.zst) | 933.42 GB |
+| **Total** | | **7461.58 GB** |
 
 ## FAQ
 
