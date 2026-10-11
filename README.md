@@ -78,7 +78,7 @@ To keep pruning block history and transaction/log indexes, add these flags to yo
 --tries-verify-mode=local
 ```
 
-The October 9 mainnet snapshot includes about 90,000 historical blocks; BSC v1.7.2 requires a minimum nonzero runtime retention of 600,000 blocks. The old `--pruneancient` flag is deprecated and is not required to use this snapshot.
+The old `--pruneancient` flag is deprecated and is not required to use this snapshot.
 
 ### Previous snapshot
 
