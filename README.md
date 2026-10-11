@@ -7,7 +7,7 @@ Usage: [usage/legacyfullnode_usage.md](./usage/legacyfullnode_usage.md)
 
 > Currently, snapshots are provided as block history data divided by year. Each list includes world states, historical block files, URL, MD5, file size. Users can use the provided tools to quickly download.
 
-> The Pruned Snapshot is better for internal/private nodes, it only keeps the latest 9w historical blocks and requires BSC client >=[v1.5.5](https://github.com/bnb-chain/bsc/releases/tag/v1.5.5).
+> The Pruned Snapshot is intended for internal/private nodes that do not need older block history. Use the BSC client version required in the tables below, and see [Starting from a pruned snapshot](#starting-from-a-pruned-snapshot) for runtime history retention settings.
 
 ### mainnet(monthly update)
 
@@ -65,6 +65,20 @@ bash fetch-snapshot.sh -e -D /data/snapshot -E /data/bsc mainnet-geth-pbss-20261
 You can remove the `-c` option to skip MD5 checking. Run `bash fetch-snapshot.sh --help` for all options.
 
 > Please keep `fetch-snapshot.sh` the latest version.
+
+### Starting from a pruned snapshot
+
+To keep pruning block history and transaction/log indexes, add these flags to your existing geth startup command:
+
+```bash
+--syncmode=full \
+--history.transactions=600000 \
+--history.blocks=600000 \
+--history.logs=600000 \
+--tries-verify-mode=local
+```
+
+The old `--pruneancient` flag is deprecated and is not required to use this snapshot.
 
 ### Previous snapshot
 
