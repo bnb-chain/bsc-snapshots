@@ -70,11 +70,17 @@ You can remove the `-c` option to skip MD5 checking. Run `bash fetch-snapshot.sh
 
 Extract both the base archive and the blocks-pruneancient archive listed in the snapshot CSV into the same datadir. The snapshot's `-pruneancient` suffix describes its contents; it does not require the deprecated `--pruneancient` startup flag.
 
-To keep pruning historical blocks as the node syncs, add the following flags to your existing geth startup command, keeping your network configuration and other settings:
+To keep block history and its transaction/log indexes within a recent retention window, add the following flags to your existing geth startup command, keeping your network configuration and other settings. This example follows the full-node (`geth.local`) retention and verification settings in [48Club's snapshot configuration](https://github.com/48Club/bsc-snapshots/blob/main/data.json):
 
 ```bash
---syncmode full --history.blocks 600000
+--syncmode=full \
+--history.transactions=600000 \
+--history.blocks=600000 \
+--history.logs=600000 \
+--tries-verify-mode=local
 ```
+
+`--history.blocks` controls block data retention; `--history.transactions` and `--history.logs` control transaction lookup and log search index retention separately. `--tries-verify-mode=local` keeps local state-root verification enabled for these full-node snapshots.
 
 The October 9, 2026 mainnet pruned snapshot contains approximately 90,000 recent historical blocks. This is the history included in the snapshot, not the runtime retention window. In BSC v1.7.2, the minimum nonzero `--history.blocks` value is [600,000](https://github.com/bnb-chain/bsc/blob/ce498e9d873b691a76f4e42d1a93b94880017efb/params/network_params.go#L35): [smaller nonzero values are raised to this minimum](https://github.com/bnb-chain/bsc/blob/ce498e9d873b691a76f4e42d1a93b94880017efb/cmd/utils/flags.go#L2203-L2208). Existing history grows toward that window as new blocks arrive; previously pruned history is not automatically restored.
 
