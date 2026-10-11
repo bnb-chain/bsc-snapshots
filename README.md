@@ -7,7 +7,7 @@ Usage: [usage/legacyfullnode_usage.md](./usage/legacyfullnode_usage.md)
 
 > Currently, snapshots are provided as block history data divided by year. Each list includes world states, historical block files, URL, MD5, file size. Users can use the provided tools to quickly download.
 
-> The Pruned Snapshot is better for internal/private nodes, it only keeps the latest 9w historical blocks and requires BSC client >=[v1.5.5](https://github.com/bnb-chain/bsc/releases/tag/v1.5.5).
+> The Pruned Snapshot is intended for internal/private nodes that do not need older block history. Use the BSC client version required in the tables below, and see [Starting from a pruned snapshot](#starting-from-a-pruned-snapshot) for runtime history retention settings.
 
 ### mainnet(monthly update)
 
@@ -65,6 +65,20 @@ bash fetch-snapshot.sh -e -D /data/snapshot -E /data/bsc mainnet-geth-pbss-20261
 You can remove the `-c` option to skip MD5 checking. Run `bash fetch-snapshot.sh --help` for all options.
 
 > Please keep `fetch-snapshot.sh` the latest version.
+
+### Starting from a pruned snapshot
+
+Extract both the base archive and the blocks-pruneancient archive listed in the snapshot CSV into the same datadir. The snapshot's `-pruneancient` suffix describes its contents; it does not require the deprecated `--pruneancient` startup flag.
+
+To keep pruning historical blocks as the node syncs, add the following flags to your existing geth startup command, keeping your network configuration and other settings:
+
+```bash
+--syncmode full --history.blocks 600000
+```
+
+The October 9, 2026 mainnet pruned snapshot contains approximately 90,000 recent historical blocks. This is the history included in the snapshot, not the runtime retention window. In BSC v1.7.2, the minimum nonzero `--history.blocks` value is [600,000](https://github.com/bnb-chain/bsc/blob/ce498e9d873b691a76f4e42d1a93b94880017efb/params/network_params.go#L35): [smaller nonzero values are raised to this minimum](https://github.com/bnb-chain/bsc/blob/ce498e9d873b691a76f4e42d1a93b94880017efb/cmd/utils/flags.go#L2203-L2208). Existing history grows toward that window as new blocks arrive; previously pruned history is not automatically restored.
+
+With the default `--history.blocks 0` and no pruning override in your configuration, newly synced block history continues to accumulate. In BSC v1.7.2, the deprecated [`--pruneancient` flag](https://github.com/bnb-chain/bsc/blob/ce498e9d873b691a76f4e42d1a93b94880017efb/cmd/geth/config.go#L199-L205) selects full sync and sets block history to the same 600,000-block minimum. Prefer `--history.blocks` for explicit retention settings.
 
 ### Previous snapshot
 
