@@ -68,7 +68,7 @@ You can remove the `-c` option to skip MD5 checking. Run `bash fetch-snapshot.sh
 
 ### Starting from a pruned snapshot
 
-To keep pruning block history and transaction/log indexes, add these flags to your existing geth startup command (based on [48Club's full-node configuration](https://github.com/48Club/bsc-snapshots/blob/main/data.json)):
+To keep pruning block history and transaction/log indexes, add these flags to your existing geth startup command:
 
 ```bash
 --syncmode=full \
