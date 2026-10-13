@@ -172,7 +172,8 @@ if [[ "$DOWNLOAD" = true ]]; then
         if [[ "$EXTRACT" = true && "$AUTO_DELETE" = true ]]; then
           strip=$(detect_strip_components "$download_path")
           echo "Extracting $filename (strip-components=$strip)"
-          tar -I lz4 -xvf "$download_path" -C "$EXTRACT_DIR" --strip-components="$strip"
+          tar -I lz4 -xvf "$download_path" -C "$EXTRACT_DIR" \
+            --strip-components="$strip" --no-same-owner --no-same-permissions
           if [[ $? -eq 0 ]]; then
               rm -f "$download_path"
               echo "Extraction complete and removed: $filename"
@@ -210,7 +211,8 @@ if [[ "$EXTRACT" = true && "$AUTO_DELETE" = false ]]; then
 
         strip=$(detect_strip_components "$download_path")
         echo "Extracting $filename (strip-components=$strip)"
-        tar -I lz4 -xvf "$download_path" -C "$EXTRACT_DIR" --strip-components="$strip"
+        tar -I lz4 -xvf "$download_path" -C "$EXTRACT_DIR" \
+          --strip-components="$strip" --no-same-owner --no-same-permissions
 
         if [[ $? -eq 0 ]]; then
             echo "Extraction complete: $filename"
