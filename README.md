@@ -111,12 +111,7 @@ The old `--pruneancient` flag is deprecated and is not required to use this snap
 Usage: [https://github.com/BNB48Club/bsc-snapshots](https://github.com/BNB48Club/bsc-snapshots)
 > Special thanks to [BNB48Club](https://x.com/48Club_Official) on contributing another dump of snapshot.
 
-## Source-3: Erigon Mainnet Archive Node(~5TB)
-Usage: [usage/erigon3_archivenode_usage.md](./usage/erigon3_archivenode_usage.md), Erigon 3 release: [v1.3.10](https://github.com/node-real/bsc-erigon/releases/tag/v1.3.10)
-
-> Endpoints: [erigon_51600000](dist/erigon_51600000.csv)
-
-## Source-4: Reth BSC Snapshots
+## Source-3: Reth BSC Snapshots
 
 Usage: [reth-bsc snapshot usage](./usage/reth-bsc-snapshot.md)
 
