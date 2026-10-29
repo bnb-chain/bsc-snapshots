@@ -123,9 +123,9 @@ Usage: [reth-bsc snapshot usage](./usage/reth-bsc-snapshot.md)
 | Archive MDBX | BSC-TestNet | [20261002_testnet_reth_mdbx_archive_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20261002_testnet_reth_mdbx_archive_node_v2.tar.zst) | 482.52 GB | - |
 | Full MDBX | BSC-TestNet | [20261002_testnet_reth_mdbx_full_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20261002_testnet_reth_mdbx_full_node_v2.tar.zst) | 312.27 GB | - |
 | Full MDBX | BSC-MainNet | [20261002_mainnet_reth_mdbx_full_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20261002_mainnet_reth_mdbx_full_node_v2.tar.zst) | 3473.25 GB | - |
-| FastNode MDBX | BSC-MainNet | [20260909_mainnet_reth_mdbx_fast_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260909_mainnet_reth_mdbx_fast_node_v2.tar.zst ) | 539.56 GB | `--minimal` <br> `--engine.skip-state-root-validation` |
+| FastNode MDBX | BSC-MainNet | [20260909_mainnet_reth_mdbx_fast_node_v2.tar.zst](https://pub-c5400abe5bed4adbaf8cd47467747e74.r2.dev/20260909_mainnet_reth_mdbx_fast_node_v2.tar.zst ) | 539.56 GB | `--minimal(required)` <br> `--engine.skip-state-root-validation(required)` |
 
-**NOTICE**: FastNode snapshots (`minimal mode`) retain the current state required for transaction execution and recent block headers, while pruning older block history and blob sidecars to reduce snapshot size. State-root validation is skipped. Suitable for workloads that do not require full historical data or state proofs.
+**NOTICE**: FastNode snapshots (`minimal mode`) retain the current state required for transaction execution and recent block headers, while pruning older block history and blob sidecars to reduce snapshot size. State-root validation is skipped. Suitable for workloads that do not require full historical data or state proofs. If you use `--minimal` flag, you should remove `--full` flag.
 
 #### BSC-MainNet Archive Files
 
