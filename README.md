@@ -115,6 +115,8 @@ Usage: [https://github.com/BNB48Club/bsc-snapshots](https://github.com/BNB48Club
 
 Usage: [reth-bsc snapshot usage](./usage/reth-bsc-snapshot.md)
 
+For snapshot maintainers: [publish a Reth download manifest for the existing archive files](./usage/reth-snapshot-publishing.md).
+
 ### Snapshots (Monthly Update)
 
 | Type | Network | File | Size | Special Parameters |

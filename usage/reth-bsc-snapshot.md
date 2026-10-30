@@ -1,5 +1,8 @@
 # BSC Reth Client Snapshot Usage
 
+Snapshot maintainers can [generate and publish a download manifest](./reth-snapshot-publishing.md)
+for the existing eight-file archive snapshot without repacking its archives.
+
 ## About BSC Reth client snapshot
 
 Currently, snapshots are available for archive node configurations of the BSC Reth client. Please note that as the client is in active development, snapshot updates do not follow a fixed schedule and will be released as they become available.
