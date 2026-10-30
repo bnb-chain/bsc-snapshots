@@ -44,7 +44,9 @@ class DownloadTests(unittest.TestCase):
         self.files = {"db/mdbx.dat": b"source database and checkpoints",
                       "rocksdb/CURRENT": b"source index state",
                       "static_files/static_file_headers_0_499999": b"source headers",
-                      "reth.toml": b"source pruning configuration"}
+                      "reth.toml": b"source pruning configuration",
+                      "blobstore/sidecar": b"source sidecar",
+                      "parlia_snapshots/mdbx.dat": b"source consensus snapshot"}
         contents = io.BytesIO()
         with tarfile.open(fileobj=contents, mode="w") as archive:
             for path, data in self.files.items():

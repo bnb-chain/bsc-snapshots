@@ -88,7 +88,7 @@ def member_path(member, component):
     if path.is_absolute() or ".." in path.parts or "\\" in member.name:
         raise ValueError(f"unsafe archive path: {member.name}")
     if component == "bundle":
-        roots = {"db", "rocksdb", "static_files"}
+        roots = {"db", "rocksdb", "static_files", "blobstore", "parlia_snapshots"}
         if member.isdir() and (not path.parts or path.parts[0] in roots):
             return None
         if not member.isfile():

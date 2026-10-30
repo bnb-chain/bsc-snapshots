@@ -1,9 +1,10 @@
-# Publishing manifests for existing Reth snapshots
+# Publishing Reth snapshot manifests
 
 Full-node and archive snapshots on **both mainnet and testnet** can use
 `reth-bsc download --manifest-url` with the matching client support. Existing
-`.tar.zst` files do not need to be changed, joined, split, or recompressed. Publish
-one extra JSON manifest for each snapshot.
+`.tar.zst` files with the supported datadir-relative layout can be reused without
+joining, splitting or recompressing them. Publish one extra JSON manifest for each
+snapshot. Check the layout requirements below before backfilling older archives.
 
 | Snapshot | Existing layout | Generator input |
 | --- | --- | --- |
@@ -24,7 +25,36 @@ The manifest records the archive names, extracted-file sizes, and BLAKE3
 checksums. Its profile describes the **source snapshot**: a full snapshot does
 not become an archive snapshot by changing a label or a download flag.
 
-## Generate the manifest
+## Automatic monthly publishing
+
+The MDBX snapshot upload job generates manifests automatically. It records the
+stopped-node checkpoint and producer version, scans each archive before uploading
+and deleting its local copy, then publishes the manifest only after all archive
+uploads and public size checks succeed. Mainnet archive still processes one
+compressed part at a time. Failed runs do not advertise a partial snapshot.
+
+Successful runs publish a dated manifest and update a stable path under the
+public snapshot base URL:
+
+| Network | Node | Manifest path |
+| --- | --- | --- |
+| Mainnet | Full | `manifests/mainnet/full/latest.json` |
+| Mainnet | Archive | `manifests/mainnet/archive/latest.json` |
+| Testnet | Full | `manifests/testnet/full/latest.json` |
+| Testnet | Archive | `manifests/testnet/archive/latest.json` |
+
+These paths are **pending deployment**, not currently published download links.
+After the first production restore has been validated, add the stable URL and
+supported client version to the README's **Manifest** column. Users then find
+one link beside their snapshot and follow the [command instructions](./reth-bsc-snapshot.md#download-with-the-reth-command).
+
+New uploader archives use datadir-relative paths. Some older upload jobs stored
+parent directories inside the tar; those archives cannot be described by this
+generator unchanged. Do not publish a manifest that strips those paths only in
+JSON: the client would extract to the wrong directory. Existing remote files are
+left untouched. The commands below apply to archives with the supported layout.
+
+## Generate a manifest manually (backfill or other upload systems)
 
 Requirements: Python 3.10 or newer, `zstd`, and the Python `blake3` package:
 
@@ -100,7 +130,7 @@ Component mode requires all eight archives and the archive profile. Its files
 must be rooted at `db/`, `rocksdb/`, or the corresponding
 `static_files/static_file_<segment>_...` paths. Bundle mode requires an explicit
 profile and `db/mdbx.dat`; it accepts regular files under `db/`, `rocksdb/`, and
-`static_files/`, plus an optional top-level `reth.toml`. Archives must contain
+`static_files/`, `blobstore/`, and `parlia_snapshots/`, plus an optional top-level `reth.toml`. Archives must contain
 relative paths directly under these directories, without an extra parent folder.
 The tool rejects links, unsafe paths, duplicate output files, changed input
 archives, and incomplete compressed streams. It writes the manifest only after

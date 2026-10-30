@@ -1,13 +1,11 @@
 # BSC Reth Client Snapshot Usage
 
 Snapshot maintainers can [generate and publish a download manifest](./reth-snapshot-publishing.md)
-for full-node and archive snapshots on mainnet and testnet without repacking their archives.
+for full-node and archive snapshots on mainnet and testnet.
 
 ## About BSC Reth client snapshot
 
-Currently, snapshots are available for archive node configurations of the BSC Reth client. Please note that as the client is in active development, snapshot updates do not follow a fixed schedule and will be released as they become available.
-
-The Snapshot for BSC mainnet fullnode configuration will be released soon.
+Full-node and archive snapshots are available for BSC mainnet and testnet. See the snapshot table for the current files and their required database options.
 
 ## Building from Source
 
@@ -31,7 +29,47 @@ After building, the binary will be located at `./target/maxperf/reth-bsc`.
 
 **Snapshots**
 
-All reth-bsc snapshots are moved to [BSC Reth Snapshots](../README.md#source-4-reth-bsc-snapshots) to download.
+All reth-bsc snapshots are moved to [BSC Reth Snapshots](../README.md#source-3-reth-bsc-snapshots) to download.
+
+## Download with the Reth command
+
+**Status:** manifest links are not published yet. This workflow requires the client
+support in [Reth-BSC #598](https://github.com/bnb-chain/reth-bsc/pull/598), which is
+currently a draft. Continue using the archive links and manual instructions below
+until a manifest and supported client release appear in the snapshot table.
+
+Once available:
+
+1. Choose your network and node type in the [snapshot table](../README.md#source-3-reth-bsc-snapshots).
+2. Copy its **Manifest** link. One manifest covers the entire snapshot, including
+   all eight files for mainnet archive.
+3. Run the command with that link and an empty data directory:
+
+   ```sh
+   reth-bsc download --chain bsc-testnet --full \
+     --manifest-url "$MANIFEST_URL" --datadir /srv/reth
+   ```
+
+| Snapshot | Command options |
+| --- | --- |
+| Mainnet full | `--chain bsc --full` |
+| Mainnet archive | `--chain bsc --archive` |
+| Testnet full | `--chain bsc-testnet --full` |
+| Testnet archive | `--chain bsc-testnet --archive` |
+
+Also copy any **Special Parameters** from the table. For example, the listed
+mainnet archive requires `--db.max-size=12TB --db.page-size=8KB`. Add
+`--print-plan-json` to inspect the selection before downloading.
+
+The command downloads the listed archive file(s), extracts them, and checks their
+file checksums. You do not need to download or combine each archive manually.
+Then start the node with the matching chain and database settings below.
+`--archive` cannot turn a full-node snapshot into an archive snapshot.
+
+The manifest is generated and uploaded automatically by the snapshot upload job.
+After rollout, each network/type will have a stable manifest link that updates
+with successful uploads. Existing dated manifests remain available for a specific
+snapshot. Allow disk space for the restored data **and cached compressed archives**.
 
 ## Installation Instructions
 
@@ -100,7 +138,7 @@ After downloading all snapshot files, follow these steps to set up your archive 
 
 ### Other Snapshots (TestNet/FullNode) Setup
 
-For single-file snapshots (TestNet Archive, TestNet FullNode):
+For single-file snapshots (TestNet Archive, TestNet FullNode, MainNet FullNode):
 
 1. **Download and extract the snapshot**:
    ```bash
@@ -117,7 +155,7 @@ For single-file snapshots (TestNet Archive, TestNet FullNode):
    # For TestNet
    reth-bsc node --datadir /path/to/your/reth-data-dir --chain bsc-testnet
    
-   # For MainNet FullNode (when available)
+   # For MainNet FullNode
    reth-bsc node --datadir /path/to/your/reth-data-dir --chain bsc
    ```
 
