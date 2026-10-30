@@ -43,6 +43,7 @@ class ManifestTests(unittest.TestCase):
         return argparse.Namespace(
             archive=archives, output=self.root / "manifest.json", chain_id=56, block=123,
             reth_version="test-producer", timestamp=123456, base_url="https://example.com/snapshot",
+            bundle=None, profile=None,
         )
 
     def test_eight_existing_archives_have_exact_output_checksums_and_are_unchanged(self):
@@ -165,6 +166,79 @@ class ManifestTests(unittest.TestCase):
             with self.subTest(url=url), self.assertRaises(ValueError):
                 publisher.validate_base_url(url)
         self.assertEqual(publisher.validate_base_url("file:///tmp/snapshot"), "file:///tmp/snapshot/")
+
+    def test_complete_snapshots_cover_both_profiles_on_both_networks(self):
+        for chain_id in (56, 97):
+            for profile in ("full", "archive"):
+                with self.subTest(chain_id=chain_id, profile=profile):
+                    args = self.inputs()
+                    args.archive = None
+                    args.chain_id, args.profile = chain_id, profile
+                    args.bundle = self.archive(f"existing-{chain_id}-{profile}.tar.zst", [
+                        ("./db/mdbx.dat", b"abc"), ("static_files/static_file_headers_0_499999", b"h"),
+                        ("rocksdb/CURRENT", b"r"), ("reth.toml", b"source config"),
+                    ])
+                    original = args.bundle.read_bytes()
+                    manifest = publisher.generate_manifest(args)
+                    self.assertEqual(manifest["chain_id"], chain_id)
+                    self.assertNotIn("components", manifest)  # Older clients must fail to parse.
+                    self.assertEqual(manifest["bundle"]["profile"], profile)
+                    entry = manifest["bundle"]["archive"]
+                    self.assertEqual(entry["file"], args.bundle.name)
+                    self.assertEqual(entry["size"], len(original))
+                    self.assertEqual(entry["decompressed_size"], 18)
+                    self.assertEqual({f["path"] for f in entry["output_files"]}, {
+                        "db/mdbx.dat", "static_files/static_file_headers_0_499999", "rocksdb/CURRENT", "reth.toml",
+                    })
+                    self.assertEqual(entry["output_files"][0]["blake3"],
+                        "6437b3ac38465133ffb63b75273a8db548c558465d79db03fd359c6cd5bd9d85")
+                    self.assertEqual(args.bundle.read_bytes(), original)
+                    self.assertFalse((self.root / "db").exists())
+
+    def test_bundle_requires_explicit_profile_and_complete_database(self):
+        args = self.inputs()
+        args.archive = None
+        args.bundle = self.archive("bundle.tar.zst", [("db/mdbx.dat", b"a")])
+        with self.assertRaisesRegex(ValueError, "requires --profile"):
+            publisher.generate_manifest(args)
+        args.profile = "full"
+        args.bundle = self.archive("bundle.tar.zst", [("db/other", b"a")])
+        with self.assertRaisesRegex(ValueError, "must contain db/mdbx.dat"):
+            publisher.generate_manifest(args)
+        args.bundle = None
+        args.archive = self.inputs().archive
+        with self.assertRaisesRegex(ValueError, "require the archive profile"):
+            publisher.generate_manifest(args)
+
+    def test_bundle_rejects_links_unsafe_unexpected_and_overlapping_paths(self):
+        args = self.inputs()
+        args.archive, args.profile = None, "archive"
+        for name in ("../outside", "/outside", "db/../../outside", "jwt.hex", "p2p-secret-key", "db\\file"):
+            with self.subTest(name=name):
+                args.bundle = self.archive("bundle.tar.zst", [("db/mdbx.dat", b"a"), (name, b"b")])
+                with self.assertRaises(ValueError):
+                    publisher.generate_manifest(args)
+        link = tarfile.TarInfo("db/link")
+        link.type, link.linkname = tarfile.SYMTYPE, "../../outside"
+        args.bundle = self.archive("bundle.tar.zst", [("db/mdbx.dat", b"a"), (link, b"")])
+        with self.assertRaisesRegex(ValueError, "only regular files"):
+            publisher.generate_manifest(args)
+        args.bundle = self.archive("bundle.tar.zst", [("db/mdbx.dat", b"a"), ("db/mdbx.dat/child", b"b")])
+        with self.assertRaisesRegex(ValueError, "output paths overlap"):
+            publisher.generate_manifest(args)
+
+    def test_bundle_cli_writes_manifest_and_rejects_mixed_layouts(self):
+        bundle = self.archive("whole.tar.zst", [("db/mdbx.dat", b"abc")])
+        output = self.root / "manifest.json"
+        command = [sys.executable, str(Path(publisher.__file__)), "--chain-id", "97", "--block", "1",
+                   "--reth-version", "test", "--base-url", "https://example.com", "--output", str(output),
+                   "--bundle", str(bundle), "--profile", "full"]
+        result = subprocess.run(command + ["--archive", "state=missing.tar.zst"], capture_output=True, text=True)
+        self.assertEqual(result.returncode, 2)
+        self.assertFalse(output.exists())
+        result = subprocess.run(command, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(json.loads(output.read_text())["bundle"]["profile"], "full")
 
 
 if __name__ == "__main__":

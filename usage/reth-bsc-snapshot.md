@@ -1,7 +1,7 @@
 # BSC Reth Client Snapshot Usage
 
 Snapshot maintainers can [generate and publish a download manifest](./reth-snapshot-publishing.md)
-for the existing eight-file archive snapshot without repacking its archives.
+for full-node and archive snapshots on mainnet and testnet without repacking their archives.
 
 ## About BSC Reth client snapshot
 
