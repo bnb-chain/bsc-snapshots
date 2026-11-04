@@ -28,7 +28,7 @@ After building, the binary will be located at `./target/maxperf/reth-bsc`.
 
 **Snapshots**
 
-All reth-bsc snapshots are moved to [BSC Reth Snapshots](../README.md#source-4-reth-bsc-snapshots) to download.
+All reth-bsc snapshots are moved to [BSC Reth Snapshots](../README.md#source-3-reth-bsc-snapshots) to download.
 
 ## Installation Instructions
 
@@ -45,16 +45,16 @@ After downloading all snapshot files, follow these steps to set up your archive 
 2. **Extract the static files** (all six segments extract into the same `static_files` directory):
    ```bash
    for segment in headers transactions transaction-senders receipts account-change-sets storage-change-sets; do
-     zstd -d -T0 --long=31 -c 20261002_mainnet_reth_mdbx_static_files_${segment}_archive_node_v2.tar.zst | tar -xvf -
+     zstd -d -T0 --long=31 -c 20261102_mainnet_reth_mdbx_static_files_${segment}_archive_node_v2.tar.zst | tar -xvf -
    done
    # This will create/populate the 'static_files' directory
    ```
 
 3. **Extract the database files**:
    ```bash
-   zstd -d -T0 --long=31 -c 20261002_mainnet_reth_mdbx_db_archive_node_v2.tar.zst | tar -xvf -
+   zstd -d -T0 --long=31 -c 20261102_mainnet_reth_mdbx_db_archive_node_v2.tar.zst | tar -xvf -
    # This will create/populate the 'db' directory
-   zstd -d -T0 --long=31 -c 20261002_mainnet_reth_mdbx_rocksdb_archive_node_v2.tar.zst | tar -xvf -
+   zstd -d -T0 --long=31 -c 20261102_mainnet_reth_mdbx_rocksdb_archive_node_v2.tar.zst | tar -xvf -
    # This will create/populate the 'rocksdb' directory
    ```
 
@@ -106,7 +106,7 @@ For single-file snapshots (TestNet Archive, TestNet FullNode):
    
    # Select archive or full, then extract the selected snapshot
    snapshot_type=archive
-   zstd -d -T0 --long=31 -c 20261002_testnet_reth_mdbx_${snapshot_type}_node_v2.tar.zst | tar -xvf -
+   zstd -d -T0 --long=31 -c 20261102_testnet_reth_mdbx_${snapshot_type}_node_v2.tar.zst | tar -xvf -
    ```
 
 2. **Start your node**:
